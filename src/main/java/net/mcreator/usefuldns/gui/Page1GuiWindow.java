@@ -90,7 +90,7 @@ public class Page1GuiWindow extends ContainerScreen<Page1Gui.GuiContainerMod> {
 	public void init(Minecraft minecraft, int width, int height) {
 		super.init(minecraft, width, height);
 		minecraft.keyboardListener.enableRepeatEvents(true);
-		this.addButton(new Button(this.guiLeft + 7, this.guiTop + 54, 222, 20, new StringTextComponent("Ender Crafter Recipes"), e -> {
+		this.addButton(new Button(this.guiLeft + 7, this.guiTop + 54, 222, 20, new StringTextComponent("MADCrafter Recipes"), e -> {
 			if (true) {
 				UsefuldnsMod.PACKET_HANDLER.sendToServer(new Page1Gui.ButtonPressedMessage(0, x, y, z));
 				Page1Gui.handleButtonAction(entity, 0, x, y, z);

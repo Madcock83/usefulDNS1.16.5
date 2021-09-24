@@ -65,13 +65,13 @@
       {
         "type": "button",
         "data": {
-          "text": "Ender Crafter Recipes",
+          "text": "MADCrafter Recipes",
           "onClick": {
             "name": "Openpage2"
           },
           "width": 222,
           "height": 20,
-          "name": "Ender Crafter Recipes",
+          "name": "MADCrafter Recipes",
           "x": 102,
           "y": 74
         }
