@@ -4080,6 +4080,99 @@
           }
         ]
       }
+    },
+    {
+      "name": "CreativegenUpdateTick",
+      "type": "procedure",
+      "sortid": 265,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "creativegen_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Creativegen",
+      "type": "block",
+      "sortid": 265,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "creativegen"
+    },
+    {
+      "name": "FereaderRightClickedOnBlock",
+      "type": "procedure",
+      "sortid": 266,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fereader_right_clicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "direction",
+            "type": "direction"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Fereader",
+      "type": "item",
+      "sortid": 266,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fereader"
+    },
+    {
+      "name": "Blockassembler",
+      "type": "block",
+      "sortid": 267,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blockassembler"
     }
   ],
   "variable_elements": [],
@@ -4190,6 +4283,7 @@
       "block.usefuldns.antimatter": "Anti-Matter Projector",
       "tile.decablo.name": "DecaNySodium Block",
       "item.usefuldns.steelplate": "Steel Plate",
+      "block.usefuldns.blockassembler": "Block Assembler",
       "item.unobtainiumhelmet.name": "Unobtainium Helmet",
       "item.madbuck.name": "Madbuck",
       "item.sepmb.name": "Septuple Money Bag",
@@ -4198,9 +4292,11 @@
       "item.usefuldns.transister": "Transistor",
       "advancements.swissachievment.descr": "Make the swiss army knife",
       "advancements.welcometohell.descr": "Entering Madworld",
+      "block.usefuldns.creativegen": "Creative Generator",
       "advancements.boom.title": "BOOM Goes the Dynomite",
       "item.dnsbook.name": "UsefulDNS Book",
       "item.doublemb.name": "Double Money Bag",
+      "item.usefuldns.fereader": "FE Reader",
       "fluid.liquidrf": "LiquidRF",
       "item.usefuldns.fivehunny": "500 Dollar Bill",
       "item.usefuldns.unobtainium_helmet": "Unobtainium Helmet",
