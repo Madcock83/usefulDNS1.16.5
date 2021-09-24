@@ -1,0 +1,98 @@
+{
+  "_fv": 24,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 300,
+    "height": 238,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "anti2.png",
+          "use1Xscale": false,
+          "name": "anti2.png",
+          "x": 81,
+          "y": 47
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Anti-matter Projector",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Anti-matter Projector",
+          "x": 63,
+          "y": 2
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Place and right click with a Madbuck",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Place and right click with a Madbuck",
+          "x": 64,
+          "y": 11
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "It will Dupe whatever is underneath",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "It will Dupe whatever is underneath",
+          "x": 64,
+          "y": 20
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Some blocks can NOT be Duped",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Some blocks can NOT be Duped",
+          "x": 64,
+          "y": 27
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Main Menu",
+          "onClick": {
+            "name": "Openpage1"
+          },
+          "width": 92,
+          "height": 20,
+          "name": "Main Menu",
+          "x": 254,
+          "y": 11
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

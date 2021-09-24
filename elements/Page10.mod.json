@@ -1,0 +1,59 @@
+{
+  "_fv": 24,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 300,
+    "height": 238,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "endercrafter1.png",
+          "use1Xscale": false,
+          "name": "endercrafter1.png",
+          "x": 84,
+          "y": 68
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Ender Crafter",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Ender Crafter",
+          "x": 168,
+          "y": 32
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Main Menu",
+          "onClick": {
+            "name": "Openpage1"
+          },
+          "width": 92,
+          "height": 20,
+          "name": "Main Menu",
+          "x": 164,
+          "y": 185
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

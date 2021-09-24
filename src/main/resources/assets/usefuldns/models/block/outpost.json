@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "usefuldns:blocks/ender_crafter_top",
+    "up": "usefuldns:blocks/ender_crafter_top",
+    "north": "usefuldns:blocks/ender_crafter_top",
+    "east": "usefuldns:blocks/ender_crafter_top",
+    "south": "usefuldns:blocks/ender_crafter_top",
+    "west": "usefuldns:blocks/ender_crafter_top",
+    "particle": "usefuldns:blocks/ender_crafter_top"
+  }
+}

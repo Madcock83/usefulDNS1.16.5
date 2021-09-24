@@ -1,0 +1,37 @@
+{
+  "group": "usefuldns",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "usefuldns:foolsgoldingot"
+    },
+    {
+      "item": "usefuldns:foolsgoldingot"
+    },
+    {
+      "item": "usefuldns:foolsgoldingot"
+    },
+    {
+      "item": "usefuldns:foolsgoldingot"
+    },
+    {
+      "item": "usefuldns:foolsgoldingot"
+    },
+    {
+      "item": "usefuldns:foolsgoldingot"
+    },
+    {
+      "item": "usefuldns:foolsgoldingot"
+    },
+    {
+      "item": "usefuldns:foolsgoldingot"
+    },
+    {
+      "item": "usefuldns:foolsgoldingot"
+    }
+  ],
+  "result": {
+    "item": "minecraft:gold_nugget",
+    "count": 1
+  }
+}

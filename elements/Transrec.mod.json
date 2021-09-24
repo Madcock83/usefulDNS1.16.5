@@ -1,0 +1,51 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Reinfdiaplater"
+      },
+      {
+        "value": "CUSTOM:Diamondplate"
+      },
+      {
+        "value": "CUSTOM:Reinfdiaplater"
+      },
+      {
+        "value": "Items.REPEATER"
+      },
+      {
+        "value": "CUSTOM:Diamondeos"
+      },
+      {
+        "value": "Items.COMPARATOR"
+      },
+      {
+        "value": "Blocks.IRON_BARS"
+      },
+      {
+        "value": "CUSTOM:Goldeneos"
+      },
+      {
+        "value": "Blocks.IRON_BARS"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Transister"
+    },
+    "smeltingInputStack": {
+      "value": ""
+    },
+    "smeltingReturnStack": {
+      "value": ""
+    },
+    "name": "transrec",
+    "namespace": "mod"
+  }
+}

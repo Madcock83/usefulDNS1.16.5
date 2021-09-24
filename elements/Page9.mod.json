@@ -1,0 +1,59 @@
+{
+  "_fv": 24,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 300,
+    "height": 238,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "ingot.png",
+          "use1Xscale": false,
+          "name": "ingot.png",
+          "x": 77,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Unobtainium Ingots",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Unobtainium Ingots",
+          "x": 159,
+          "y": 29
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Next",
+          "onClick": {
+            "name": "Openpage10"
+          },
+          "width": 44,
+          "height": 20,
+          "name": "Next",
+          "x": 178,
+          "y": 181
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "_fv": 24,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "swissmag",
+    "customModelName": "Normal",
+    "name": "Swiss Army Knife (Magnet)",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "toolType": "MultiTool",
+    "harvestLevel": 5,
+    "efficiency": 30.0,
+    "attackSpeed": 2.8,
+    "enchantability": 64,
+    "damageVsEntity": 6.0,
+    "usageCount": 4004,
+    "blocksAffected": [],
+    "hasGlow": true,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Deca"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "SwissArmyMagRightClickedInAir"
+    },
+    "onRightClickedOnBlock": {
+      "name": "SwissArmyMagRightClickedInAir"
+    },
+    "onItemInInventoryTick": {
+      "name": "SwissArmyMagToolInInventoryTick"
+    },
+    "onBlockDestroyedWithTool": {
+      "name": "SwissArmyBlockDestroyedWithTool"
+    }
+  }
+}

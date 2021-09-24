@@ -1,0 +1,51 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 5,
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.STONEBRICK"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.STONEBRICK"
+      },
+      {
+        "value": "Blocks.STONEBRICK"
+      },
+      {
+        "value": "Blocks.STONEBRICK"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.STONEBRICK"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "Blocks.STONEBRICK#3"
+    },
+    "smeltingInputStack": {
+      "value": ""
+    },
+    "smeltingReturnStack": {
+      "value": ""
+    },
+    "name": "chiselrec",
+    "namespace": "mod"
+  }
+}

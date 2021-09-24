@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "usefuldns:blocks/reinforcedredstone",
+    "particle": "usefuldns:blocks/reinforcedredstone"
+  }
+}

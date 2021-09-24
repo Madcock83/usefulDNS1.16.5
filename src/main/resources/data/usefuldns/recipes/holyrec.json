@@ -1,0 +1,30 @@
+{
+  "group": "usefuldns",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "usefuldns:unboingot"
+    },
+    "3": {
+      "item": "usefuldns:unboingot"
+    },
+    "4": {
+      "item": "minecraft:tnt"
+    },
+    "5": {
+      "item": "usefuldns:unboingot"
+    },
+    "7": {
+      "item": "usefuldns:unboingot"
+    }
+  },
+  "result": {
+    "item": "usefuldns:holyhand",
+    "count": 1
+  }
+}

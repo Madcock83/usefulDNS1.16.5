@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "usefuldns:blocks/iron_drill_back",
+    "up": "usefuldns:blocks/iron_drill_head_off",
+    "north": "usefuldns:blocks/iron_drill_side1",
+    "east": "usefuldns:blocks/iron_drill_side1",
+    "south": "usefuldns:blocks/iron_drill_side1",
+    "west": "usefuldns:blocks/iron_drill_side1",
+    "particle": "usefuldns:blocks/iron_drill_back"
+  }
+}

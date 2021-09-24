@@ -1,0 +1,448 @@
+{
+  "_fv": 24,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 225,
+    "height": 225,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 150,
+          "y": 48
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #2",
+          "x": 168,
+          "y": 48
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 3,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #3",
+          "x": 132,
+          "y": 66
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 4,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #4",
+          "x": 150,
+          "y": 66
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 5,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #5",
+          "x": 168,
+          "y": 66
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 6,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #6",
+          "x": 132,
+          "y": 84
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 7,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #7",
+          "x": 150,
+          "y": 84
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 8,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #8",
+          "x": 168,
+          "y": 84
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 9,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #9",
+          "x": 222,
+          "y": 84
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 10,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #10",
+          "x": 258,
+          "y": 48
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Fuel",
+          "color": {
+            "value": -12566464,
+            "falpha": 0.0
+          },
+          "name": "Fuel",
+          "x": 222,
+          "y": 102
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Unobtainium Furance",
+          "color": {
+            "value": -12566464,
+            "falpha": 0.0
+          },
+          "name": "Unobtainium Furance",
+          "x": 106,
+          "y": 13
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Place Vanilla recipes in Green Slot",
+          "color": {
+            "value": -12566464,
+            "falpha": 0.0
+          },
+          "name": "Place Vanilla recipes in Green Slot",
+          "x": 105,
+          "y": 23
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "color": {
+            "value": -16711885,
+            "falpha": 0.0
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 132,
+          "y": 48
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "This Furnace Only Accepts",
+          "color": {
+            "value": -12566464,
+            "falpha": 0.0
+          },
+          "name": "This Furnace Only Accepts",
+          "x": 141,
+          "y": 201
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fire.png",
+          "use1Xscale": false,
+          "name": "fire.png",
+          "x": 186,
+          "y": 84
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow.png",
+          "use1Xscale": false,
+          "name": "arrow.png",
+          "x": 204,
+          "y": 48
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 11,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #11",
+          "x": 276,
+          "y": 48
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 12,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #12",
+          "x": 294,
+          "y": 48
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 13,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #13",
+          "x": 258,
+          "y": 66
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 14,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #14",
+          "x": 276,
+          "y": 66
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 15,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #15",
+          "x": 294,
+          "y": 66
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Sort",
+          "onClick": {
+            "name": "Firancesort"
+          },
+          "width": 44,
+          "height": 20,
+          "name": "Sort",
+          "x": 258,
+          "y": 93
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Coal Blocks and",
+          "color": {
+            "value": -12566464,
+            "falpha": 0.0
+          },
+          "name": "Coal Blocks and",
+          "x": 175,
+          "y": 210
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Compressed Coal as Fuel",
+          "color": {
+            "value": -12566464,
+            "falpha": 0.0
+          },
+          "name": "Compressed Coal as Fuel",
+          "x": 158,
+          "y": 219
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Anything placed in",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Anything placed in",
+          "x": 6,
+          "y": 12
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "the green slot",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "the green slot",
+          "x": 6,
+          "y": 21
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "will be melted",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "will be melted",
+          "x": 6,
+          "y": 30
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "regaurdless if it",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "regaurdless if it",
+          "x": 6,
+          "y": 39
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "has a smelting",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "has a smelting",
+          "x": 6,
+          "y": 48
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "recipe or not",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "recipe or not",
+          "x": 6,
+          "y": 57
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "once fuel",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "once fuel",
+          "x": 6,
+          "y": 66
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "is added",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "is added",
+          "x": 6,
+          "y": 75
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "_fv": 24,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 238,
+    "height": 200,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Welcome to usefulDNS",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Welcome to usefulDNS",
+          "x": 158,
+          "y": 26
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "This book is a WIP",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "This book is a WIP",
+          "x": 170,
+          "y": 38
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "I will add more when I get the time",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "I will add more when I get the time",
+          "x": 141,
+          "y": 48
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "For now this will give you some basic info",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "For now this will give you some basic info",
+          "x": 120,
+          "y": 58
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Ender Crafter Recipes",
+          "onClick": {
+            "name": "Openpage2"
+          },
+          "width": 222,
+          "height": 20,
+          "name": "Ender Crafter Recipes",
+          "x": 102,
+          "y": 74
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Unobtainium Furnace Recipes",
+          "onClick": {
+            "name": "Openpage9"
+          },
+          "width": 213,
+          "height": 20,
+          "name": "Unobtainium Furnace Recipes",
+          "x": 106,
+          "y": 99
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Sorry for the basic look here :-(",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Sorry for the basic look here :-(",
+          "x": 135,
+          "y": 196
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Tools and Items",
+          "onClick": {
+            "name": "Openpage11"
+          },
+          "width": 150,
+          "height": 20,
+          "name": "Tools and Items",
+          "x": 137,
+          "y": 146
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Anti-Matter Projector",
+          "onClick": {
+            "name": "Antimatteropengui"
+          },
+          "width": 220,
+          "height": 20,
+          "name": "Anti-Matter Projector",
+          "x": 101,
+          "y": 121
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

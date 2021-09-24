@@ -1,0 +1,51 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Steelingot"
+      },
+      {
+        "value": "CUSTOM:Steelingot"
+      },
+      {
+        "value": "CUSTOM:SteelRod"
+      },
+      {
+        "value": "CUSTOM:SteelRod"
+      },
+      {
+        "value": "CUSTOM:Steelingot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Steelingot"
+      },
+      {
+        "value": "CUSTOM:Steelingot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Steelhammer"
+    },
+    "smeltingInputStack": {
+      "value": ""
+    },
+    "smeltingReturnStack": {
+      "value": ""
+    },
+    "name": "steelhammerrec",
+    "namespace": "mod"
+  }
+}
