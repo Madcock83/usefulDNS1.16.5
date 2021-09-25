@@ -1,5 +1,6 @@
 {
-  "parent": "forge:item/bucket_drip",
-  "loader": "forge:bucket",
-  "fluid": "usefuldns:liquid_rf"
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "usefuldns:items/bucket_liquid_fe"
+  }
 }

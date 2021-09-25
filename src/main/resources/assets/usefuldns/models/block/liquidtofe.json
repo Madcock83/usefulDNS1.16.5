@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "usefuldns:blocks/liquidtopower_top",
+    "up": "usefuldns:blocks/liquidtopower_top",
+    "north": "usefuldns:blocks/liguidtopower_side",
+    "east": "usefuldns:blocks/liguidtopower_side",
+    "south": "usefuldns:blocks/liguidtopower_side",
+    "west": "usefuldns:blocks/liguidtopower_side",
+    "particle": "usefuldns:blocks/liquidtopower_top"
+  }
+}

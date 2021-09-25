@@ -10,33 +10,28 @@ import net.minecraftforge.fluids.capability.templates.FluidTank;
 import net.minecraftforge.fluids.capability.CapabilityFluidHandler;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.energy.EnergyStorage;
-import net.minecraftforge.energy.CapabilityEnergy;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.common.capabilities.Capability;
 
-import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.Rotation;
 import net.minecraft.util.NonNullList;
-import net.minecraft.util.Mirror;
+import net.minecraft.util.Hand;
 import net.minecraft.util.Direction;
+import net.minecraft.util.ActionResultType;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.LockableLootTileEntity;
-import net.minecraft.state.StateContainer;
-import net.minecraft.state.DirectionProperty;
 import net.minecraft.network.play.server.SUpdateTileEntityPacket;
 import net.minecraft.network.NetworkManager;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
-import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.BlockItem;
 import net.minecraft.inventory.container.INamedContainerProvider;
 import net.minecraft.inventory.container.Container;
@@ -45,33 +40,32 @@ import net.minecraft.inventory.ItemStackHelper;
 import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.inventory.ISidedInventory;
 import net.minecraft.entity.player.PlayerInventory;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
-import net.minecraft.block.DirectionalBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.usefuldns.procedures.BlockassemblerUpdateTickProcedure;
+import net.mcreator.usefuldns.procedures.CreativeliquidUpdateTickProcedure;
 import net.mcreator.usefuldns.itemgroup.UsefuldnsItemGroup;
 import net.mcreator.usefuldns.UsefuldnsModElements;
 
 import javax.annotation.Nullable;
 
 import java.util.stream.IntStream;
-import java.util.Random;
 import java.util.Map;
 import java.util.List;
 import java.util.HashMap;
 import java.util.Collections;
 
 @UsefuldnsModElements.ModElement.Tag
-public class BlockassemblerBlock extends UsefuldnsModElements.ModElement {
-	@ObjectHolder("usefuldns:blockassembler")
+public class CreativeliquidBlock extends UsefuldnsModElements.ModElement {
+	@ObjectHolder("usefuldns:creativeliquid")
 	public static final Block block = null;
-	@ObjectHolder("usefuldns:blockassembler")
+	@ObjectHolder("usefuldns:creativeliquid")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
-	public BlockassemblerBlock(UsefuldnsModElements instance) {
-		super(instance, 267);
+	public CreativeliquidBlock(UsefuldnsModElements instance) {
+		super(instance, 274);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 	}
 
@@ -83,40 +77,19 @@ public class BlockassemblerBlock extends UsefuldnsModElements.ModElement {
 	private static class TileEntityRegisterHandler {
 		@SubscribeEvent
 		public void registerTileEntity(RegistryEvent.Register<TileEntityType<?>> event) {
-			event.getRegistry().register(TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("blockassembler"));
+			event.getRegistry().register(TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("creativeliquid"));
 		}
 	}
 
 	public static class CustomBlock extends Block {
-		public static final DirectionProperty FACING = DirectionalBlock.FACING;
 		public CustomBlock() {
-			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0));
-			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
-			setRegistryName("blockassembler");
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0));
+			setRegistryName("creativeliquid");
 		}
 
 		@Override
 		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
 			return 15;
-		}
-
-		@Override
-		protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {
-			builder.add(FACING);
-		}
-
-		public BlockState rotate(BlockState state, Rotation rot) {
-			return state.with(FACING, rot.rotate(state.get(FACING)));
-		}
-
-		public BlockState mirror(BlockState state, Mirror mirrorIn) {
-			return state.rotate(mirrorIn.toRotation(state.get(FACING)));
-		}
-
-		@Override
-		public BlockState getStateForPlacement(BlockItemUseContext context) {
-			;
-			return this.getDefaultState().with(FACING, context.getNearestLookingDirection().getOpposite());
 		}
 
 		@Override
@@ -128,29 +101,25 @@ public class BlockassemblerBlock extends UsefuldnsModElements.ModElement {
 		}
 
 		@Override
-		public void onBlockAdded(BlockState blockstate, World world, BlockPos pos, BlockState oldState, boolean moving) {
-			super.onBlockAdded(blockstate, world, pos, oldState, moving);
+		public ActionResultType onBlockActivated(BlockState blockstate, World world, BlockPos pos, PlayerEntity entity, Hand hand,
+				BlockRayTraceResult hit) {
+			super.onBlockActivated(blockstate, world, pos, entity, hand, hit);
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
-			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 1);
-		}
-
-		@Override
-		public void tick(BlockState blockstate, ServerWorld world, BlockPos pos, Random random) {
-			super.tick(blockstate, world, pos, random);
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
+			double hitX = hit.getHitVec().x;
+			double hitY = hit.getHitVec().y;
+			double hitZ = hit.getHitVec().z;
+			Direction direction = hit.getFace();
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				BlockassemblerUpdateTickProcedure.executeProcedure($_dependencies);
+				CreativeliquidUpdateTickProcedure.executeProcedure($_dependencies);
 			}
-			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 1);
+			return ActionResultType.SUCCESS;
 		}
 
 		@Override
@@ -204,7 +173,7 @@ public class BlockassemblerBlock extends UsefuldnsModElements.ModElement {
 	}
 
 	public static class CustomTileEntity extends LockableLootTileEntity implements ISidedInventory {
-		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(2, ItemStack.EMPTY);
+		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
 		protected CustomTileEntity() {
 			super(tileEntityType);
 		}
@@ -216,8 +185,6 @@ public class BlockassemblerBlock extends UsefuldnsModElements.ModElement {
 				this.stacks = NonNullList.withSize(this.getSizeInventory(), ItemStack.EMPTY);
 			}
 			ItemStackHelper.loadAllItems(compound, this.stacks);
-			if (compound.get("energyStorage") != null)
-				CapabilityEnergy.ENERGY.readNBT(energyStorage, null, compound.get("energyStorage"));
 			if (compound.get("fluidTank") != null)
 				CapabilityFluidHandler.FLUID_HANDLER_CAPABILITY.readNBT(fluidTank, null, compound.get("fluidTank"));
 		}
@@ -228,7 +195,6 @@ public class BlockassemblerBlock extends UsefuldnsModElements.ModElement {
 			if (!this.checkLootAndWrite(compound)) {
 				ItemStackHelper.saveAllItems(compound, this.stacks);
 			}
-			compound.put("energyStorage", CapabilityEnergy.ENERGY.writeNBT(energyStorage, null));
 			compound.put("fluidTank", CapabilityFluidHandler.FLUID_HANDLER_CAPABILITY.writeNBT(fluidTank, null));
 			return compound;
 		}
@@ -263,12 +229,12 @@ public class BlockassemblerBlock extends UsefuldnsModElements.ModElement {
 
 		@Override
 		public ITextComponent getDefaultName() {
-			return new StringTextComponent("blockassembler");
+			return new StringTextComponent("creativeliquid");
 		}
 
 		@Override
 		public int getInventoryStackLimit() {
-			return 1;
+			return 64;
 		}
 
 		@Override
@@ -278,7 +244,7 @@ public class BlockassemblerBlock extends UsefuldnsModElements.ModElement {
 
 		@Override
 		public ITextComponent getDisplayName() {
-			return new StringTextComponent("Block Assembler");
+			return new StringTextComponent("Creativeliquid");
 		}
 
 		@Override
@@ -311,34 +277,7 @@ public class BlockassemblerBlock extends UsefuldnsModElements.ModElement {
 			return true;
 		}
 		private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
-		private final EnergyStorage energyStorage = new EnergyStorage(100000000, 1000000, 1000000, 0) {
-			@Override
-			public int receiveEnergy(int maxReceive, boolean simulate) {
-				int retval = super.receiveEnergy(maxReceive, simulate);
-				if (!simulate) {
-					markDirty();
-					world.notifyBlockUpdate(pos, world.getBlockState(pos), world.getBlockState(pos), 2);
-				}
-				return retval;
-			}
-
-			@Override
-			public int extractEnergy(int maxExtract, boolean simulate) {
-				int retval = super.extractEnergy(maxExtract, simulate);
-				if (!simulate) {
-					markDirty();
-					world.notifyBlockUpdate(pos, world.getBlockState(pos), world.getBlockState(pos), 2);
-				}
-				return retval;
-			}
-		};
-		private final FluidTank fluidTank = new FluidTank(128000, fs -> {
-			if (fs.getFluid() == LiquidRFBlock.still)
-				return true;
-			if (fs.getFluid() == LiquidRFBlock.flowing)
-				return true;
-			return false;
-		}) {
+		private final FluidTank fluidTank = new FluidTank(32000) {
 			@Override
 			protected void onContentsChanged() {
 				super.onContentsChanged();
@@ -350,8 +289,6 @@ public class BlockassemblerBlock extends UsefuldnsModElements.ModElement {
 		public <T> LazyOptional<T> getCapability(Capability<T> capability, @Nullable Direction facing) {
 			if (!this.removed && facing != null && capability == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY)
 				return handlers[facing.ordinal()].cast();
-			if (!this.removed && capability == CapabilityEnergy.ENERGY)
-				return LazyOptional.of(() -> energyStorage).cast();
 			if (!this.removed && capability == CapabilityFluidHandler.FLUID_HANDLER_CAPABILITY)
 				return LazyOptional.of(() -> fluidTank).cast();
 			return super.getCapability(capability, facing);

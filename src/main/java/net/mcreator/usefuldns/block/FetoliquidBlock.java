@@ -14,6 +14,8 @@ import net.minecraftforge.energy.EnergyStorage;
 import net.minecraftforge.energy.CapabilityEnergy;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.common.capabilities.Capability;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
@@ -21,22 +23,17 @@ import net.minecraft.world.IBlockReader;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.Rotation;
 import net.minecraft.util.NonNullList;
-import net.minecraft.util.Mirror;
 import net.minecraft.util.Direction;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.LockableLootTileEntity;
-import net.minecraft.state.StateContainer;
-import net.minecraft.state.DirectionProperty;
 import net.minecraft.network.play.server.SUpdateTileEntityPacket;
 import net.minecraft.network.NetworkManager;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
-import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.BlockItem;
 import net.minecraft.inventory.container.INamedContainerProvider;
 import net.minecraft.inventory.container.Container;
@@ -45,13 +42,13 @@ import net.minecraft.inventory.ItemStackHelper;
 import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.inventory.ISidedInventory;
 import net.minecraft.entity.player.PlayerInventory;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
-import net.minecraft.block.DirectionalBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.usefuldns.procedures.BlockassemblerUpdateTickProcedure;
+import net.mcreator.usefuldns.procedures.FetoliquidUpdateTickProcedure;
 import net.mcreator.usefuldns.itemgroup.UsefuldnsItemGroup;
 import net.mcreator.usefuldns.UsefuldnsModElements;
 
@@ -65,13 +62,13 @@ import java.util.HashMap;
 import java.util.Collections;
 
 @UsefuldnsModElements.ModElement.Tag
-public class BlockassemblerBlock extends UsefuldnsModElements.ModElement {
-	@ObjectHolder("usefuldns:blockassembler")
+public class FetoliquidBlock extends UsefuldnsModElements.ModElement {
+	@ObjectHolder("usefuldns:fetoliquid")
 	public static final Block block = null;
-	@ObjectHolder("usefuldns:blockassembler")
+	@ObjectHolder("usefuldns:fetoliquid")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
-	public BlockassemblerBlock(UsefuldnsModElements instance) {
-		super(instance, 267);
+	public FetoliquidBlock(UsefuldnsModElements instance) {
+		super(instance, 272);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 	}
 
@@ -83,40 +80,27 @@ public class BlockassemblerBlock extends UsefuldnsModElements.ModElement {
 	private static class TileEntityRegisterHandler {
 		@SubscribeEvent
 		public void registerTileEntity(RegistryEvent.Register<TileEntityType<?>> event) {
-			event.getRegistry().register(TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("blockassembler"));
+			event.getRegistry().register(TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("fetoliquid"));
 		}
 	}
 
 	public static class CustomBlock extends Block {
-		public static final DirectionProperty FACING = DirectionalBlock.FACING;
 		public CustomBlock() {
-			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0));
-			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
-			setRegistryName("blockassembler");
+			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(2f, 50f).setLightLevel(s -> 0));
+			setRegistryName("fetoliquid");
+		}
+
+		@Override
+		@OnlyIn(Dist.CLIENT)
+		public void addInformation(ItemStack itemstack, IBlockReader world, List<ITextComponent> list, ITooltipFlag flag) {
+			super.addInformation(itemstack, world, list, flag);
+			list.add(new StringTextComponent("This Machine takes in FE"));
+			list.add(new StringTextComponent("And produces Liquid FE"));
 		}
 
 		@Override
 		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
 			return 15;
-		}
-
-		@Override
-		protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {
-			builder.add(FACING);
-		}
-
-		public BlockState rotate(BlockState state, Rotation rot) {
-			return state.with(FACING, rot.rotate(state.get(FACING)));
-		}
-
-		public BlockState mirror(BlockState state, Mirror mirrorIn) {
-			return state.rotate(mirrorIn.toRotation(state.get(FACING)));
-		}
-
-		@Override
-		public BlockState getStateForPlacement(BlockItemUseContext context) {
-			;
-			return this.getDefaultState().with(FACING, context.getNearestLookingDirection().getOpposite());
 		}
 
 		@Override
@@ -148,7 +132,7 @@ public class BlockassemblerBlock extends UsefuldnsModElements.ModElement {
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				BlockassemblerUpdateTickProcedure.executeProcedure($_dependencies);
+				FetoliquidUpdateTickProcedure.executeProcedure($_dependencies);
 			}
 			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 1);
 		}
@@ -204,7 +188,7 @@ public class BlockassemblerBlock extends UsefuldnsModElements.ModElement {
 	}
 
 	public static class CustomTileEntity extends LockableLootTileEntity implements ISidedInventory {
-		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(2, ItemStack.EMPTY);
+		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
 		protected CustomTileEntity() {
 			super(tileEntityType);
 		}
@@ -263,12 +247,12 @@ public class BlockassemblerBlock extends UsefuldnsModElements.ModElement {
 
 		@Override
 		public ITextComponent getDefaultName() {
-			return new StringTextComponent("blockassembler");
+			return new StringTextComponent("fetoliquid");
 		}
 
 		@Override
 		public int getInventoryStackLimit() {
-			return 1;
+			return 64;
 		}
 
 		@Override
@@ -278,7 +262,7 @@ public class BlockassemblerBlock extends UsefuldnsModElements.ModElement {
 
 		@Override
 		public ITextComponent getDisplayName() {
-			return new StringTextComponent("Block Assembler");
+			return new StringTextComponent("FE to Liquid Transformer");
 		}
 
 		@Override
@@ -311,7 +295,7 @@ public class BlockassemblerBlock extends UsefuldnsModElements.ModElement {
 			return true;
 		}
 		private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
-		private final EnergyStorage energyStorage = new EnergyStorage(100000000, 1000000, 1000000, 0) {
+		private final EnergyStorage energyStorage = new EnergyStorage(100000000, 1000000, 10000000, 0) {
 			@Override
 			public int receiveEnergy(int maxReceive, boolean simulate) {
 				int retval = super.receiveEnergy(maxReceive, simulate);
@@ -332,13 +316,7 @@ public class BlockassemblerBlock extends UsefuldnsModElements.ModElement {
 				return retval;
 			}
 		};
-		private final FluidTank fluidTank = new FluidTank(128000, fs -> {
-			if (fs.getFluid() == LiquidRFBlock.still)
-				return true;
-			if (fs.getFluid() == LiquidRFBlock.flowing)
-				return true;
-			return false;
-		}) {
+		private final FluidTank fluidTank = new FluidTank(128000) {
 			@Override
 			protected void onContentsChanged() {
 				super.onContentsChanged();

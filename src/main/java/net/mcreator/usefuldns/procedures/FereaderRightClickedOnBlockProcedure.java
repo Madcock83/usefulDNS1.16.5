@@ -1,5 +1,6 @@
 package net.mcreator.usefuldns.procedures;
 
+import net.minecraftforge.fluids.capability.CapabilityFluidHandler;
 import net.minecraftforge.energy.CapabilityEnergy;
 
 import net.minecraft.world.IWorld;
@@ -62,7 +63,7 @@ public class FereaderRightClickedOnBlockProcedure {
 						_ent.getCapability(CapabilityEnergy.ENERGY, direction).ifPresent(capability -> _retval.set(capability.getEnergyStored()));
 					return _retval.get();
 				}
-			}.getEnergyStored(world, new BlockPos((int) x, (int) y, (int) z)))) + "" + ("/") + "" + ((new Object() {
+			}.getEnergyStored(world, new BlockPos((int) x, (int) y, (int) z)))) + "" + ("\u00A7/\u00A7f ") + "" + ((new Object() {
 				public int getMaxEnergyStored(IWorld world, BlockPos pos) {
 					AtomicInteger _retval = new AtomicInteger(0);
 					TileEntity _ent = world.getTileEntity(pos);
@@ -70,7 +71,30 @@ public class FereaderRightClickedOnBlockProcedure {
 						_ent.getCapability(CapabilityEnergy.ENERGY, direction).ifPresent(capability -> _retval.set(capability.getMaxEnergyStored()));
 					return _retval.get();
 				}
-			}.getMaxEnergyStored(world, new BlockPos((int) x, (int) y, (int) z)))) + "" + (" energy stored "))), (true));
+			}.getMaxEnergyStored(world, new BlockPos((int) x, (int) y, (int) z)))) + "" + ("\u00A7eEnergy Stored\u00A7f "))), (false));
+		}
+		if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
+			((PlayerEntity) entity).sendStatusMessage(new StringTextComponent((((new java.text.DecimalFormat("##").format((new Object() {
+				public int getFluidTankLevel(BlockPos pos, int tank) {
+					AtomicInteger _retval = new AtomicInteger(0);
+					TileEntity _ent = world.getTileEntity(pos);
+					if (_ent != null)
+						_ent.getCapability(CapabilityFluidHandler.FLUID_HANDLER_CAPABILITY, null)
+								.ifPresent(capability -> _retval.set(capability.getFluidInTank(tank).getAmount()));
+					return _retval.get();
+				}
+			}.getFluidTankLevel(new BlockPos((int) x, (int) y, (int) z), (int) 1))))) + "" + ("mb/") + ""
+					+ ((new java.text.DecimalFormat("##").format((new Object() {
+						public int getFluidTankCapacity(BlockPos pos, int tank) {
+							AtomicInteger _retval = new AtomicInteger(0);
+							TileEntity _ent = world.getTileEntity(pos);
+							if (_ent != null)
+								_ent.getCapability(CapabilityFluidHandler.FLUID_HANDLER_CAPABILITY, null)
+										.ifPresent(capability -> _retval.set(capability.getTankCapacity(tank)));
+							return _retval.get();
+						}
+					}.getFluidTankCapacity(new BlockPos((int) x, (int) y, (int) z), (int) 1))))) + "" + ("\u00A7emb of fluid stored \u00A7f"))),
+					(false));
 		}
 	}
 }

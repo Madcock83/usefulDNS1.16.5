@@ -23,6 +23,8 @@ import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.ChunkGenerator;
 import net.minecraft.world.World;
 import net.minecraft.world.ISeedReader;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.registry.WorldGenRegistries;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.math.BlockPos;
@@ -30,11 +32,13 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.RegistryKey;
 import net.minecraft.item.Rarity;
 import net.minecraft.item.Items;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BucketItem;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.fluid.FlowingFluid;
 import net.minecraft.entity.Entity;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.Material;
@@ -48,6 +52,7 @@ import net.mcreator.usefuldns.UsefuldnsModElements;
 
 import java.util.Random;
 import java.util.Map;
+import java.util.List;
 import java.util.HashMap;
 
 @UsefuldnsModElements.ModElement.Tag
@@ -103,8 +108,14 @@ public class LiquidRFBlock extends UsefuldnsModElements.ModElement {
 					}
 				}.setRegistryName("liquid_rf"));
 		elements.items.add(() -> new BucketItem(still,
-				new Item.Properties().containerItem(Items.BUCKET).maxStackSize(1).group(UsefuldnsItemGroup.tab).rarity(Rarity.COMMON))
-						.setRegistryName("liquid_rf_bucket"));
+				new Item.Properties().containerItem(Items.BUCKET).maxStackSize(1).group(UsefuldnsItemGroup.tab).rarity(Rarity.COMMON)) {
+			@Override
+			@OnlyIn(Dist.CLIENT)
+			public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
+				super.addInformation(itemstack, world, list, flag);
+				list.add(new StringTextComponent("Its Electric!!"));
+			}
+		}.setRegistryName("liquid_rf_bucket"));
 	}
 	private static Feature<BlockStateFeatureConfig> feature = null;
 	private static ConfiguredFeature<?, ?> configuredFeature = null;

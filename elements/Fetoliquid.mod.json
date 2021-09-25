@@ -10,7 +10,7 @@
     "textureBack": "assemble_side",
     "renderType": 10,
     "customModelName": "Normal",
-    "rotationMode": 2,
+    "rotationMode": 0,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
@@ -32,10 +32,13 @@
         "subtract": false
       }
     ],
-    "name": "Block Assembler",
-    "specialInfo": [],
-    "hardness": 1.0,
-    "resistance": 10.0,
+    "name": "FE to Liquid Transformer",
+    "specialInfo": [
+      "This Machine takes in FE",
+      "And produces Liquid FE"
+    ],
+    "hardness": 2.0,
+    "resistance": 50.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -107,8 +110,8 @@
     "hasInventory": true,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
-    "inventorySize": 2,
-    "inventoryStackSize": 1,
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [],
@@ -117,19 +120,12 @@
     "energyInitial": 0,
     "energyCapacity": 100000000,
     "energyMaxReceive": 1000000,
-    "energyMaxExtract": 1000000,
+    "energyMaxExtract": 10000000,
     "isFluidTank": true,
     "fluidCapacity": 128000,
-    "fluidRestrictions": [
-      {
-        "value": "CUSTOM:LiquidRF"
-      },
-      {
-        "value": "CUSTOM:LiquidRF:Flowing"
-      }
-    ],
+    "fluidRestrictions": [],
     "onTickUpdate": {
-      "name": "BlockassemblerUpdateTick"
+      "name": "FetoliquidUpdateTick"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

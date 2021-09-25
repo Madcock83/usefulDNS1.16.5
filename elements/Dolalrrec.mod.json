@@ -5,7 +5,8 @@
     "recipeType": "Crafting",
     "xpReward": 0.0,
     "cookingTime": 200,
-    "recipeRetstackSize": 55,
+    "recipeRetstackSize": 38,
+    "group": "",
     "recipeShapeless": true,
     "recipeSlots": [
       {
@@ -38,12 +39,6 @@
     ],
     "recipeReturnStack": {
       "value": "CUSTOM:Onedollar"
-    },
-    "smeltingInputStack": {
-      "value": ""
-    },
-    "smeltingReturnStack": {
-      "value": ""
     },
     "name": "dolalrrec",
     "namespace": "mod"

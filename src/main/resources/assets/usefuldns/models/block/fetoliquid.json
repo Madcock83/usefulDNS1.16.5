@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "usefuldns:blocks/assemble_top",
+    "up": "usefuldns:blocks/assemble_top",
+    "north": "usefuldns:blocks/assemble_side",
+    "east": "usefuldns:blocks/assemble_side",
+    "south": "usefuldns:blocks/assemble_side",
+    "west": "usefuldns:blocks/assemble_side",
+    "particle": "usefuldns:blocks/assemble_top"
+  }
+}

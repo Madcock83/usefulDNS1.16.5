@@ -38,6 +38,22 @@ public class SwissArmyRightClickedInAirProcedure {
 				.getBoolean("swiss")) == (false)) && (entity.isSneaking()))) {
 			((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag().putBoolean("swiss",
 					(true));
+			if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
+					.getItem() == SwissArmyItem.block)) {
+				swissDamage = (double) ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY))
+						.getDamage());
+				if (entity instanceof LivingEntity) {
+					ItemStack _setstack = new ItemStack(SwissArmyMagItem.block);
+					_setstack.setCount((int) 1);
+					((LivingEntity) entity).setHeldItem(Hand.MAIN_HAND, _setstack);
+					if (entity instanceof ServerPlayerEntity)
+						((ServerPlayerEntity) entity).inventory.markDirty();
+				}
+				(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)).setDamage((int) swissDamage);
+				if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
+					((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("\u00A7aMagnet Mode Enabled"), (true));
+				}
+			}
 			new Object() {
 				private int ticks = 0;
 				private float waitTicks;
@@ -63,22 +79,6 @@ public class SwissArmyRightClickedInAirProcedure {
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
 			}.start(world, (int) 10);
-			if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
-					.getItem() == SwissArmyItem.block)) {
-				swissDamage = (double) ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY))
-						.getDamage());
-				if (entity instanceof LivingEntity) {
-					ItemStack _setstack = new ItemStack(SwissArmyMagItem.block);
-					_setstack.setCount((int) 1);
-					((LivingEntity) entity).setHeldItem(Hand.MAIN_HAND, _setstack);
-					if (entity instanceof ServerPlayerEntity)
-						((ServerPlayerEntity) entity).inventory.markDirty();
-				}
-				(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)).setDamage((int) swissDamage);
-				if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
-					((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("\u00A7aMagnet Mode Enabled"), (true));
-				}
-			}
 		}
 	}
 }
