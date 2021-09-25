@@ -4175,15 +4175,6 @@
       "registry_name": "blockassembler"
     },
     {
-      "name": "Blockassgui",
-      "type": "gui",
-      "sortid": 268,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "blockassgui"
-    },
-    {
       "name": "BlockassemblerUpdateTick",
       "type": "procedure",
       "sortid": 269,
