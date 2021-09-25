@@ -41,7 +41,7 @@ public class CreativeliquidUpdateTickProcedure {
 		IWorld world = (IWorld) dependencies.get("world");
 		{
 			TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) (y - 1), (int) z));
-			int _amount = (int) 1000;
+			int _amount = (int) 2000;
 			if (_ent != null)
 				_ent.getCapability(CapabilityFluidHandler.FLUID_HANDLER_CAPABILITY, null)
 						.ifPresent(capability -> capability.fill(new FluidStack(LiquidRFBlock.still, _amount), IFluidHandler.FluidAction.EXECUTE));

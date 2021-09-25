@@ -117,7 +117,7 @@ public class LiquidtofeBlock extends UsefuldnsModElements.ModElement {
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
-			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 1);
+			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 20);
 		}
 
 		@Override
@@ -134,7 +134,7 @@ public class LiquidtofeBlock extends UsefuldnsModElements.ModElement {
 				$_dependencies.put("world", world);
 				LiquidtofeUpdateTickProcedure.executeProcedure($_dependencies);
 			}
-			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 1);
+			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 20);
 		}
 
 		@Override
