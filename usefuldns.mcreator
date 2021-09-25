@@ -4342,6 +4342,44 @@
           }
         ]
       }
+    },
+    {
+      "name": "BatteryUpdateTick",
+      "type": "procedure",
+      "sortid": 276,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "battery_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Battery",
+      "type": "block",
+      "sortid": 276,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "battery"
     }
   ],
   "variable_elements": [],
@@ -4511,6 +4549,7 @@
       "item.exporb.name": "XP Orb",
       "advancements.eaglescout.title": "Eagle Scout",
       "item.usefuldns.unboingot": "Unobtainium Ingot",
+      "block.usefuldns.battery": "DNS Battery",
       "item.usefuldns.diamondplate": "Diamond Plate",
       "item.usefuldns.madsworld": "Madcock\u0027s Travel Staff",
       "tile.unobcrafter.name": "Unobtainium Crafter",
