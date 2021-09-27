@@ -54,7 +54,7 @@
     "material": {
       "value": "ANVIL"
     },
-    "tickRate": 20,
+    "tickRate": 5,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -104,10 +104,10 @@
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
-    "hasInventory": false,
-    "guiBoundTo": "<NONE>",
-    "openGUIOnRightClick": false,
-    "inventorySize": 1,
+    "hasInventory": true,
+    "guiBoundTo": "OpenAntimatter",
+    "openGUIOnRightClick": true,
+    "inventorySize": 2,
     "inventoryStackSize": 1,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
@@ -118,11 +118,18 @@
     "energyCapacity": 400000,
     "energyMaxReceive": 200,
     "energyMaxExtract": 200,
-    "isFluidTank": false,
-    "fluidCapacity": 8000,
-    "fluidRestrictions": [],
+    "isFluidTank": true,
+    "fluidCapacity": 32000,
+    "fluidRestrictions": [
+      {
+        "value": "CUSTOM:LiquidRF"
+      }
+    ],
     "onRightClicked": {
       "name": "AntimatterOnBlockRightClicked"
+    },
+    "onTickUpdate": {
+      "name": "AntimatterUpdateTick"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
