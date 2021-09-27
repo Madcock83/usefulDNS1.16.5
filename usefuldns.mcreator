@@ -1,8 +1,8 @@
 {
   "id_map": {
-    "GUI": 22,
     "DIMENSION": 1,
     "ENTITY": 1,
+    "GUI": 22,
     "BIOME": 0
   },
   "mod_elements": [
@@ -4662,6 +4662,44 @@
           }
         ]
       }
+    },
+    {
+      "name": "CrafterrecFEtoLiquid",
+      "type": "procedure",
+      "sortid": 293,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crafterrec_f_eto_liquid",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Liquidtoferec",
+      "type": "recipe",
+      "sortid": 294,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "liquidtoferec"
     }
   ],
   "variable_elements": [],
@@ -4687,9 +4725,9 @@
       "block.usefuldns.digger_east": "Digger East",
       "advancements.swissachievment.title": "Get to Work",
       "item.reinfdiaplater.name": "Reiinforced Diamond Plate",
-      "block.usefuldns.compressedcoal": "Compressed Coal Block",
-      "item.usefuldns.quinmb": "Quintuple Money Bag",
       "tile.unobfurnace.name": "Unobtainium Furance",
+      "item.usefuldns.quinmb": "Quintuple Money Bag",
+      "block.usefuldns.compressedcoal": "Compressed Coal Block",
       "item.usefuldns.lightingrod": "Lightning Rod",
       "item.steelrod.name": "Steel Rod",
       "advancements.welcometohell.title": "Welcome to Thunder Dome",

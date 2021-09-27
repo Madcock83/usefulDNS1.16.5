@@ -110,6 +110,14 @@ public class MadcrafterreccipesProcedure {
 			$_dependencies.put("world", world);
 			CrafterrecMadstaffProcedure.executeProcedure($_dependencies);
 		}
+		{
+			Map<String, Object> $_dependencies = new HashMap<>();
+			$_dependencies.put("x", x);
+			$_dependencies.put("y", y);
+			$_dependencies.put("z", z);
+			$_dependencies.put("world", world);
+			CrafterrecFEtoLiquidProcedure.executeProcedure($_dependencies);
+		}
 		if (((new Object() {
 			public int getAmount(IWorld world, BlockPos pos, int sltid) {
 				AtomicInteger _retval = new AtomicInteger(0);
