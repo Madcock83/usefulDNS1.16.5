@@ -39,7 +39,7 @@ public class SwissArmyMagItem extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:swiss_army_mag")
 	public static final Item block = null;
 	public SwissArmyMagItem(UsefuldnsModElements instance) {
-		super(instance, 228);
+		super(instance, 238);
 	}
 
 	@Override

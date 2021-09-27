@@ -31,7 +31,7 @@ public class KbindKeyBinding extends UsefuldnsModElements.ModElement {
 	@OnlyIn(Dist.CLIENT)
 	private KeyBinding keys;
 	public KbindKeyBinding(UsefuldnsModElements instance) {
-		super(instance, 271);
+		super(instance, 278);
 		elements.addNetworkMessage(KeyBindingPressedMessage.class, KeyBindingPressedMessage::buffer, KeyBindingPressedMessage::new,
 				KeyBindingPressedMessage::handler);
 	}

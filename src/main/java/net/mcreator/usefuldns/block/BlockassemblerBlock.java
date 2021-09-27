@@ -71,7 +71,7 @@ public class BlockassemblerBlock extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:blockassembler")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public BlockassemblerBlock(UsefuldnsModElements instance) {
-		super(instance, 267);
+		super(instance, 68);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 	}
 
