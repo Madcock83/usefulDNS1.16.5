@@ -122,7 +122,7 @@
     "energyMaxReceive": 1000000,
     "energyMaxExtract": 10000000,
     "isFluidTank": true,
-    "fluidCapacity": 128000,
+    "fluidCapacity": 32000,
     "fluidRestrictions": [],
     "onTickUpdate": {
       "name": "FetoliquidUpdateTick"
