@@ -1,9 +1,9 @@
 {
   "id_map": {
-    "DIMENSION": 1,
+    "BIOME": 0,
     "ENTITY": 1,
     "GUI": 22,
-    "BIOME": 0
+    "DIMENSION": 1
   },
   "mod_elements": [
     {
@@ -23,7 +23,8 @@
       "sortid": 75,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Vanilla Recipes"
     },
     {
       "name": "Icerec",
@@ -31,7 +32,8 @@
       "sortid": 76,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Vanilla Recipes"
     },
     {
       "name": "Chiselrec",
@@ -39,7 +41,8 @@
       "sortid": 77,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Vanilla Recipes"
     },
     {
       "name": "Obsidrec",
@@ -47,7 +50,8 @@
       "sortid": 78,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Vanilla Recipes"
     },
     {
       "name": "Rebuckrec",
@@ -55,7 +59,8 @@
       "sortid": 79,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Vanilla Recipes"
     },
     {
       "name": "Slimerec",
@@ -63,7 +68,8 @@
       "sortid": 80,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Vanilla Recipes"
     },
     {
       "name": "NetherstarRec",
@@ -71,7 +77,8 @@
       "sortid": 81,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Vanilla Recipes"
     },
     {
       "name": "SwissArmy",
@@ -163,7 +170,8 @@
       "sortid": 82,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "Groundflesh",
@@ -185,7 +193,8 @@
       "sortid": 83,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "Peopleburger",
@@ -199,7 +208,8 @@
         "2": 0,
         "3": 0,
         "4": 0
-      }
+      },
+      "path": "~/Dollars"
     },
     {
       "name": "Onedollar",
@@ -213,7 +223,8 @@
         "2": 0,
         "3": 0,
         "4": 0
-      }
+      },
+      "path": "~/Dollars"
     },
     {
       "name": "Dolalrrec",
@@ -221,7 +232,8 @@
       "sortid": 84,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Dollars"
     },
     {
       "name": "Fivedollar",
@@ -235,7 +247,8 @@
         "2": 0,
         "3": 0,
         "4": 0
-      }
+      },
+      "path": "~/Dollars"
     },
     {
       "name": "Tendollar",
@@ -249,7 +262,8 @@
         "2": 0,
         "3": 0,
         "4": 0
-      }
+      },
+      "path": "~/Dollars"
     },
     {
       "name": "Twentydollar",
@@ -263,7 +277,8 @@
         "2": 0,
         "3": 0,
         "4": 0
-      }
+      },
+      "path": "~/Dollars"
     },
     {
       "name": "Hunddollar",
@@ -277,7 +292,8 @@
         "2": 0,
         "3": 0,
         "4": 0
-      }
+      },
+      "path": "~/Dollars"
     },
     {
       "name": "Fivehunny",
@@ -291,7 +307,8 @@
         "2": 0,
         "3": 0,
         "4": 0
-      }
+      },
+      "path": "~/Dollars"
     },
     {
       "name": "Thousdollar",
@@ -305,7 +322,8 @@
         "2": 0,
         "3": 0,
         "4": 0
-      }
+      },
+      "path": "~/Dollars"
     },
     {
       "name": "Fivethousdollar",
@@ -319,7 +337,8 @@
         "2": 0,
         "3": 0,
         "4": 0
-      }
+      },
+      "path": "~/Dollars"
     },
     {
       "name": "Moneybag",
@@ -333,7 +352,8 @@
         "2": 0,
         "3": 0,
         "4": 0
-      }
+      },
+      "path": "~/Dollars"
     },
     {
       "name": "Doublemb",
@@ -347,7 +367,8 @@
         "2": 0,
         "3": 0,
         "4": 0
-      }
+      },
+      "path": "~/Dollars"
     },
     {
       "name": "Tripmb",
@@ -361,7 +382,8 @@
         "2": 0,
         "3": 0,
         "4": 0
-      }
+      },
+      "path": "~/Dollars"
     },
     {
       "name": "Quadmb",
@@ -375,7 +397,8 @@
         "2": 0,
         "3": 0,
         "4": 0
-      }
+      },
+      "path": "~/Dollars"
     },
     {
       "name": "Quinmb",
@@ -425,7 +448,8 @@
       "sortid": 85,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "Decablo",
@@ -478,7 +502,8 @@
       "sortid": 86,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "Rawironrec",
@@ -486,7 +511,8 @@
       "sortid": 87,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "SwissArmyRecipe",
@@ -494,7 +520,8 @@
       "sortid": 88,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "RawSteelRecipe",
@@ -502,7 +529,8 @@
       "sortid": 89,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "SteelingotRecipe",
@@ -510,7 +538,8 @@
       "sortid": 90,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "SteelRodRecipe",
@@ -518,7 +547,8 @@
       "sortid": 91,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "PeopleburgerRecipe",
@@ -526,7 +556,8 @@
       "sortid": 92,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Dollars"
     },
     {
       "name": "FivedollarRecipe",
@@ -534,7 +565,8 @@
       "sortid": 93,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Dollars"
     },
     {
       "name": "TendollarRecipe",
@@ -542,7 +574,8 @@
       "sortid": 94,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Dollars"
     },
     {
       "name": "TwentydollarRecipe",
@@ -550,7 +583,8 @@
       "sortid": 95,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Dollars"
     },
     {
       "name": "HunddollarRecipe",
@@ -558,7 +592,8 @@
       "sortid": 96,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Dollars"
     },
     {
       "name": "FivehunnyRecipe",
@@ -566,7 +601,8 @@
       "sortid": 97,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Dollars"
     },
     {
       "name": "ThousdollarRecipe",
@@ -574,7 +610,8 @@
       "sortid": 98,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Dollars"
     },
     {
       "name": "FivethousdollarRecipe",
@@ -582,7 +619,8 @@
       "sortid": 99,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Dollars"
     },
     {
       "name": "MoneybagRecipe",
@@ -590,7 +628,8 @@
       "sortid": 100,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Dollars"
     },
     {
       "name": "DoublembRecipe",
@@ -598,7 +637,8 @@
       "sortid": 101,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Dollars"
     },
     {
       "name": "TripmbRecipe",
@@ -606,7 +646,8 @@
       "sortid": 102,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Dollars"
     },
     {
       "name": "QuadmbRecipe",
@@ -614,7 +655,8 @@
       "sortid": 103,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Dollars"
     },
     {
       "name": "QuinmbRecipe",
@@ -622,7 +664,8 @@
       "sortid": 104,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "MadstaffRecipe",
@@ -630,7 +673,8 @@
       "sortid": 105,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "DecabloRecipe",
@@ -638,7 +682,8 @@
       "sortid": 106,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "MudpieFoodEaten",
@@ -877,7 +922,8 @@
       "sortid": 119,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "Endpoprec",
@@ -885,7 +931,8 @@
       "sortid": 120,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "UnobtainiumHelmetTickEvent",
@@ -1011,7 +1058,8 @@
       "sortid": 127,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "MoneycannonBulletHitsBlock",
@@ -1080,7 +1128,8 @@
       "sortid": 130,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "SexMB",
@@ -1152,7 +1201,8 @@
       "sortid": 132,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "Reunobblockrec",
@@ -1160,7 +1210,8 @@
       "sortid": 133,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "Reoct",
@@ -1168,7 +1219,8 @@
       "sortid": 134,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "Resep",
@@ -1176,7 +1228,8 @@
       "sortid": 135,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "Resex",
@@ -1184,7 +1237,8 @@
       "sortid": 136,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "Unbogui",
@@ -1242,7 +1296,8 @@
       "sortid": 139,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "SteelhammerItemInUseTick",
@@ -1290,7 +1345,8 @@
       "sortid": 141,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "Goldplate",
@@ -1314,7 +1370,8 @@
       "sortid": 142,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "Diamondplaterec",
@@ -1322,7 +1379,8 @@
       "sortid": 143,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "Steelplate",
@@ -1338,7 +1396,8 @@
       "sortid": 144,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "Reinfdiaplater",
@@ -1354,7 +1413,8 @@
       "sortid": 145,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "Goldeneos",
@@ -1370,7 +1430,8 @@
       "sortid": 146,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "Diamondeos",
@@ -1386,7 +1447,8 @@
       "sortid": 147,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "Cone",
@@ -1402,7 +1464,8 @@
       "sortid": 148,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "Transister",
@@ -1418,7 +1481,8 @@
       "sortid": 149,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "Energyconeleft",
@@ -1442,7 +1506,8 @@
       "sortid": 150,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "Ecrrec",
@@ -1450,7 +1515,8 @@
       "sortid": 151,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "Unobcrafter",
@@ -1466,7 +1532,8 @@
       "sortid": 152,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "Unobfurnace",
@@ -1482,7 +1549,8 @@
       "sortid": 153,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "Unobfurancegui",
@@ -1690,7 +1758,8 @@
       "sortid": 163,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "Unobmix",
@@ -1706,7 +1775,8 @@
       "sortid": 164,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "Rawironrerec",
@@ -1714,7 +1784,8 @@
       "sortid": 165,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "Exporb",
@@ -1762,7 +1833,8 @@
       "sortid": 167,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "Rsfgfgfg",
@@ -1811,7 +1883,8 @@
       "sortid": 169,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "OctupleblockOnBlockRightClicked",
@@ -2289,7 +2362,8 @@
       "sortid": 192,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "Page11",
@@ -2948,7 +3022,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "cobblegenrec"
+      "registry_name": "cobblegenrec",
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "Flashlightrec",
@@ -2957,7 +3032,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "flashlightrec"
+      "registry_name": "flashlightrec",
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "Holyrec",
@@ -2966,7 +3042,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "holyrec"
+      "registry_name": "holyrec",
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "Dnslamprec",
@@ -2975,7 +3052,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "dnslamprec"
+      "registry_name": "dnslamprec",
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "Caveexcaperec",
@@ -2984,7 +3062,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "caveexcaperec"
+      "registry_name": "caveexcaperec",
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "Gamemoderec",
@@ -2993,7 +3072,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "gamemoderec"
+      "registry_name": "gamemoderec",
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "Escapedown",
@@ -3269,7 +3349,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "outpostrec"
+      "registry_name": "outpostrec",
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "Join",
@@ -4062,7 +4143,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "foolscluster"
+      "registry_name": "foolscluster",
+      "path": "~/Recipes/Mod Recipes"
     },
     {
       "name": "Swissnbt",
@@ -4108,7 +4190,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/FE Power"
     },
     {
       "name": "Creativegen",
@@ -4117,7 +4200,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "creativegen"
+      "registry_name": "creativegen",
+      "path": "~/FE Power"
     },
     {
       "name": "FereaderRightClickedOnBlock",
@@ -4154,7 +4238,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/FE Power"
     },
     {
       "name": "Fereader",
@@ -4163,7 +4248,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "fereader"
+      "registry_name": "fereader",
+      "path": "~/FE Power"
     },
     {
       "name": "Blockassembler",
@@ -4172,7 +4258,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "blockassembler"
+      "registry_name": "blockassembler",
+      "path": "~/FE Power"
     },
     {
       "name": "BlockassemblerUpdateTick",
@@ -4201,7 +4288,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/FE Power"
     },
     {
       "name": "KbindOnKeyPressed",
@@ -4256,7 +4344,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/FE Power"
     },
     {
       "name": "Fetoliquid",
@@ -4265,7 +4354,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "fetoliquid"
+      "registry_name": "fetoliquid",
+      "path": "~/FE Power"
     },
     {
       "name": "LiquidtofeUpdateTick",
@@ -4294,7 +4384,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/FE Power"
     },
     {
       "name": "Liquidtofe",
@@ -4303,7 +4394,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "liquidtofe"
+      "registry_name": "liquidtofe",
+      "path": "~/FE Power"
     },
     {
       "name": "Creativeliquid",
@@ -4312,7 +4404,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "creativeliquid"
+      "registry_name": "creativeliquid",
+      "path": "~/FE Power"
     },
     {
       "name": "CreativeliquidUpdateTick",
@@ -4341,7 +4434,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/FE Power"
     },
     {
       "name": "BatteryUpdateTick",
@@ -4370,7 +4464,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/FE Power"
     },
     {
       "name": "Battery",
@@ -4379,7 +4474,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "battery"
+      "registry_name": "battery",
+      "path": "~/FE Power"
     },
     {
       "name": "CrafterrecUnobhelmet",
@@ -4408,7 +4504,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Recipes/Madcrafter Recipes"
     },
     {
       "name": "CrafterrecUnobchest",
@@ -4437,7 +4534,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Recipes/Madcrafter Recipes"
     },
     {
       "name": "CrafterrecUnoblegging",
@@ -4466,7 +4564,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Recipes/Madcrafter Recipes"
     },
     {
       "name": "CrafterrecUnobboots",
@@ -4495,7 +4594,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Recipes/Madcrafter Recipes"
     },
     {
       "name": "CrafterrecSexMB",
@@ -4507,7 +4607,8 @@
       "registry_name": "crafterrec_sex_mb",
       "metadata": {
         "dependencies": []
-      }
+      },
+      "path": "~/Recipes/Madcrafter Recipes"
     },
     {
       "name": "CrafterrecSepMB",
@@ -4536,7 +4637,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Recipes/Madcrafter Recipes"
     },
     {
       "name": "CrafterrecOctMB",
@@ -4565,7 +4667,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Recipes/Madcrafter Recipes"
     },
     {
       "name": "CrafterrecAntimatter",
@@ -4594,7 +4697,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Recipes/Madcrafter Recipes"
     },
     {
       "name": "CrafterrecMadstaff",
@@ -4623,7 +4727,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Recipes/Madcrafter Recipes"
     },
     {
       "name": "OpenAntimatter",
@@ -4690,7 +4795,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Recipes/Madcrafter Recipes"
     },
     {
       "name": "Liquidtoferec",
@@ -4699,7 +4805,387 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "liquidtoferec"
+      "registry_name": "liquidtoferec",
+      "path": "~/Recipes/Mod Recipes"
+    },
+    {
+      "name": "BatteryPlayerStartsToDestroy",
+      "type": "procedure",
+      "sortid": 295,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "battery_player_starts_to_destroy",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/FE Power"
+    },
+    {
+      "name": "Fetoliquidgui",
+      "type": "gui",
+      "sortid": 296,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fetoliquidgui",
+      "path": "~/FE Power"
+    },
+    {
+      "name": "Liquidtofegui",
+      "type": "gui",
+      "sortid": 297,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "liquidtofegui",
+      "path": "~/FE Power"
+    },
+    {
+      "name": "Fetoliquidgui0per",
+      "type": "procedure",
+      "sortid": 298,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fetoliquidgui_0per",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/FE Power/FE to Liquid Status bars"
+    },
+    {
+      "name": "Fetoliquid10per",
+      "type": "procedure",
+      "sortid": 299,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fetoliquid_10per",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/FE Power/FE to Liquid Status bars"
+    },
+    {
+      "name": "Fetoliquid20per",
+      "type": "procedure",
+      "sortid": 300,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fetoliquid_20per",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/FE Power/FE to Liquid Status bars"
+    },
+    {
+      "name": "Fetoliquid30per",
+      "type": "procedure",
+      "sortid": 301,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fetoliquid_30per",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/FE Power/FE to Liquid Status bars"
+    },
+    {
+      "name": "Fetoliquidper40",
+      "type": "procedure",
+      "sortid": 302,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fetoliquidper_40",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/FE Power/FE to Liquid Status bars"
+    },
+    {
+      "name": "Fetoliquidper50",
+      "type": "procedure",
+      "sortid": 303,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fetoliquidper_50",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/FE Power/FE to Liquid Status bars"
+    },
+    {
+      "name": "Fetoliquidper60",
+      "type": "procedure",
+      "sortid": 304,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fetoliquidper_60",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/FE Power/FE to Liquid Status bars"
+    },
+    {
+      "name": "Fetoliquidper70",
+      "type": "procedure",
+      "sortid": 305,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fetoliquidper_70",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/FE Power/FE to Liquid Status bars"
+    },
+    {
+      "name": "Fetoliquidper80",
+      "type": "procedure",
+      "sortid": 306,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fetoliquidper_80",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/FE Power/FE to Liquid Status bars"
+    },
+    {
+      "name": "Fetoliquidper90",
+      "type": "procedure",
+      "sortid": 307,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fetoliquidper_90",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/FE Power/FE to Liquid Status bars"
+    },
+    {
+      "name": "Fetoliquidper100",
+      "type": "procedure",
+      "sortid": 308,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fetoliquidper_100",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/FE Power/FE to Liquid Status bars"
     }
   ],
   "variable_elements": [],
@@ -4725,9 +5211,9 @@
       "block.usefuldns.digger_east": "Digger East",
       "advancements.swissachievment.title": "Get to Work",
       "item.reinfdiaplater.name": "Reiinforced Diamond Plate",
-      "tile.unobfurnace.name": "Unobtainium Furance",
-      "item.usefuldns.quinmb": "Quintuple Money Bag",
       "block.usefuldns.compressedcoal": "Compressed Coal Block",
+      "item.usefuldns.quinmb": "Quintuple Money Bag",
+      "tile.unobfurnace.name": "Unobtainium Furance",
       "item.usefuldns.lightingrod": "Lightning Rod",
       "item.steelrod.name": "Steel Rod",
       "advancements.welcometohell.title": "Welcome to Thunder Dome",
@@ -4906,7 +5392,38 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "FE Power",
+        "children": [
+          {
+            "name": "FE to Liquid Status bars",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Recipes",
+        "children": [
+          {
+            "name": "Vanilla Recipes",
+            "children": []
+          },
+          {
+            "name": "Mod Recipes",
+            "children": []
+          },
+          {
+            "name": "Madcrafter Recipes",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Dollars",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "usefuldns",

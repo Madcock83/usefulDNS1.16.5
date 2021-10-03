@@ -115,14 +115,17 @@
     "inventoryInSlotIDs": [],
     "hasEnergyStorage": true,
     "energyInitial": 0,
-    "energyCapacity": 500000000,
-    "energyMaxReceive": 1000000,
-    "energyMaxExtract": 1000000,
+    "energyCapacity": 1000000000,
+    "energyMaxReceive": 10000000,
+    "energyMaxExtract": 10000000,
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onTickUpdate": {
       "name": "BatteryUpdateTick"
+    },
+    "onStartToDestroy": {
+      "name": "BatteryPlayerStartsToDestroy"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

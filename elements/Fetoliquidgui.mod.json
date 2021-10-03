@@ -1,0 +1,191 @@
+{
+  "_fv": 24,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "<energy>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<energy>",
+          "x": 150,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "of 10 Billion",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "of 10 Billion",
+          "x": 150,
+          "y": 98
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_0.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Fetoliquidgui0per"
+          },
+          "name": "afe_0.png",
+          "x": 150,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_10.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Fetoliquid10per"
+          },
+          "name": "afe_10.png",
+          "x": 150,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_20.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Fetoliquid20per"
+          },
+          "name": "afe_20.png",
+          "x": 150,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_30.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Fetoliquid30per"
+          },
+          "name": "afe_30.png",
+          "x": 150,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_40.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Fetoliquidper40"
+          },
+          "name": "afe_40.png",
+          "x": 150,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_50.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Fetoliquidper50"
+          },
+          "name": "afe_50.png",
+          "x": 150,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_60.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Fetoliquidper60"
+          },
+          "name": "afe_60.png",
+          "x": 150,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_70.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Fetoliquidper70"
+          },
+          "name": "afe_70.png",
+          "x": 150,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_80.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Fetoliquidper80"
+          },
+          "name": "afe_80.png",
+          "x": 150,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_90.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Fetoliquidper90"
+          },
+          "name": "afe_90.png",
+          "x": 150,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_100.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Fetoliquidper100"
+          },
+          "name": "afe_100.png",
+          "x": 150,
+          "y": 62
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

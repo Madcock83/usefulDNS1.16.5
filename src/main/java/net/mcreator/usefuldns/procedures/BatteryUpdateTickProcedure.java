@@ -63,7 +63,7 @@ public class BatteryUpdateTickProcedure {
 								.ifPresent(capability -> _retval.set(capability.extractEnergy(_amount, true)));
 					return _retval.get();
 				}
-			}.extractEnergySimulate(world, new BlockPos((int) x, (int) y, (int) z), (int) 100000));
+			}.extractEnergySimulate(world, new BlockPos((int) x, (int) y, (int) z), (int) 1000000));
 			up = (double) (new Object() {
 				public int receiveEnergySimulate(IWorld world, BlockPos pos, int _amount) {
 					AtomicInteger _retval = new AtomicInteger(0);
@@ -105,7 +105,7 @@ public class BatteryUpdateTickProcedure {
 								.ifPresent(capability -> _retval.set(capability.extractEnergy(_amount, true)));
 					return _retval.get();
 				}
-			}.extractEnergySimulate(world, new BlockPos((int) x, (int) y, (int) z), (int) 100000));
+			}.extractEnergySimulate(world, new BlockPos((int) x, (int) y, (int) z), (int) 1000000));
 			down = (double) (new Object() {
 				public int receiveEnergySimulate(IWorld world, BlockPos pos, int _amount) {
 					AtomicInteger _retval = new AtomicInteger(0);
@@ -147,7 +147,7 @@ public class BatteryUpdateTickProcedure {
 								.ifPresent(capability -> _retval.set(capability.extractEnergy(_amount, true)));
 					return _retval.get();
 				}
-			}.extractEnergySimulate(world, new BlockPos((int) x, (int) y, (int) z), (int) 100000));
+			}.extractEnergySimulate(world, new BlockPos((int) x, (int) y, (int) z), (int) 1000000));
 			west = (double) (new Object() {
 				public int receiveEnergySimulate(IWorld world, BlockPos pos, int _amount) {
 					AtomicInteger _retval = new AtomicInteger(0);
@@ -189,7 +189,7 @@ public class BatteryUpdateTickProcedure {
 								.ifPresent(capability -> _retval.set(capability.extractEnergy(_amount, true)));
 					return _retval.get();
 				}
-			}.extractEnergySimulate(world, new BlockPos((int) x, (int) y, (int) z), (int) 100000));
+			}.extractEnergySimulate(world, new BlockPos((int) x, (int) y, (int) z), (int) 1000000));
 			east = (double) (new Object() {
 				public int receiveEnergySimulate(IWorld world, BlockPos pos, int _amount) {
 					AtomicInteger _retval = new AtomicInteger(0);
@@ -231,7 +231,7 @@ public class BatteryUpdateTickProcedure {
 								.ifPresent(capability -> _retval.set(capability.extractEnergy(_amount, true)));
 					return _retval.get();
 				}
-			}.extractEnergySimulate(world, new BlockPos((int) x, (int) y, (int) z), (int) 100000));
+			}.extractEnergySimulate(world, new BlockPos((int) x, (int) y, (int) z), (int) 1000000));
 			south = (double) (new Object() {
 				public int receiveEnergySimulate(IWorld world, BlockPos pos, int _amount) {
 					AtomicInteger _retval = new AtomicInteger(0);
@@ -273,7 +273,7 @@ public class BatteryUpdateTickProcedure {
 								.ifPresent(capability -> _retval.set(capability.extractEnergy(_amount, true)));
 					return _retval.get();
 				}
-			}.extractEnergySimulate(world, new BlockPos((int) x, (int) y, (int) z), (int) 100000));
+			}.extractEnergySimulate(world, new BlockPos((int) x, (int) y, (int) z), (int) 1000000));
 			north = (double) (new Object() {
 				public int receiveEnergySimulate(IWorld world, BlockPos pos, int _amount) {
 					AtomicInteger _retval = new AtomicInteger(0);

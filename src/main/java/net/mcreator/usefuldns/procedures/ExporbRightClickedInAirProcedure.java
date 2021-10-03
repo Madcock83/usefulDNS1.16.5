@@ -44,13 +44,32 @@ public class ExporbRightClickedInAirProcedure {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (world instanceof World && !world.isRemote()) {
-			((World) world).addEntity(new ExperienceOrbEntity(((World) world), x, y, z, (int) 10));
-		}
-		if (entity instanceof PlayerEntity) {
-			ItemStack _stktoremove = new ItemStack(ExporbItem.block);
-			((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
-					((PlayerEntity) entity).container.func_234641_j_());
+		if (((entity.isSneaking()) && (((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).experienceLevel : 0) > 1))) {
+			if (entity instanceof PlayerEntity) {
+				((PlayerEntity) entity)
+						.giveExperiencePoints((int) -(((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).experienceLevel : 0) * 10));
+			}
+			if (entity instanceof PlayerEntity) {
+				ItemStack _stktoremove = new ItemStack(ExporbItem.block);
+				((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+						((PlayerEntity) entity).container.func_234641_j_());
+			}
+		} else {
+			if ((((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).experienceLevel : 0) < 1)) {
+				if (world instanceof World && !world.isRemote()) {
+					((World) world).addEntity(new ExperienceOrbEntity(((World) world), x, y, z, (int) 10));
+				}
+			} else {
+				if (world instanceof World && !world.isRemote()) {
+					((World) world).addEntity(new ExperienceOrbEntity(((World) world), x, y, z,
+							(int) (((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).experienceLevel : 0) * 10)));
+				}
+				if (entity instanceof PlayerEntity) {
+					ItemStack _stktoremove = new ItemStack(ExporbItem.block);
+					((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+							((PlayerEntity) entity).container.func_234641_j_());
+				}
+			}
 		}
 	}
 }
