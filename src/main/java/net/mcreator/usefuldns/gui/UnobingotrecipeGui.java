@@ -10,7 +10,9 @@ import net.minecraftforge.fml.network.IContainerFactory;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.DeferredWorkQueue;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -28,8 +30,8 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.client.gui.ScreenManager;
 
-import net.mcreator.usefuldns.procedures.UnobingotrecipebuttonProcedure;
-import net.mcreator.usefuldns.procedures.FirancesortProcedure;
+import net.mcreator.usefuldns.procedures.UnobfurrecipesProcedure;
+import net.mcreator.usefuldns.procedures.MadcrafterfurrecipeProcedure;
 import net.mcreator.usefuldns.UsefuldnsModElements;
 import net.mcreator.usefuldns.UsefuldnsMod;
 
@@ -38,27 +40,44 @@ import java.util.Map;
 import java.util.HashMap;
 
 @UsefuldnsModElements.ModElement.Tag
-public class UnobfuranceguiGui extends UsefuldnsModElements.ModElement {
+public class UnobingotrecipeGui extends UsefuldnsModElements.ModElement {
 	public static HashMap guistate = new HashMap();
 	private static ContainerType<GuiContainerMod> containerType = null;
-	public UnobfuranceguiGui(UsefuldnsModElements instance) {
-		super(instance, 154);
+	public UnobingotrecipeGui(UsefuldnsModElements instance) {
+		super(instance, 342);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,
 				GUISlotChangedMessage::handler);
 		containerType = new ContainerType<>(new GuiContainerModFactory());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new ContainerRegisterHandler());
+		MinecraftForge.EVENT_BUS.register(this);
 	}
 	private static class ContainerRegisterHandler {
 		@SubscribeEvent
 		public void registerContainer(RegistryEvent.Register<ContainerType<?>> event) {
-			event.getRegistry().register(containerType.setRegistryName("unobfurancegui"));
+			event.getRegistry().register(containerType.setRegistryName("unobingotrecipe"));
 		}
 	}
 	@OnlyIn(Dist.CLIENT)
 	public void initElements() {
-		DeferredWorkQueue.runLater(() -> ScreenManager.registerFactory(containerType, UnobfuranceguiGuiWindow::new));
+		DeferredWorkQueue.runLater(() -> ScreenManager.registerFactory(containerType, UnobingotrecipeGuiWindow::new));
+	}
+
+	@SubscribeEvent
+	public void onPlayerTick(TickEvent.PlayerTickEvent event) {
+		PlayerEntity entity = event.player;
+		if (event.phase == TickEvent.Phase.END && entity.openContainer instanceof GuiContainerMod) {
+			World world = entity.world;
+			double x = entity.getPosX();
+			double y = entity.getPosY();
+			double z = entity.getPosZ();
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				UnobfurrecipesProcedure.executeProcedure($_dependencies);
+			}
+		}
 	}
 	public static class GuiContainerModFactory implements IContainerFactory {
 		public GuiContainerMod create(int id, PlayerInventory inv, PacketBuffer extraData) {
@@ -116,32 +135,132 @@ public class UnobfuranceguiGui extends UsefuldnsModElements.ModElement {
 				}
 			}
 			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 50, 41) {
+				@Override
+				public boolean canTakeStack(PlayerEntity player) {
+					return false;
+				}
+
+				@Override
+				public boolean isItemValid(ItemStack stack) {
+					return false;
+				}
 			}));
 			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 68, 41) {
+				@Override
+				public boolean canTakeStack(PlayerEntity player) {
+					return false;
+				}
+
+				@Override
+				public boolean isItemValid(ItemStack stack) {
+					return false;
+				}
 			}));
 			this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 32, 59) {
+				@Override
+				public boolean canTakeStack(PlayerEntity player) {
+					return false;
+				}
+
+				@Override
+				public boolean isItemValid(ItemStack stack) {
+					return false;
+				}
 			}));
 			this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 50, 59) {
+				@Override
+				public boolean canTakeStack(PlayerEntity player) {
+					return false;
+				}
+
+				@Override
+				public boolean isItemValid(ItemStack stack) {
+					return false;
+				}
 			}));
 			this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 68, 59) {
+				@Override
+				public boolean canTakeStack(PlayerEntity player) {
+					return false;
+				}
+
+				@Override
+				public boolean isItemValid(ItemStack stack) {
+					return false;
+				}
 			}));
 			this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 32, 77) {
+				@Override
+				public boolean canTakeStack(PlayerEntity player) {
+					return false;
+				}
+
+				@Override
+				public boolean isItemValid(ItemStack stack) {
+					return false;
+				}
 			}));
 			this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 50, 77) {
+				@Override
+				public boolean canTakeStack(PlayerEntity player) {
+					return false;
+				}
+
+				@Override
+				public boolean isItemValid(ItemStack stack) {
+					return false;
+				}
 			}));
 			this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 68, 77) {
+				@Override
+				public boolean canTakeStack(PlayerEntity player) {
+					return false;
+				}
+
+				@Override
+				public boolean isItemValid(ItemStack stack) {
+					return false;
+				}
 			}));
 			this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 122, 77) {
+				@Override
+				public boolean canTakeStack(PlayerEntity player) {
+					return false;
+				}
+
+				@Override
+				public boolean isItemValid(ItemStack stack) {
+					return false;
+				}
 			}));
 			this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 158, 41) {
+				@Override
+				public boolean canTakeStack(PlayerEntity player) {
+					return false;
+				}
+
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
 			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 32, 41) {
+				@Override
+				public boolean canTakeStack(PlayerEntity player) {
+					return false;
+				}
+
+				@Override
+				public boolean isItemValid(ItemStack stack) {
+					return false;
+				}
 			}));
 			this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 176, 41) {
+				@Override
+				public boolean canTakeStack(PlayerEntity player) {
+					return false;
+				}
+
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
@@ -313,10 +432,58 @@ public class UnobfuranceguiGui extends UsefuldnsModElements.ModElement {
 			if (!bound && (playerIn instanceof ServerPlayerEntity)) {
 				if (!playerIn.isAlive() || playerIn instanceof ServerPlayerEntity && ((ServerPlayerEntity) playerIn).hasDisconnected()) {
 					for (int j = 0; j < internal.getSlots(); ++j) {
+						if (j == 1)
+							continue;
+						if (j == 2)
+							continue;
+						if (j == 3)
+							continue;
+						if (j == 4)
+							continue;
+						if (j == 5)
+							continue;
+						if (j == 6)
+							continue;
+						if (j == 7)
+							continue;
+						if (j == 8)
+							continue;
+						if (j == 9)
+							continue;
+						if (j == 10)
+							continue;
+						if (j == 0)
+							continue;
+						if (j == 11)
+							continue;
 						playerIn.dropItem(internal.extractItem(j, internal.getStackInSlot(j).getCount(), false), false);
 					}
 				} else {
 					for (int i = 0; i < internal.getSlots(); ++i) {
+						if (i == 1)
+							continue;
+						if (i == 2)
+							continue;
+						if (i == 3)
+							continue;
+						if (i == 4)
+							continue;
+						if (i == 5)
+							continue;
+						if (i == 6)
+							continue;
+						if (i == 7)
+							continue;
+						if (i == 8)
+							continue;
+						if (i == 9)
+							continue;
+						if (i == 10)
+							continue;
+						if (i == 0)
+							continue;
+						if (i == 11)
+							continue;
 						playerIn.inventory.placeItemBackInInventory(playerIn.world,
 								internal.extractItem(i, internal.getStackInSlot(i).getCount(), false));
 					}
@@ -421,22 +588,8 @@ public class UnobfuranceguiGui extends UsefuldnsModElements.ModElement {
 		if (buttonID == 0) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				FirancesortProcedure.executeProcedure($_dependencies);
-			}
-		}
-		if (buttonID == 1) {
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				UnobingotrecipebuttonProcedure.executeProcedure($_dependencies);
+				MadcrafterfurrecipeProcedure.executeProcedure($_dependencies);
 			}
 		}
 	}

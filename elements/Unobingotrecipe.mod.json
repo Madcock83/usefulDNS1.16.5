@@ -17,8 +17,8 @@
             "value": ""
           },
           "id": 1,
-          "disableStackInteraction": false,
-          "dropItemsWhenNotBound": true,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": false,
           "name": "Slot #1",
           "x": 150,
           "y": 48
@@ -31,8 +31,8 @@
             "value": ""
           },
           "id": 2,
-          "disableStackInteraction": false,
-          "dropItemsWhenNotBound": true,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": false,
           "name": "Slot #2",
           "x": 168,
           "y": 48
@@ -45,8 +45,8 @@
             "value": ""
           },
           "id": 3,
-          "disableStackInteraction": false,
-          "dropItemsWhenNotBound": true,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": false,
           "name": "Slot #3",
           "x": 132,
           "y": 66
@@ -59,8 +59,8 @@
             "value": ""
           },
           "id": 4,
-          "disableStackInteraction": false,
-          "dropItemsWhenNotBound": true,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": false,
           "name": "Slot #4",
           "x": 150,
           "y": 66
@@ -73,8 +73,8 @@
             "value": ""
           },
           "id": 5,
-          "disableStackInteraction": false,
-          "dropItemsWhenNotBound": true,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": false,
           "name": "Slot #5",
           "x": 168,
           "y": 66
@@ -87,8 +87,8 @@
             "value": ""
           },
           "id": 6,
-          "disableStackInteraction": false,
-          "dropItemsWhenNotBound": true,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": false,
           "name": "Slot #6",
           "x": 132,
           "y": 84
@@ -101,8 +101,8 @@
             "value": ""
           },
           "id": 7,
-          "disableStackInteraction": false,
-          "dropItemsWhenNotBound": true,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": false,
           "name": "Slot #7",
           "x": 150,
           "y": 84
@@ -115,8 +115,8 @@
             "value": ""
           },
           "id": 8,
-          "disableStackInteraction": false,
-          "dropItemsWhenNotBound": true,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": false,
           "name": "Slot #8",
           "x": 168,
           "y": 84
@@ -129,8 +129,8 @@
             "value": ""
           },
           "id": 9,
-          "disableStackInteraction": false,
-          "dropItemsWhenNotBound": true,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": false,
           "name": "Slot #9",
           "x": 222,
           "y": 84
@@ -140,8 +140,8 @@
         "type": "outputslot",
         "data": {
           "id": 10,
-          "disableStackInteraction": false,
-          "dropItemsWhenNotBound": true,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": false,
           "name": "Slot #10",
           "x": 258,
           "y": 48
@@ -182,8 +182,8 @@
             "falpha": 0.0
           },
           "name": "Place Vanilla recipes in Green Slot",
-          "x": 105,
-          "y": 23
+          "x": 86,
+          "y": 1
         }
       },
       {
@@ -197,8 +197,8 @@
             "falpha": 0.0
           },
           "id": 0,
-          "disableStackInteraction": false,
-          "dropItemsWhenNotBound": true,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": false,
           "name": "Slot #0",
           "x": 132,
           "y": 48
@@ -241,8 +241,8 @@
         "type": "outputslot",
         "data": {
           "id": 11,
-          "disableStackInteraction": false,
-          "dropItemsWhenNotBound": true,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": false,
           "name": "Slot #11",
           "x": 276,
           "y": 48
@@ -293,20 +293,6 @@
         }
       },
       {
-        "type": "button",
-        "data": {
-          "text": "Sort",
-          "onClick": {
-            "name": "Firancesort"
-          },
-          "width": 44,
-          "height": 20,
-          "name": "Sort",
-          "x": 258,
-          "y": 93
-        }
-      },
-      {
         "type": "label",
         "data": {
           "text": "Coal Blocks and",
@@ -333,124 +319,23 @@
         }
       },
       {
-        "type": "label",
-        "data": {
-          "text": "Anything placed in",
-          "color": {
-            "value": -1,
-            "falpha": 0.0
-          },
-          "name": "Anything placed in",
-          "x": 6,
-          "y": 12
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "the green slot",
-          "color": {
-            "value": -1,
-            "falpha": 0.0
-          },
-          "name": "the green slot",
-          "x": 6,
-          "y": 21
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "will be melted",
-          "color": {
-            "value": -1,
-            "falpha": 0.0
-          },
-          "name": "will be melted",
-          "x": 6,
-          "y": 30
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "regaurdless if it",
-          "color": {
-            "value": -1,
-            "falpha": 0.0
-          },
-          "name": "regaurdless if it",
-          "x": 6,
-          "y": 39
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "has a smelting",
-          "color": {
-            "value": -1,
-            "falpha": 0.0
-          },
-          "name": "has a smelting",
-          "x": 6,
-          "y": 48
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "recipe or not",
-          "color": {
-            "value": -1,
-            "falpha": 0.0
-          },
-          "name": "recipe or not",
-          "x": 6,
-          "y": 57
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "once fuel",
-          "color": {
-            "value": -1,
-            "falpha": 0.0
-          },
-          "name": "once fuel",
-          "x": 6,
-          "y": 66
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "is added",
-          "color": {
-            "value": -1,
-            "falpha": 0.0
-          },
-          "name": "is added",
-          "x": 6,
-          "y": 75
-        }
-      },
-      {
         "type": "button",
         "data": {
-          "text": "Recipes",
+          "text": ">",
           "onClick": {
-            "name": "Unobingotrecipebutton"
+            "name": "Madcrafterfurrecipe"
           },
-          "width": 60,
+          "width": 30,
           "height": 20,
-          "name": "Recipes",
-          "x": 327,
-          "y": 23
+          "name": ">",
+          "x": 325,
+          "y": 14
         }
       }
     ],
+    "onTick": {
+      "name": "Unobfurrecipes"
+    },
     "gridSettings": {
       "sx": 18,
       "sy": 18,

@@ -22,12 +22,12 @@ import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.matrix.MatrixStack;
 
 @OnlyIn(Dist.CLIENT)
-public class UnobfuranceguiGuiWindow extends ContainerScreen<UnobfuranceguiGui.GuiContainerMod> {
+public class UnobingotrecipeGuiWindow extends ContainerScreen<UnobingotrecipeGui.GuiContainerMod> {
 	private World world;
 	private int x, y, z;
 	private PlayerEntity entity;
-	private final static HashMap guistate = UnobfuranceguiGui.guistate;
-	public UnobfuranceguiGuiWindow(UnobfuranceguiGui.GuiContainerMod container, PlayerInventory inventory, ITextComponent text) {
+	private final static HashMap guistate = UnobingotrecipeGui.guistate;
+	public UnobingotrecipeGuiWindow(UnobingotrecipeGui.GuiContainerMod container, PlayerInventory inventory, ITextComponent text) {
 		super(container, inventory, text);
 		this.world = container.world;
 		this.x = container.x;
@@ -37,7 +37,7 @@ public class UnobfuranceguiGuiWindow extends ContainerScreen<UnobfuranceguiGui.G
 		this.xSize = 225;
 		this.ySize = 225;
 	}
-	private static final ResourceLocation texture = new ResourceLocation("usefuldns:textures/unobfurancegui.png");
+	private static final ResourceLocation texture = new ResourceLocation("usefuldns:textures/unobingotrecipe.png");
 	@Override
 	public void render(MatrixStack ms, int mouseX, int mouseY, float partialTicks) {
 		this.renderBackground(ms);
@@ -79,18 +79,10 @@ public class UnobfuranceguiGuiWindow extends ContainerScreen<UnobfuranceguiGui.G
 	protected void drawGuiContainerForegroundLayer(MatrixStack ms, int mouseX, int mouseY) {
 		this.font.drawString(ms, "Fuel", 121, 94, -12566464);
 		this.font.drawString(ms, "Unobtainium Furance", 5, 5, -12566464);
-		this.font.drawString(ms, "Place Vanilla recipes in Green Slot", 4, 15, -12566464);
+		this.font.drawString(ms, "Place Vanilla recipes in Green Slot", -15, -6, -12566464);
 		this.font.drawString(ms, "This Furnace Only Accepts", 40, 193, -12566464);
 		this.font.drawString(ms, "Coal Blocks and", 74, 202, -12566464);
 		this.font.drawString(ms, "Compressed Coal as Fuel", 57, 211, -12566464);
-		this.font.drawString(ms, "Anything placed in", -95, 4, -1);
-		this.font.drawString(ms, "the green slot", -95, 13, -1);
-		this.font.drawString(ms, "will be melted", -95, 22, -1);
-		this.font.drawString(ms, "regaurdless if it", -95, 31, -1);
-		this.font.drawString(ms, "has a smelting", -95, 40, -1);
-		this.font.drawString(ms, "recipe or not", -95, 49, -1);
-		this.font.drawString(ms, "once fuel", -95, 58, -1);
-		this.font.drawString(ms, "is added", -95, 67, -1);
 	}
 
 	@Override
@@ -103,16 +95,10 @@ public class UnobfuranceguiGuiWindow extends ContainerScreen<UnobfuranceguiGui.G
 	public void init(Minecraft minecraft, int width, int height) {
 		super.init(minecraft, width, height);
 		minecraft.keyboardListener.enableRepeatEvents(true);
-		this.addButton(new Button(this.guiLeft + 157, this.guiTop + 85, 44, 20, new StringTextComponent("Sort"), e -> {
+		this.addButton(new Button(this.guiLeft + 224, this.guiTop + 6, 30, 20, new StringTextComponent(">"), e -> {
 			if (true) {
-				UsefuldnsMod.PACKET_HANDLER.sendToServer(new UnobfuranceguiGui.ButtonPressedMessage(0, x, y, z));
-				UnobfuranceguiGui.handleButtonAction(entity, 0, x, y, z);
-			}
-		}));
-		this.addButton(new Button(this.guiLeft + 226, this.guiTop + 15, 60, 20, new StringTextComponent("Recipes"), e -> {
-			if (true) {
-				UsefuldnsMod.PACKET_HANDLER.sendToServer(new UnobfuranceguiGui.ButtonPressedMessage(1, x, y, z));
-				UnobfuranceguiGui.handleButtonAction(entity, 1, x, y, z);
+				UsefuldnsMod.PACKET_HANDLER.sendToServer(new UnobingotrecipeGui.ButtonPressedMessage(0, x, y, z));
+				UnobingotrecipeGui.handleButtonAction(entity, 0, x, y, z);
 			}
 		}));
 	}

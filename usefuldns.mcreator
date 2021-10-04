@@ -6169,6 +6169,104 @@
         ]
       },
       "path": "~/FE Power/FE to Liquid Status bars"
+    },
+    {
+      "name": "Unobingotrecipe",
+      "type": "gui",
+      "sortid": 342,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "unobingotrecipe",
+      "path": "~/UnobFurnaceRecipeGUI"
+    },
+    {
+      "name": "Unobfurrecipes",
+      "type": "procedure",
+      "sortid": 342,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "unobfurrecipes",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/UnobFurnaceRecipeGUI"
+    },
+    {
+      "name": "Unobingotrecipebutton",
+      "type": "procedure",
+      "sortid": 343,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "unobingotrecipebutton",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/UnobFurnaceRecipeGUI"
+    },
+    {
+      "name": "UnobingotrecipeThisGUIIsClosed",
+      "type": "procedure",
+      "sortid": 344,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "unobingotrecipe_this_gui_is_closed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/UnobFurnaceRecipeGUI"
+    },
+    {
+      "name": "Madcrafterfurrecipe",
+      "type": "procedure",
+      "sortid": 345,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "madcrafterfurrecipe",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/UnobFurnaceRecipeGUI"
     }
   ],
   "variable_elements": [],
@@ -6403,6 +6501,10 @@
       },
       {
         "name": "Dollars",
+        "children": []
+      },
+      {
+        "name": "UnobFurnaceRecipeGUI",
         "children": []
       }
     ]
