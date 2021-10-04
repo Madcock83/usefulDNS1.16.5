@@ -349,7 +349,7 @@ public class LiquidtofeBlock extends UsefuldnsModElements.ModElement {
 				return retval;
 			}
 		};
-		private final FluidTank fluidTank = new FluidTank(128000) {
+		private final FluidTank fluidTank = new FluidTank(32000) {
 			@Override
 			protected void onContentsChanged() {
 				super.onContentsChanged();

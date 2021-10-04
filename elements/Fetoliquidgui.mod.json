@@ -3,13 +3,23 @@
   "_type": "gui",
   "definition": {
     "type": 1,
-    "width": 177,
-    "height": 185,
+    "width": 181,
+    "height": 189,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
     "renderBgLayer": true,
     "doesPauseGame": false,
     "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "untitled.png",
+          "use1Xscale": false,
+          "name": "untitled.png",
+          "x": 177,
+          "y": 35
+        }
+      },
       {
         "type": "label",
         "data": {
@@ -341,8 +351,21 @@
             "falpha": 0.0
           },
           "name": "of 32,000 Buckets",
-          "x": 213,
+          "x": 204,
           "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "FE to Liquid Fe Transformer",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "FE to Liquid Fe Transformer",
+          "x": 132,
+          "y": 35
         }
       }
     ],

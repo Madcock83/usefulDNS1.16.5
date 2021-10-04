@@ -4,12 +4,321 @@
   "definition": {
     "type": 1,
     "width": 176,
-    "height": 166,
+    "height": 180,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
     "renderBgLayer": true,
     "doesPauseGame": false,
     "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "untitled.png",
+          "use1Xscale": false,
+          "name": "untitled.png",
+          "x": 177,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "aliquid_0.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Liqtofeper0"
+          },
+          "name": "aliquid_0.png",
+          "x": 141,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "aliquid_10.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Liqtofeper10"
+          },
+          "name": "aliquid_10.png",
+          "x": 141,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "aliquid_20.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Liqtofeper20"
+          },
+          "name": "aliquid_20.png",
+          "x": 141,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "liquid_30.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Liqtofeper30"
+          },
+          "name": "liquid_30.png",
+          "x": 141,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "liquid_40.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Liqtofeper40"
+          },
+          "name": "liquid_40.png",
+          "x": 141,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "liquid_50.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Liqtofeper50"
+          },
+          "name": "liquid_50.png",
+          "x": 141,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "liquid_60.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Liqtofeper60"
+          },
+          "name": "liquid_60.png",
+          "x": 141,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "liquid_70.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Liqtofeper70"
+          },
+          "name": "liquid_70.png",
+          "x": 141,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "liquid_80.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Liqtofeper80"
+          },
+          "name": "liquid_80.png",
+          "x": 141,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "liquid_90.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Liqtofeper90"
+          },
+          "name": "liquid_90.png",
+          "x": 141,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "liquid_100.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Liqtofeper100"
+          },
+          "name": "liquid_100.png",
+          "x": 141,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_0.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Liquidtofeper0"
+          },
+          "name": "afe_0.png",
+          "x": 222,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_10.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Liquidtofeper10"
+          },
+          "name": "afe_10.png",
+          "x": 222,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_20.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Liquidtofeper20"
+          },
+          "name": "afe_20.png",
+          "x": 222,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_30.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Liquidtofeper30"
+          },
+          "name": "afe_30.png",
+          "x": 222,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_40.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Liquidtofeper40"
+          },
+          "name": "afe_40.png",
+          "x": 222,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_50.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Liquidtofeper50"
+          },
+          "name": "afe_50.png",
+          "x": 222,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_60.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Liquidtofeper60"
+          },
+          "name": "afe_60.png",
+          "x": 222,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_70.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Liquidtofeper70"
+          },
+          "name": "afe_70.png",
+          "x": 222,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_80.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Liquidtofeper80"
+          },
+          "name": "afe_80.png",
+          "x": 222,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_90.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Liquidtofeper90"
+          },
+          "name": "afe_90.png",
+          "x": 222,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_100.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Liquidtofeper100"
+          },
+          "name": "afe_100.png",
+          "x": 222,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<energy>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<energy>",
+          "x": 231,
+          "y": 71
+        }
+      },
       {
         "type": "label",
         "data": {
@@ -19,21 +328,47 @@
             "falpha": 0.0
           },
           "name": "<fluidlevel>",
-          "x": 180,
-          "y": 80
+          "x": 159,
+          "y": 98
         }
       },
       {
         "type": "label",
         "data": {
-          "text": "<BNBT:number:liquidAmount>",
+          "text": "Liquid Fe To FE transformer",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "<BNBT:number:liquidAmount>",
-          "x": 142,
-          "y": 96
+          "name": "Liquid Fe To FE transformer",
+          "x": 132,
+          "y": 35
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "of 32,000 Buckets",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "of 32,000 Buckets",
+          "x": 159,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "of 100 Million",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "of 100 Million",
+          "x": 222,
+          "y": 80
         }
       }
     ],
@@ -42,7 +377,7 @@
       "sy": 18,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": false
+      "snapOnGrid": true
     }
   }
 }

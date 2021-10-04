@@ -41,24 +41,6 @@ public class LiquidtofeUpdateTickProcedure {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (!world.isRemote()) {
-			BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-			TileEntity _tileEntity = world.getTileEntity(_bp);
-			BlockState _bs = world.getBlockState(_bp);
-			if (_tileEntity != null)
-				_tileEntity.getTileData().putDouble("liquidAmount", ((new Object() {
-					public int getFluidTankLevel(BlockPos pos, int tank) {
-						AtomicInteger _retval = new AtomicInteger(0);
-						TileEntity _ent = world.getTileEntity(pos);
-						if (_ent != null)
-							_ent.getCapability(CapabilityFluidHandler.FLUID_HANDLER_CAPABILITY, null)
-									.ifPresent(capability -> _retval.set(capability.getFluidInTank(tank).getAmount()));
-						return _retval.get();
-					}
-				}.getFluidTankLevel(new BlockPos((int) x, (int) y, (int) z), (int) 1)) / 1000));
-			if (world instanceof World)
-				((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
-		}
 		if ((((new Object() {
 			public int getEnergyStored(IWorld world, BlockPos pos) {
 				AtomicInteger _retval = new AtomicInteger(0);
@@ -79,17 +61,52 @@ public class LiquidtofeUpdateTickProcedure {
 		}.getFluidTankLevel(new BlockPos((int) x, (int) y, (int) z), (int) 1)) >= 1000))) {
 			{
 				TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
-				int _amount = (int) 1000;
+				int _amount = (int) 100;
 				if (_ent != null)
 					_ent.getCapability(CapabilityFluidHandler.FLUID_HANDLER_CAPABILITY, null)
 							.ifPresent(capability -> capability.drain(_amount, IFluidHandler.FluidAction.EXECUTE));
 			}
 			{
 				TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
-				int _amount = (int) 10000000;
+				int _amount = (int) 1000000;
 				if (_ent != null)
 					_ent.getCapability(CapabilityEnergy.ENERGY, null).ifPresent(capability -> capability.receiveEnergy(_amount, false));
 			}
+		}
+		if (!world.isRemote()) {
+			BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+			TileEntity _tileEntity = world.getTileEntity(_bp);
+			BlockState _bs = world.getBlockState(_bp);
+			if (_tileEntity != null)
+				_tileEntity.getTileData().putDouble("liqfe1", (new Object() {
+					public int getEnergyStored(IWorld world, BlockPos pos) {
+						AtomicInteger _retval = new AtomicInteger(0);
+						TileEntity _ent = world.getTileEntity(pos);
+						if (_ent != null)
+							_ent.getCapability(CapabilityEnergy.ENERGY, null).ifPresent(capability -> _retval.set(capability.getEnergyStored()));
+						return _retval.get();
+					}
+				}.getEnergyStored(world, new BlockPos((int) x, (int) y, (int) z))));
+			if (world instanceof World)
+				((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
+		}
+		if (!world.isRemote()) {
+			BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+			TileEntity _tileEntity = world.getTileEntity(_bp);
+			BlockState _bs = world.getBlockState(_bp);
+			if (_tileEntity != null)
+				_tileEntity.getTileData().putDouble("liqfe2", (new Object() {
+					public int getFluidTankLevel(BlockPos pos, int tank) {
+						AtomicInteger _retval = new AtomicInteger(0);
+						TileEntity _ent = world.getTileEntity(pos);
+						if (_ent != null)
+							_ent.getCapability(CapabilityFluidHandler.FLUID_HANDLER_CAPABILITY, null)
+									.ifPresent(capability -> _retval.set(capability.getFluidInTank(tank).getAmount()));
+						return _retval.get();
+					}
+				}.getFluidTankLevel(new BlockPos((int) x, (int) y, (int) z), (int) 1)));
+			if (world instanceof World)
+				((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
 		}
 	}
 }

@@ -41,7 +41,7 @@ public class Liquidfeper0Procedure {
 					return tileEntity.getTileData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "liq1stored")) <= 0)) {
+		}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "liq1stored")) >= 0)) {
 			return (true);
 		}
 		return (false);
