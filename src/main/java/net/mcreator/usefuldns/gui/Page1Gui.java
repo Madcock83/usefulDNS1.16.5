@@ -22,10 +22,7 @@ import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.gui.ScreenManager;
 
-import net.mcreator.usefuldns.procedures.Openpage9Procedure;
-import net.mcreator.usefuldns.procedures.Openpage2Procedure;
-import net.mcreator.usefuldns.procedures.Openpage11Procedure;
-import net.mcreator.usefuldns.procedures.AntimatteropenguiProcedure;
+import net.mcreator.usefuldns.procedures.UnobingotrecipebuttonProcedure;
 import net.mcreator.usefuldns.UsefuldnsModElements;
 
 import java.util.function.Supplier;
@@ -186,40 +183,7 @@ public class Page1Gui extends UsefuldnsModElements.ModElement {
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				Openpage2Procedure.executeProcedure($_dependencies);
-			}
-		}
-		if (buttonID == 1) {
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				Openpage9Procedure.executeProcedure($_dependencies);
-			}
-		}
-		if (buttonID == 2) {
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				Openpage11Procedure.executeProcedure($_dependencies);
-			}
-		}
-		if (buttonID == 3) {
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				AntimatteropenguiProcedure.executeProcedure($_dependencies);
+				UnobingotrecipebuttonProcedure.executeProcedure($_dependencies);
 			}
 		}
 	}

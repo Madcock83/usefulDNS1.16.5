@@ -136,7 +136,7 @@ public class CrafterrecAntimatterProcedure {
 				}
 				return _retval.get();
 			}
-		}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (7))).getItem() == OctupleMBItem.block)))) && ((((((new Object() {
+		}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (7))).getItem() == OctupleMBItem.block)))) && (((((new Object() {
 			public ItemStack getItemStack(BlockPos pos, int sltid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				TileEntity _ent = world.getTileEntity(pos);
@@ -147,18 +147,7 @@ public class CrafterrecAntimatterProcedure {
 				}
 				return _retval.get();
 			}
-		}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (8))).getItem() == Blocks.DRAGON_HEAD.asItem()) || ((new Object() {
-			public ItemStack getItemStack(BlockPos pos, int sltid) {
-				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-				TileEntity _ent = world.getTileEntity(pos);
-				if (_ent != null) {
-					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-						_retval.set(capability.getStackInSlot(sltid).copy());
-					});
-				}
-				return _retval.get();
-			}
-		}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (8))).getItem() == Items.DRAGON_HEAD)) && ((new Object() {
+		}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (8))).getItem() == Blocks.DRAGON_HEAD.asItem()) && ((new Object() {
 			public ItemStack getItemStack(BlockPos pos, int sltid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				TileEntity _ent = world.getTileEntity(pos);

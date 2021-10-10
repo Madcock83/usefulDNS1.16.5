@@ -1,0 +1,230 @@
+{
+  "_fv": 24,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 211,
+    "height": 168,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_0.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Batteryprogress0"
+          },
+          "name": "afe_0.png",
+          "x": 186,
+          "y": 89
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Batteryprogress1"
+          },
+          "name": "afe_1.png",
+          "x": 186,
+          "y": 89
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_10.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Batteryprogress10"
+          },
+          "name": "afe_10.png",
+          "x": 186,
+          "y": 89
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_20.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Batteryprogress20"
+          },
+          "name": "afe_20.png",
+          "x": 186,
+          "y": 89
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_30.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Liqtofeper30"
+          },
+          "name": "afe_30.png",
+          "x": 186,
+          "y": 89
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_40.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Batteryprogress40"
+          },
+          "name": "afe_40.png",
+          "x": 186,
+          "y": 89
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_50.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Batteryprogress50"
+          },
+          "name": "afe_50.png",
+          "x": 186,
+          "y": 89
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_60.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Liqtofeper60"
+          },
+          "name": "afe_60.png",
+          "x": 186,
+          "y": 89
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_70.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Batteryprogress70"
+          },
+          "name": "afe_70.png",
+          "x": 186,
+          "y": 89
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_80.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Batteryprogress80"
+          },
+          "name": "afe_80.png",
+          "x": 186,
+          "y": 89
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_90.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Batteryprogress90"
+          },
+          "name": "afe_90.png",
+          "x": 186,
+          "y": 89
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_100.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Batteryprogress100"
+          },
+          "name": "afe_100.png",
+          "x": 186,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "of 2,147,483,647",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "of 2,147,483,647",
+          "x": 177,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<energy>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<energy>",
+          "x": 195,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "DNS Battery",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "DNS Battery",
+          "x": 132,
+          "y": 44
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Battery WILL lose all power if picked up",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Battery WILL lose all power if picked up",
+          "x": 114,
+          "y": 107
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

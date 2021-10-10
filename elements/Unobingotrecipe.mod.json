@@ -323,13 +323,27 @@
         "data": {
           "text": ">",
           "onClick": {
-            "name": "Madcrafterfurrecipe"
+            "name": "Unobfurpage2"
           },
           "width": 30,
           "height": 20,
           "name": ">",
           "x": 325,
           "y": 14
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "<",
+          "onClick": {
+            "name": "Openpage1"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "<",
+          "x": 325,
+          "y": 35
         }
       }
     ],

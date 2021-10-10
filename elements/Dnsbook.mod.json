@@ -15,6 +15,9 @@
     "useDuration": 0,
     "toolType": 1.0,
     "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
     "destroyAnyBlock": false,
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
@@ -25,9 +28,13 @@
       "Some useful Info"
     ],
     "hasGlow": true,
+    "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onRightClickedInAir": {
+      "name": "Openpage1"
+    },
+    "onRightClickedOnBlock": {
       "name": "Openpage1"
     },
     "hasDispenseBehavior": false

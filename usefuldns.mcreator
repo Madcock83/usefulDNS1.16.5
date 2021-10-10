@@ -1,9 +1,9 @@
 {
   "id_map": {
-    "ENTITY": 1,
     "GUI": 22,
     "BIOME": 0,
-    "DIMENSION": 1
+    "DIMENSION": 1,
+    "ENTITY": 1
   },
   "mod_elements": [
     {
@@ -1156,14 +1156,6 @@
       "ids": {}
     },
     {
-      "name": "Octupleblock",
-      "type": "block",
-      "sortid": 64,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
       "name": "Hammer",
       "type": "procedure",
       "sortid": 131,
@@ -1887,98 +1879,6 @@
       "path": "~/Recipes/Mod Recipes"
     },
     {
-      "name": "OctupleblockOnBlockRightClicked",
-      "type": "procedure",
-      "sortid": 170,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Page2",
-      "type": "gui",
-      "sortid": 171,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {
-        "0": 7
-      }
-    },
-    {
-      "name": "Page3",
-      "type": "gui",
-      "sortid": 172,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {
-        "0": 8
-      }
-    },
-    {
-      "name": "Page4",
-      "type": "gui",
-      "sortid": 173,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {
-        "0": 9
-      }
-    },
-    {
-      "name": "Page5",
-      "type": "gui",
-      "sortid": 174,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {
-        "0": 10
-      }
-    },
-    {
-      "name": "Page6",
-      "type": "gui",
-      "sortid": 175,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {
-        "0": 11
-      }
-    },
-    {
-      "name": "Page7",
-      "type": "gui",
-      "sortid": 176,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {
-        "0": 12
-      }
-    },
-    {
       "name": "Page1",
       "type": "gui",
       "sortid": 177,
@@ -1986,367 +1886,8 @@
       "locked_code": false,
       "ids": {
         "0": 13
-      }
-    },
-    {
-      "name": "Openpage2",
-      "type": "procedure",
-      "sortid": 178,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Openpage3",
-      "type": "procedure",
-      "sortid": 179,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Openpage4",
-      "type": "procedure",
-      "sortid": 180,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Openpage5",
-      "type": "procedure",
-      "sortid": 181,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Openpage6",
-      "type": "procedure",
-      "sortid": 182,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Openpage7",
-      "type": "procedure",
-      "sortid": 183,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Openpage1",
-      "type": "procedure",
-      "sortid": 184,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Page8",
-      "type": "gui",
-      "sortid": 185,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {
-        "0": 14
-      }
-    },
-    {
-      "name": "Openpage8",
-      "type": "procedure",
-      "sortid": 186,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Page9",
-      "type": "gui",
-      "sortid": 187,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {
-        "0": 15
-      }
-    },
-    {
-      "name": "Page10",
-      "type": "gui",
-      "sortid": 188,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {
-        "0": 16
-      }
-    },
-    {
-      "name": "Openpage9",
-      "type": "procedure",
-      "sortid": 189,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Openpage10",
-      "type": "procedure",
-      "sortid": 190,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Antimattergui",
-      "type": "gui",
-      "sortid": 191,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {
-        "0": 17
-      }
+      },
+      "path": "~/Recipe Book"
     },
     {
       "name": "Dnsbook",
@@ -2354,7 +1895,8 @@
       "sortid": 61,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "path": "~/Recipe Book"
     },
     {
       "name": "Bookrec",
@@ -2364,248 +1906,6 @@
       "locked_code": false,
       "ids": {},
       "path": "~/Recipes/Mod Recipes"
-    },
-    {
-      "name": "Page11",
-      "type": "gui",
-      "sortid": 193,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {
-        "0": 18
-      }
-    },
-    {
-      "name": "Page12",
-      "type": "gui",
-      "sortid": 194,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {
-        "0": 19
-      }
-    },
-    {
-      "name": "Page13",
-      "type": "gui",
-      "sortid": 195,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {
-        "0": 20
-      }
-    },
-    {
-      "name": "Page14",
-      "type": "gui",
-      "sortid": 196,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {
-        "0": 21
-      }
-    },
-    {
-      "name": "Page15",
-      "type": "gui",
-      "sortid": 197,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {
-        "0": 22
-      }
-    },
-    {
-      "name": "Openpage11",
-      "type": "procedure",
-      "sortid": 198,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Openpage12",
-      "type": "procedure",
-      "sortid": 199,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Openpage13",
-      "type": "procedure",
-      "sortid": 200,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Openpage14",
-      "type": "procedure",
-      "sortid": 201,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Openpage15",
-      "type": "procedure",
-      "sortid": 202,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Antimatteropengui",
-      "type": "procedure",
-      "sortid": 203,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
     },
     {
       "name": "Manie",
@@ -4566,7 +3866,24 @@
       "ids": {},
       "registry_name": "crafterrec_sex_mb",
       "metadata": {
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       },
       "path": "~/Recipes/Madcrafter Recipes"
     },
@@ -6178,7 +5495,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "unobingotrecipe",
-      "path": "~/UnobFurnaceRecipeGUI"
+      "path": "~/Recipe Book"
     },
     {
       "name": "Unobfurrecipes",
@@ -6196,7 +5513,7 @@
           }
         ]
       },
-      "path": "~/UnobFurnaceRecipeGUI"
+      "path": "~/Recipe Book"
     },
     {
       "name": "Unobingotrecipebutton",
@@ -6230,25 +5547,7 @@
           }
         ]
       },
-      "path": "~/UnobFurnaceRecipeGUI"
-    },
-    {
-      "name": "UnobingotrecipeThisGUIIsClosed",
-      "type": "procedure",
-      "sortid": 344,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "unobingotrecipe_this_gui_is_closed",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/UnobFurnaceRecipeGUI"
+      "path": "~/Recipe Book"
     },
     {
       "name": "Madcrafterfurrecipe",
@@ -6266,7 +5565,569 @@
           }
         ]
       },
-      "path": "~/UnobFurnaceRecipeGUI"
+      "path": "~/Recipe Book"
+    },
+    {
+      "name": "Openpage1",
+      "type": "procedure",
+      "sortid": 346,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "openpage_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Recipe Book"
+    },
+    {
+      "name": "Madcrafterrecipegui",
+      "type": "gui",
+      "sortid": 347,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "madcrafterrecipegui",
+      "path": "~/Recipe Book"
+    },
+    {
+      "name": "Unobfurpage2",
+      "type": "procedure",
+      "sortid": 348,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "unobfurpage_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Recipe Book"
+    },
+    {
+      "name": "Oresrecipes",
+      "type": "gui",
+      "sortid": 349,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "oresrecipes",
+      "path": "~/Recipe Book"
+    },
+    {
+      "name": "Orerecipesopengui",
+      "type": "procedure",
+      "sortid": 350,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "orerecipesopengui",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Recipe Book"
+    },
+    {
+      "name": "OresrecipesWhileThisGUIIsOpenTick",
+      "type": "procedure",
+      "sortid": 351,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "oresrecipes_while_this_gui_is_open_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Recipe Book"
+    },
+    {
+      "name": "Battergui",
+      "type": "gui",
+      "sortid": 352,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "battergui",
+      "path": "~/FE Power"
+    },
+    {
+      "name": "Batteryprogress0",
+      "type": "procedure",
+      "sortid": 353,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "batteryprogress_0",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/FE Power/FE to Liquid Status bars"
+    },
+    {
+      "name": "Batteryprogress1",
+      "type": "procedure",
+      "sortid": 354,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "batteryprogress_1",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/FE Power/FE to Liquid Status bars"
+    },
+    {
+      "name": "Batteryprogress10",
+      "type": "procedure",
+      "sortid": 355,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "batteryprogress_10",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/FE Power/FE to Liquid Status bars"
+    },
+    {
+      "name": "Batteryprogress20",
+      "type": "procedure",
+      "sortid": 356,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "batteryprogress_20",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/FE Power/FE to Liquid Status bars"
+    },
+    {
+      "name": "Batteryprogress30",
+      "type": "procedure",
+      "sortid": 357,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "batteryprogress_30",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/FE Power/FE to Liquid Status bars"
+    },
+    {
+      "name": "Batteryprogress40",
+      "type": "procedure",
+      "sortid": 358,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "batteryprogress_40",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/FE Power/FE to Liquid Status bars"
+    },
+    {
+      "name": "Batteryprogress50",
+      "type": "procedure",
+      "sortid": 359,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "batteryprogress_50",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/FE Power/FE to Liquid Status bars"
+    },
+    {
+      "name": "Batteryprogress60",
+      "type": "procedure",
+      "sortid": 360,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "batteryprogress_60",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/FE Power/FE to Liquid Status bars"
+    },
+    {
+      "name": "Batteryprogress70",
+      "type": "procedure",
+      "sortid": 361,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "batteryprogress_70",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/FE Power/FE to Liquid Status bars"
+    },
+    {
+      "name": "Batteryprogress80",
+      "type": "procedure",
+      "sortid": 362,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "batteryprogress_80",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/FE Power/FE to Liquid Status bars"
+    },
+    {
+      "name": "Batteryprogress90",
+      "type": "procedure",
+      "sortid": 363,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "batteryprogress_90",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/FE Power/FE to Liquid Status bars"
+    },
+    {
+      "name": "Batteryprogress100",
+      "type": "procedure",
+      "sortid": 364,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "batteryprogress_100",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/FE Power/FE to Liquid Status bars"
+    },
+    {
+      "name": "Madcraftrecgui",
+      "type": "gui",
+      "sortid": 365,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "madcraftrecgui",
+      "path": "~/Recipe Book"
+    },
+    {
+      "name": "CrafterrecBattery",
+      "type": "procedure",
+      "sortid": 366,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crafterrec_battery",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Recipes/Madcrafter Recipes"
     }
   ],
   "variable_elements": [],
@@ -6292,9 +6153,9 @@
       "block.usefuldns.digger_east": "Digger East",
       "advancements.swissachievment.title": "Get to Work",
       "item.reinfdiaplater.name": "Reiinforced Diamond Plate",
-      "tile.unobfurnace.name": "Unobtainium Furance",
-      "item.usefuldns.quinmb": "Quintuple Money Bag",
       "block.usefuldns.compressedcoal": "Compressed Coal Block",
+      "item.usefuldns.quinmb": "Quintuple Money Bag",
+      "tile.unobfurnace.name": "Unobtainium Furance",
       "item.usefuldns.lightingrod": "Lightning Rod",
       "item.steelrod.name": "Steel Rod",
       "advancements.welcometohell.title": "Welcome to Thunder Dome",
@@ -6461,7 +6322,6 @@
       "block.usefuldns.fetoliquid": "FE to Liquid Transformer",
       "item.usefuldns.groundflesh": "Ground Flesh",
       "item.fivethousdollar.name": "5000 Dollar Bill",
-      "block.usefuldns.octupleblock": "Octuple Block",
       "block.usefuldns.diggereast_on": "Digger East ON",
       "item.usefuldns.gamemode": "Gamemode Changer",
       "block.usefuldns.digger_north_on": "Digger North ON",
@@ -6504,7 +6364,7 @@
         "children": []
       },
       {
-        "name": "UnobFurnaceRecipeGUI",
+        "name": "Recipe Book",
         "children": []
       }
     ]

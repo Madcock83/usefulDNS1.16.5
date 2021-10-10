@@ -101,5 +101,11 @@ public class UnobingotrecipeGuiWindow extends ContainerScreen<UnobingotrecipeGui
 				UnobingotrecipeGui.handleButtonAction(entity, 0, x, y, z);
 			}
 		}));
+		this.addButton(new Button(this.guiLeft + 224, this.guiTop + 27, 30, 20, new StringTextComponent("<"), e -> {
+			if (true) {
+				UsefuldnsMod.PACKET_HANDLER.sendToServer(new UnobingotrecipeGui.ButtonPressedMessage(1, x, y, z));
+				UnobingotrecipeGui.handleButtonAction(entity, 1, x, y, z);
+			}
+		}));
 	}
 }

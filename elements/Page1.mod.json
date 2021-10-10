@@ -3,8 +3,8 @@
   "_type": "gui",
   "definition": {
     "type": 0,
-    "width": 238,
-    "height": 200,
+    "width": 254,
+    "height": 201,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
     "renderBgLayer": true,
@@ -19,7 +19,7 @@
             "falpha": 0.0
           },
           "name": "Welcome to usefulDNS",
-          "x": 158,
+          "x": 159,
           "y": 26
         }
       },
@@ -32,8 +32,8 @@
             "falpha": 0.0
           },
           "name": "This book is a WIP",
-          "x": 170,
-          "y": 38
+          "x": 168,
+          "y": 35
         }
       },
       {
@@ -45,35 +45,21 @@
             "falpha": 0.0
           },
           "name": "I will add more when I get the time",
-          "x": 141,
-          "y": 48
+          "x": 132,
+          "y": 44
         }
       },
       {
         "type": "label",
         "data": {
-          "text": "For now this will give you some basic info",
+          "text": "For now this will give you some basic recipes",
           "color": {
             "value": -16777216,
             "falpha": 0.0
           },
-          "name": "For now this will give you some basic info",
-          "x": 120,
-          "y": 58
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "text": "MADCrafter Recipes",
-          "onClick": {
-            "name": "Openpage2"
-          },
-          "width": 222,
-          "height": 20,
-          "name": "MADCrafter Recipes",
-          "x": 102,
-          "y": 74
+          "name": "For now this will give you some basic recipes",
+          "x": 105,
+          "y": 53
         }
       },
       {
@@ -81,13 +67,24 @@
         "data": {
           "text": "Unobtainium Furnace Recipes",
           "onClick": {
-            "name": "Openpage9"
+            "name": "Unobingotrecipebutton"
           },
-          "width": 213,
+          "width": 222,
           "height": 20,
           "name": "Unobtainium Furnace Recipes",
+          "x": 103,
+          "y": 84
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "MADcrafter Recipes",
+          "width": 213,
+          "height": 20,
+          "name": "MADcrafter Recipes",
           "x": 106,
-          "y": 99
+          "y": 120
         }
       },
       {
@@ -104,31 +101,13 @@
         }
       },
       {
-        "type": "button",
+        "type": "image",
         "data": {
-          "text": "Tools and Items",
-          "onClick": {
-            "name": "Openpage11"
-          },
-          "width": 150,
-          "height": 20,
-          "name": "Tools and Items",
-          "x": 137,
-          "y": 146
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "text": "Anti-Matter Projector",
-          "onClick": {
-            "name": "Antimatteropengui"
-          },
-          "width": 220,
-          "height": 20,
-          "name": "Anti-Matter Projector",
-          "x": 101,
-          "y": 121
+          "image": "xrwplfk.png",
+          "use1Xscale": false,
+          "name": "xrwplfk.png",
+          "x": 156,
+          "y": 67
         }
       }
     ],

@@ -435,20 +435,6 @@
           "x": 6,
           "y": 75
         }
-      },
-      {
-        "type": "button",
-        "data": {
-          "text": "Recipes",
-          "onClick": {
-            "name": "Unobingotrecipebutton"
-          },
-          "width": 60,
-          "height": 20,
-          "name": "Recipes",
-          "x": 327,
-          "y": 23
-        }
       }
     ],
     "gridSettings": {

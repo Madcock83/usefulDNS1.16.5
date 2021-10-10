@@ -71,7 +71,7 @@ public class FereaderRightClickedOnBlockProcedure {
 						_ent.getCapability(CapabilityEnergy.ENERGY, direction).ifPresent(capability -> _retval.set(capability.getMaxEnergyStored()));
 					return _retval.get();
 				}
-			}.getMaxEnergyStored(world, new BlockPos((int) x, (int) y, (int) z)))) + "" + ("\u00A7eEnergy Stored\u00A7f "))), (false));
+			}.getMaxEnergyStored(world, new BlockPos((int) x, (int) y, (int) z)))) + "" + ("\u00A7e Energy Stored \u00A7f "))), (false));
 		}
 		if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
 			((PlayerEntity) entity).sendStatusMessage(new StringTextComponent((((new java.text.DecimalFormat("##").format((new Object() {
@@ -83,7 +83,7 @@ public class FereaderRightClickedOnBlockProcedure {
 								.ifPresent(capability -> _retval.set(capability.getFluidInTank(tank).getAmount()));
 					return _retval.get();
 				}
-			}.getFluidTankLevel(new BlockPos((int) x, (int) y, (int) z), (int) 1))))) + "" + ("\u00A7emb/ \u00A7f") + ""
+			}.getFluidTankLevel(new BlockPos((int) x, (int) y, (int) z), (int) 1))))) + "" + ("\u00A7e mb/ \u00A7f") + ""
 					+ ((new java.text.DecimalFormat("##").format((new Object() {
 						public int getFluidTankCapacity(BlockPos pos, int tank) {
 							AtomicInteger _retval = new AtomicInteger(0);
@@ -93,7 +93,7 @@ public class FereaderRightClickedOnBlockProcedure {
 										.ifPresent(capability -> _retval.set(capability.getTankCapacity(tank)));
 							return _retval.get();
 						}
-					}.getFluidTankCapacity(new BlockPos((int) x, (int) y, (int) z), (int) 1))))) + "" + ("\u00A7emb of fluid stored \u00A7f"))),
+					}.getFluidTankCapacity(new BlockPos((int) x, (int) y, (int) z), (int) 1))))) + "" + ("\u00A7e mb of fluid stored \u00A7f"))),
 					(false));
 		}
 	}

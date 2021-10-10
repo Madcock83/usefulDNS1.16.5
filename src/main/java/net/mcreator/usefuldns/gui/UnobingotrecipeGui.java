@@ -31,7 +31,8 @@ import net.minecraft.entity.Entity;
 import net.minecraft.client.gui.ScreenManager;
 
 import net.mcreator.usefuldns.procedures.UnobfurrecipesProcedure;
-import net.mcreator.usefuldns.procedures.MadcrafterfurrecipeProcedure;
+import net.mcreator.usefuldns.procedures.Unobfurpage2Procedure;
+import net.mcreator.usefuldns.procedures.Openpage1Procedure;
 import net.mcreator.usefuldns.UsefuldnsModElements;
 import net.mcreator.usefuldns.UsefuldnsMod;
 
@@ -589,7 +590,22 @@ public class UnobingotrecipeGui extends UsefuldnsModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
-				MadcrafterfurrecipeProcedure.executeProcedure($_dependencies);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				Unobfurpage2Procedure.executeProcedure($_dependencies);
+			}
+		}
+		if (buttonID == 1) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				Openpage1Procedure.executeProcedure($_dependencies);
 			}
 		}
 	}

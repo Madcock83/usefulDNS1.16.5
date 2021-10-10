@@ -5,6 +5,7 @@ import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.items.wrapper.SidedInvWrapper;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.CapabilityItemHandler;
+import net.minecraftforge.fml.network.NetworkHooks;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
@@ -18,13 +19,17 @@ import net.minecraft.world.World;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.NonNullList;
+import net.minecraft.util.Hand;
 import net.minecraft.util.Direction;
+import net.minecraft.util.ActionResultType;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.LockableLootTileEntity;
 import net.minecraft.network.play.server.SUpdateTileEntityPacket;
+import net.minecraft.network.PacketBuffer;
 import net.minecraft.network.NetworkManager;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.loot.LootContext;
@@ -33,10 +38,10 @@ import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.inventory.container.INamedContainerProvider;
 import net.minecraft.inventory.container.Container;
-import net.minecraft.inventory.container.ChestContainer;
 import net.minecraft.inventory.ItemStackHelper;
 import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.inventory.ISidedInventory;
+import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.block.material.Material;
@@ -47,6 +52,7 @@ import net.minecraft.block.Block;
 import net.mcreator.usefuldns.procedures.BatteryUpdateTickProcedure;
 import net.mcreator.usefuldns.procedures.BatteryPlayerStartsToDestroyProcedure;
 import net.mcreator.usefuldns.itemgroup.UsefuldnsItemGroup;
+import net.mcreator.usefuldns.gui.BatterguiGui;
 import net.mcreator.usefuldns.UsefuldnsModElements;
 
 import javax.annotation.Nullable;
@@ -57,6 +63,8 @@ import java.util.Map;
 import java.util.List;
 import java.util.HashMap;
 import java.util.Collections;
+
+import io.netty.buffer.Unpooled;
 
 @UsefuldnsModElements.ModElement.Tag
 public class BatteryBlock extends UsefuldnsModElements.ModElement {
@@ -140,6 +148,30 @@ public class BatteryBlock extends UsefuldnsModElements.ModElement {
 		}
 
 		@Override
+		public ActionResultType onBlockActivated(BlockState blockstate, World world, BlockPos pos, PlayerEntity entity, Hand hand,
+				BlockRayTraceResult hit) {
+			super.onBlockActivated(blockstate, world, pos, entity, hand, hit);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			if (entity instanceof ServerPlayerEntity) {
+				NetworkHooks.openGui((ServerPlayerEntity) entity, new INamedContainerProvider() {
+					@Override
+					public ITextComponent getDisplayName() {
+						return new StringTextComponent("DNS Battery");
+					}
+
+					@Override
+					public Container createMenu(int id, PlayerInventory inventory, PlayerEntity player) {
+						return new BatterguiGui.GuiContainerMod(id, inventory,
+								new PacketBuffer(Unpooled.buffer()).writeBlockPos(new BlockPos(x, y, z)));
+					}
+				}, new BlockPos(x, y, z));
+			}
+			return ActionResultType.SUCCESS;
+		}
+
+		@Override
 		public INamedContainerProvider getContainer(BlockState state, World worldIn, BlockPos pos) {
 			TileEntity tileEntity = worldIn.getTileEntity(pos);
 			return tileEntity instanceof INamedContainerProvider ? (INamedContainerProvider) tileEntity : null;
@@ -190,7 +222,7 @@ public class BatteryBlock extends UsefuldnsModElements.ModElement {
 	}
 
 	public static class CustomTileEntity extends LockableLootTileEntity implements ISidedInventory {
-		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
+		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(1, ItemStack.EMPTY);
 		protected CustomTileEntity() {
 			super(tileEntityType);
 		}
@@ -256,7 +288,7 @@ public class BatteryBlock extends UsefuldnsModElements.ModElement {
 
 		@Override
 		public Container createMenu(int id, PlayerInventory player) {
-			return ChestContainer.createGeneric9X3(id, player, this);
+			return new BatterguiGui.GuiContainerMod(id, player, new PacketBuffer(Unpooled.buffer()).writeBlockPos(this.getPos()));
 		}
 
 		@Override
@@ -294,7 +326,7 @@ public class BatteryBlock extends UsefuldnsModElements.ModElement {
 			return true;
 		}
 		private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
-		private final EnergyStorage energyStorage = new EnergyStorage(1000000000, 10000000, 10000000, 0) {
+		private final EnergyStorage energyStorage = new EnergyStorage(2147483647, 10000000, 10000000, 0) {
 			@Override
 			public int receiveEnergy(int maxReceive, boolean simulate) {
 				int retval = super.receiveEnergy(maxReceive, simulate);

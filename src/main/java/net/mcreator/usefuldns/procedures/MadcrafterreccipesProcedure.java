@@ -76,6 +76,10 @@ public class MadcrafterreccipesProcedure {
 		}
 		{
 			Map<String, Object> $_dependencies = new HashMap<>();
+			$_dependencies.put("x", x);
+			$_dependencies.put("y", y);
+			$_dependencies.put("z", z);
+			$_dependencies.put("world", world);
 			CrafterrecSexMBProcedure.executeProcedure($_dependencies);
 		}
 		{
@@ -117,6 +121,14 @@ public class MadcrafterreccipesProcedure {
 			$_dependencies.put("z", z);
 			$_dependencies.put("world", world);
 			CrafterrecFEtoLiquidProcedure.executeProcedure($_dependencies);
+		}
+		{
+			Map<String, Object> $_dependencies = new HashMap<>();
+			$_dependencies.put("x", x);
+			$_dependencies.put("y", y);
+			$_dependencies.put("z", z);
+			$_dependencies.put("world", world);
+			CrafterrecBatteryProcedure.executeProcedure($_dependencies);
 		}
 		if (((new Object() {
 			public int getAmount(IWorld world, BlockPos pos, int sltid) {

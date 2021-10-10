@@ -34,8 +34,8 @@ public class Page1GuiWindow extends ContainerScreen<Page1Gui.GuiContainerMod> {
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.xSize = 238;
-		this.ySize = 200;
+		this.xSize = 254;
+		this.ySize = 201;
 	}
 	private static final ResourceLocation texture = new ResourceLocation("usefuldns:textures/page_1.png");
 	@Override
@@ -54,6 +54,8 @@ public class Page1GuiWindow extends ContainerScreen<Page1Gui.GuiContainerMod> {
 		int k = (this.width - this.xSize) / 2;
 		int l = (this.height - this.ySize) / 2;
 		this.blit(ms, k, l, 0, 0, this.xSize, this.ySize, this.xSize, this.ySize);
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/xrwplfk.png"));
+		this.blit(ms, this.guiLeft + 69, this.guiTop + 47, 0, 0, 256, 256, 256, 256);
 		RenderSystem.disableBlend();
 	}
 
@@ -73,11 +75,11 @@ public class Page1GuiWindow extends ContainerScreen<Page1Gui.GuiContainerMod> {
 
 	@Override
 	protected void drawGuiContainerForegroundLayer(MatrixStack ms, int mouseX, int mouseY) {
-		this.font.drawString(ms, "Welcome to usefulDNS", 63, 6, -16777216);
-		this.font.drawString(ms, "This book is a WIP", 75, 18, -16777216);
-		this.font.drawString(ms, "I will add more when I get the time", 46, 28, -16777216);
-		this.font.drawString(ms, "For now this will give you some basic info", 25, 38, -16777216);
-		this.font.drawString(ms, "Sorry for the basic look here :-(", 40, 176, -16777216);
+		this.font.drawString(ms, "Welcome to usefulDNS", 72, 6, -16777216);
+		this.font.drawString(ms, "This book is a WIP", 81, 15, -16777216);
+		this.font.drawString(ms, "I will add more when I get the time", 45, 24, -16777216);
+		this.font.drawString(ms, "For now this will give you some basic recipes", 18, 33, -16777216);
+		this.font.drawString(ms, "Sorry for the basic look here :-(", 48, 176, -16777216);
 	}
 
 	@Override
@@ -90,28 +92,16 @@ public class Page1GuiWindow extends ContainerScreen<Page1Gui.GuiContainerMod> {
 	public void init(Minecraft minecraft, int width, int height) {
 		super.init(minecraft, width, height);
 		minecraft.keyboardListener.enableRepeatEvents(true);
-		this.addButton(new Button(this.guiLeft + 7, this.guiTop + 54, 222, 20, new StringTextComponent("MADCrafter Recipes"), e -> {
+		this.addButton(new Button(this.guiLeft + 16, this.guiTop + 64, 222, 20, new StringTextComponent("Unobtainium Furnace Recipes"), e -> {
 			if (true) {
 				UsefuldnsMod.PACKET_HANDLER.sendToServer(new Page1Gui.ButtonPressedMessage(0, x, y, z));
 				Page1Gui.handleButtonAction(entity, 0, x, y, z);
 			}
 		}));
-		this.addButton(new Button(this.guiLeft + 11, this.guiTop + 79, 213, 20, new StringTextComponent("Unobtainium Furnace Recipes"), e -> {
+		this.addButton(new Button(this.guiLeft + 19, this.guiTop + 100, 213, 20, new StringTextComponent("MADcrafter Recipes"), e -> {
 			if (true) {
 				UsefuldnsMod.PACKET_HANDLER.sendToServer(new Page1Gui.ButtonPressedMessage(1, x, y, z));
 				Page1Gui.handleButtonAction(entity, 1, x, y, z);
-			}
-		}));
-		this.addButton(new Button(this.guiLeft + 42, this.guiTop + 126, 150, 20, new StringTextComponent("Tools and Items"), e -> {
-			if (true) {
-				UsefuldnsMod.PACKET_HANDLER.sendToServer(new Page1Gui.ButtonPressedMessage(2, x, y, z));
-				Page1Gui.handleButtonAction(entity, 2, x, y, z);
-			}
-		}));
-		this.addButton(new Button(this.guiLeft + 6, this.guiTop + 101, 220, 20, new StringTextComponent("Anti-Matter Projector"), e -> {
-			if (true) {
-				UsefuldnsMod.PACKET_HANDLER.sendToServer(new Page1Gui.ButtonPressedMessage(3, x, y, z));
-				Page1Gui.handleButtonAction(entity, 3, x, y, z);
 			}
 		}));
 	}

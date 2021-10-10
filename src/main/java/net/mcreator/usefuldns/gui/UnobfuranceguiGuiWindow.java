@@ -109,11 +109,5 @@ public class UnobfuranceguiGuiWindow extends ContainerScreen<UnobfuranceguiGui.G
 				UnobfuranceguiGui.handleButtonAction(entity, 0, x, y, z);
 			}
 		}));
-		this.addButton(new Button(this.guiLeft + 226, this.guiTop + 15, 60, 20, new StringTextComponent("Recipes"), e -> {
-			if (true) {
-				UsefuldnsMod.PACKET_HANDLER.sendToServer(new UnobfuranceguiGui.ButtonPressedMessage(1, x, y, z));
-				UnobfuranceguiGui.handleButtonAction(entity, 1, x, y, z);
-			}
-		}));
 	}
 }

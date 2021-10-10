@@ -28,7 +28,6 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.client.gui.ScreenManager;
 
-import net.mcreator.usefuldns.procedures.UnobingotrecipebuttonProcedure;
 import net.mcreator.usefuldns.procedures.FirancesortProcedure;
 import net.mcreator.usefuldns.UsefuldnsModElements;
 import net.mcreator.usefuldns.UsefuldnsMod;
@@ -426,17 +425,6 @@ public class UnobfuranceguiGui extends UsefuldnsModElements.ModElement {
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
 				FirancesortProcedure.executeProcedure($_dependencies);
-			}
-		}
-		if (buttonID == 1) {
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				UnobingotrecipebuttonProcedure.executeProcedure($_dependencies);
 			}
 		}
 	}
