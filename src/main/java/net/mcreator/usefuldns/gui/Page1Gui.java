@@ -23,6 +23,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.gui.ScreenManager;
 
 import net.mcreator.usefuldns.procedures.UnobingotrecipebuttonProcedure;
+import net.mcreator.usefuldns.procedures.OpenMadcraftergui1Procedure;
 import net.mcreator.usefuldns.UsefuldnsModElements;
 
 import java.util.function.Supplier;
@@ -184,6 +185,17 @@ public class Page1Gui extends UsefuldnsModElements.ModElement {
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
 				UnobingotrecipebuttonProcedure.executeProcedure($_dependencies);
+			}
+		}
+		if (buttonID == 1) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				OpenMadcraftergui1Procedure.executeProcedure($_dependencies);
 			}
 		}
 	}

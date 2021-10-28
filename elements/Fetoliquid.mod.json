@@ -124,6 +124,9 @@
     "isFluidTank": true,
     "fluidCapacity": 32000,
     "fluidRestrictions": [],
+    "onTickUpdate": {
+      "name": "FetoliquidUpdateTick"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

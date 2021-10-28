@@ -80,6 +80,9 @@
         "type": "button",
         "data": {
           "text": "MADcrafter Recipes",
+          "onClick": {
+            "name": "OpenMadcraftergui1"
+          },
           "width": 213,
           "height": 20,
           "name": "MADcrafter Recipes",

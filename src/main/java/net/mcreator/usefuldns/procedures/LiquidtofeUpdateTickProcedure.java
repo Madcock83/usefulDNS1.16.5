@@ -49,7 +49,7 @@ public class LiquidtofeUpdateTickProcedure {
 					_ent.getCapability(CapabilityEnergy.ENERGY, null).ifPresent(capability -> _retval.set(capability.getEnergyStored()));
 				return _retval.get();
 			}
-		}.getEnergyStored(world, new BlockPos((int) x, (int) y, (int) z))) <= 90000000) && ((new Object() {
+		}.getEnergyStored(world, new BlockPos((int) x, (int) y, (int) z))) <= 99000000) && ((new Object() {
 			public int getFluidTankLevel(BlockPos pos, int tank) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				TileEntity _ent = world.getTileEntity(pos);
@@ -58,7 +58,7 @@ public class LiquidtofeUpdateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getFluidInTank(tank).getAmount()));
 				return _retval.get();
 			}
-		}.getFluidTankLevel(new BlockPos((int) x, (int) y, (int) z), (int) 1)) >= 1000))) {
+		}.getFluidTankLevel(new BlockPos((int) x, (int) y, (int) z), (int) 1)) >= 100))) {
 			{
 				TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 				int _amount = (int) 100;
