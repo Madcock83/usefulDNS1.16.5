@@ -43,7 +43,7 @@ public class OutpostBlock extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:outpost")
 	public static final Block block = null;
 	public OutpostBlock(UsefuldnsModElements instance) {
-		super(instance, 51);
+		super(instance, 53);
 	}
 
 	@Override

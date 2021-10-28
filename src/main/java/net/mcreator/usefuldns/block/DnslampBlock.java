@@ -34,7 +34,7 @@ public class DnslampBlock extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:dnslamp")
 	public static final Block block = null;
 	public DnslampBlock(UsefuldnsModElements instance) {
-		super(instance, 55);
+		super(instance, 57);
 	}
 
 	@Override

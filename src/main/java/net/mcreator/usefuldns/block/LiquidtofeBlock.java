@@ -77,7 +77,7 @@ public class LiquidtofeBlock extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:liquidtofe")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public LiquidtofeBlock(UsefuldnsModElements instance) {
-		super(instance, 70);
+		super(instance, 67);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 	}
 
@@ -126,7 +126,7 @@ public class LiquidtofeBlock extends UsefuldnsModElements.ModElement {
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
-			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 20);
+			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 5);
 		}
 
 		@Override
@@ -143,7 +143,7 @@ public class LiquidtofeBlock extends UsefuldnsModElements.ModElement {
 				$_dependencies.put("world", world);
 				LiquidtofeUpdateTickProcedure.executeProcedure($_dependencies);
 			}
-			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 20);
+			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 5);
 		}
 
 		@Override

@@ -26,7 +26,7 @@ public class FereaderItem extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:fereader")
 	public static final Item block = null;
 	public FereaderItem(UsefuldnsModElements instance) {
-		super(instance, 67);
+		super(instance, 41);
 	}
 
 	@Override

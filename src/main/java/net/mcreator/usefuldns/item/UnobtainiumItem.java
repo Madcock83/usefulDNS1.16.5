@@ -38,7 +38,7 @@ public class UnobtainiumItem extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:unobtainium_boots")
 	public static final Item boots = null;
 	public UnobtainiumItem(UsefuldnsModElements instance) {
-		super(instance, 12);
+		super(instance, 52);
 	}
 
 	@Override

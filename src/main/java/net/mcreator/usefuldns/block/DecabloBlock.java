@@ -26,7 +26,7 @@ public class DecabloBlock extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:decablo")
 	public static final Block block = null;
 	public DecabloBlock(UsefuldnsModElements instance) {
-		super(instance, 52);
+		super(instance, 54);
 	}
 
 	@Override

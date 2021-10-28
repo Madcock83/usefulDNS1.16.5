@@ -26,7 +26,7 @@ public class UnobcrafterBlock extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:unobcrafter")
 	public static final Block block = null;
 	public UnobcrafterBlock(UsefuldnsModElements instance) {
-		super(instance, 57);
+		super(instance, 59);
 	}
 
 	@Override

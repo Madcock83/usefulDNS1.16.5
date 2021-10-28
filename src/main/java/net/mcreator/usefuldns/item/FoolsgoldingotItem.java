@@ -16,7 +16,7 @@ public class FoolsgoldingotItem extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:foolsgoldingot")
 	public static final Item block = null;
 	public FoolsgoldingotItem(UsefuldnsModElements instance) {
-		super(instance, 65);
+		super(instance, 12);
 	}
 
 	@Override

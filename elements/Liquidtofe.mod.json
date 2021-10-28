@@ -57,7 +57,7 @@
     "material": {
       "value": "IRON"
     },
-    "tickRate": 20,
+    "tickRate": 5,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,

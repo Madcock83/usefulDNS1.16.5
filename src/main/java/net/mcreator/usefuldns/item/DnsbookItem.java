@@ -34,7 +34,7 @@ public class DnsbookItem extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:dnsbook")
 	public static final Item block = null;
 	public DnsbookItem(UsefuldnsModElements instance) {
-		super(instance, 61);
+		super(instance, 63);
 	}
 
 	@Override

@@ -16,7 +16,7 @@ public class ConeItem extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:cone")
 	public static final Item block = null;
 	public ConeItem(UsefuldnsModElements instance) {
-		super(instance, 47);
+		super(instance, 48);
 	}
 
 	@Override

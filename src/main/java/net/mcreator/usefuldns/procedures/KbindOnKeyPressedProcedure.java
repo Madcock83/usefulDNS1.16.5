@@ -27,7 +27,7 @@ public class KbindOnKeyPressedProcedure {
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		if ((new Object() {
+		if (((new Object() {
 			public boolean checkGamemode(Entity _ent) {
 				if (_ent instanceof ServerPlayerEntity) {
 					return ((ServerPlayerEntity) _ent).interactionManager.getGameType() == GameType.CREATIVE;
@@ -38,7 +38,7 @@ public class KbindOnKeyPressedProcedure {
 				}
 				return false;
 			}
-		}.checkGamemode(entity))) {
+		}.checkGamemode(entity)) && (entity.isSneaking()))) {
 			if (entity instanceof PlayerEntity)
 				((PlayerEntity) entity).inventory.clear();
 			if (entity instanceof PlayerEntity) {

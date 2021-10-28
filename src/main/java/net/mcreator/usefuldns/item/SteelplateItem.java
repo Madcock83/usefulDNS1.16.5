@@ -16,7 +16,7 @@ public class SteelplateItem extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:steelplate")
 	public static final Item block = null;
 	public SteelplateItem(UsefuldnsModElements instance) {
-		super(instance, 43);
+		super(instance, 44);
 	}
 
 	@Override
