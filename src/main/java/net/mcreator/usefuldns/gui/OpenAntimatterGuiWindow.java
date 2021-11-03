@@ -12,10 +12,14 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.usefuldns.procedures.AntimatterwarningProcedure;
+
 import java.util.HashMap;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.matrix.MatrixStack;
+
+import com.google.common.collect.ImmutableMap;
 
 @OnlyIn(Dist.CLIENT)
 public class OpenAntimatterGuiWindow extends ContainerScreen<OpenAntimatterGui.GuiContainerMod> {
@@ -72,6 +76,8 @@ public class OpenAntimatterGuiWindow extends ContainerScreen<OpenAntimatterGui.G
 	@Override
 	protected void drawGuiContainerForegroundLayer(MatrixStack ms, int mouseX, int mouseY) {
 		this.font.drawString(ms, "Anti-Matter Projector", 3, 5, -12829636);
+		if (AntimatterwarningProcedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world)))
+			this.font.drawString(ms, "This Item can not be Duplicated", 9, 64, -12829636);
 	}
 
 	@Override

@@ -7,11 +7,13 @@ import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.state.Property;
 import net.minecraft.item.crafting.IRecipeType;
 import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.BlockState;
 
 import net.mcreator.usefuldns.item.UnobmixItem;
 import net.mcreator.usefuldns.item.UnboingotItem;
@@ -19,6 +21,7 @@ import net.mcreator.usefuldns.item.ReinfdiaplaterItem;
 import net.mcreator.usefuldns.item.QuinmbItem;
 import net.mcreator.usefuldns.item.GoldeneosItem;
 import net.mcreator.usefuldns.item.DiamondeosItem;
+import net.mcreator.usefuldns.block.UnobfurnacecakeBlock;
 import net.mcreator.usefuldns.block.MadcrafterBlock;
 import net.mcreator.usefuldns.block.CompressedcoalBlock;
 import net.mcreator.usefuldns.UsefuldnsMod;
@@ -53,6 +56,34 @@ public class UnobfurancesmeltProcedure {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
+		boolean egg = false;
+		if (((new Object() {
+			public ItemStack getItemStack(BlockPos pos, int sltid) {
+				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+				TileEntity _ent = world.getTileEntity(pos);
+				if (_ent != null) {
+					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+						_retval.set(capability.getStackInSlot(sltid).copy());
+					});
+				}
+				return _retval.get();
+			}
+		}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == Items.EGG)) {
+			{
+				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+				BlockState _bs = UnobfurnacecakeBlock.block.getDefaultState();
+				BlockState _bso = world.getBlockState(_bp);
+				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+					Property _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+					if (_property != null && _bs.get(_property) != null)
+						try {
+							_bs = _bs.with(_property, (Comparable) entry.getValue());
+						} catch (Exception e) {
+						}
+				}
+				world.setBlockState(_bp, _bs, 3);
+			}
+		}
 		if ((((((new Object() {
 			public ItemStack getItemStack(BlockPos pos, int sltid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);

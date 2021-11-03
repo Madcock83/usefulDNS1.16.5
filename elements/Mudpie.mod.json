@@ -15,12 +15,15 @@
     "nutritionalValue": 25,
     "saturation": 0.30000001192092896,
     "eatingSpeed": 7,
+    "resultItem": {
+      "value": ""
+    },
     "forDogs": true,
     "isAlwaysEdible": true,
     "animation": "eat",
     "hasGlow": false,
     "onEaten": {
-      "name": "MudpieFoodEaten"
+      "name": "Mudpiefoodeatennorm"
     }
   }
 }

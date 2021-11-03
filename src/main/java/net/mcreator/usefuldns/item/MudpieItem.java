@@ -11,7 +11,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.Food;
 import net.minecraft.entity.LivingEntity;
 
-import net.mcreator.usefuldns.procedures.MudpieFoodEatenProcedure;
+import net.mcreator.usefuldns.procedures.MudpiefoodeatennormProcedure;
 import net.mcreator.usefuldns.itemgroup.UsefuldnsItemGroup;
 import net.mcreator.usefuldns.UsefuldnsModElements;
 
@@ -56,7 +56,7 @@ public class MudpieItem extends UsefuldnsModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
-				MudpieFoodEatenProcedure.executeProcedure($_dependencies);
+				MudpiefoodeatennormProcedure.executeProcedure($_dependencies);
 			}
 			return retval;
 		}

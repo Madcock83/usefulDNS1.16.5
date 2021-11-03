@@ -1,10 +1,10 @@
 package net.mcreator.usefuldns.procedures;
 
-import net.minecraft.potion.Effects;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
+import net.mcreator.usefuldns.potion.DiamondpoopsPotionEffect;
 import net.mcreator.usefuldns.UsefuldnsMod;
 
 import java.util.Map;
@@ -18,6 +18,6 @@ public class MudpieFoodEatenProcedure {
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.REGENERATION, (int) 10, (int) 1, (true), (false)));
+			((LivingEntity) entity).addPotionEffect(new EffectInstance(DiamondpoopsPotionEffect.potion, (int) 100, (int) 5, (true), (false)));
 	}
 }

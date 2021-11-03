@@ -1,0 +1,148 @@
+{
+  "_fv": 24,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 177,
+    "height": 170,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": true,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "cobble_gen.png",
+          "use1Xscale": false,
+          "name": "cobble_gen.png",
+          "x": 132,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Portable Cobble Gen",
+          "width": 120,
+          "height": 20,
+          "name": "Portable Cobble Gen",
+          "x": 150,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "endpop.png",
+          "use1Xscale": true,
+          "name": "endpop.png",
+          "x": 132,
+          "y": 71
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "End Pop",
+          "width": 60,
+          "height": 20,
+          "name": "End Pop",
+          "x": 150,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "exp_orb.png",
+          "use1Xscale": true,
+          "name": "exp_orb.png",
+          "x": 132,
+          "y": 98
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Exp Orb",
+          "width": 60,
+          "height": 20,
+          "name": "Exp Orb",
+          "x": 150,
+          "y": 98
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "lightningrod.png",
+          "use1Xscale": true,
+          "name": "lightningrod.png",
+          "x": 132,
+          "y": 125
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Lightning Rod",
+          "width": 90,
+          "height": 20,
+          "name": "Lightning Rod",
+          "x": 150,
+          "y": 125
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "madcannon1.png",
+          "use1Xscale": true,
+          "name": "madcannon1.png",
+          "x": 132,
+          "y": 152
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Mad Cannon",
+          "width": 75,
+          "height": 20,
+          "name": "Mad Cannon",
+          "x": 150,
+          "y": 152
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "madstaff.png",
+          "use1Xscale": true,
+          "name": "madstaff.png",
+          "x": 132,
+          "y": 179
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Madcock Travel Staff",
+          "width": 125,
+          "height": 20,
+          "name": "Madcock Travel Staff",
+          "x": 150,
+          "y": 179
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

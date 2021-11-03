@@ -1,0 +1,50 @@
+{
+  "_fv": 24,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 103,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "Noon",
+          "onClick": {
+            "name": "Dayproc"
+          },
+          "width": 45,
+          "height": 20,
+          "name": "Noon",
+          "x": 142,
+          "y": 81
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Midnight",
+          "onClick": {
+            "name": "Nightproc"
+          },
+          "width": 65,
+          "height": 20,
+          "name": "Midnight",
+          "x": 142,
+          "y": 109
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

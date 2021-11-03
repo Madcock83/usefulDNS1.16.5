@@ -1,7 +1,12 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/cube",
   "textures": {
-    "all": "usefuldns:blocks/reinforcedredstone",
+    "down": "usefuldns:blocks/reinforcedredstone",
+    "up": "usefuldns:blocks/reinforcedredstone",
+    "north": "usefuldns:blocks/reinforcedredstonewater",
+    "east": "usefuldns:blocks/reinforcedredstonelava",
+    "south": "usefuldns:blocks/reinforcedredstonewater",
+    "west": "usefuldns:blocks/reinforcedredstonelava",
     "particle": "usefuldns:blocks/reinforcedredstone"
   }
 }

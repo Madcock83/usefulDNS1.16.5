@@ -1,0 +1,29 @@
+{
+  "_fv": 24,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "diamondmudpie",
+    "customModelName": "Normal",
+    "name": "Diamond Mudpie",
+    "rarity": "COMMON",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 25,
+    "saturation": 0.30000001192092896,
+    "eatingSpeed": 7,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": true,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": true,
+    "onEaten": {
+      "name": "MudpieFoodEaten"
+    }
+  }
+}

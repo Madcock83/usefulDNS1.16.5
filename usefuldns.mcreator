@@ -2,8 +2,8 @@
   "id_map": {
     "GUI": 22,
     "BIOME": 0,
-    "DIMENSION": 1,
-    "ENTITY": 1
+    "ENTITY": 1,
+    "DIMENSION": 1
   },
   "mod_elements": [
     {
@@ -2068,6 +2068,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -6710,6 +6726,329 @@
         ]
       },
       "path": "~/Recipe Book"
+    },
+    {
+      "name": "Antimatterwarning",
+      "type": "procedure",
+      "sortid": 358,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "antimatterwarning",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Mainitem",
+      "type": "gui",
+      "sortid": 361,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mainitem",
+      "path": "~/Recipe Book/items"
+    },
+    {
+      "name": "DiamondpoopsActiveTickCondition",
+      "type": "procedure",
+      "sortid": 362,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diamondpoops_active_tick_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Diamondpoops",
+      "type": "potioneffect",
+      "sortid": 362,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diamondpoops"
+    },
+    {
+      "name": "Diamondmudpie",
+      "type": "food",
+      "sortid": 363,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diamondmudpie"
+    },
+    {
+      "name": "Diamondmudpierec",
+      "type": "recipe",
+      "sortid": 364,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diamondmudpierec",
+      "path": "~/Recipes/Mod Recipes"
+    },
+    {
+      "name": "DiamondGenUpdateTick",
+      "type": "procedure",
+      "sortid": 365,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diamond_gen_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DnslampEntityWalksOnTheBlock",
+      "type": "procedure",
+      "sortid": 367,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dnslamp_entity_walks_on_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Daygui",
+      "type": "gui",
+      "sortid": 368,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "daygui"
+    },
+    {
+      "name": "Dayproc",
+      "type": "procedure",
+      "sortid": 369,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dayproc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Nightproc",
+      "type": "procedure",
+      "sortid": 370,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nightproc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Unobfurnacecake",
+      "type": "block",
+      "sortid": 371,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "unobfurnacecake"
+    },
+    {
+      "name": "Unobfurnacecakeontick",
+      "type": "procedure",
+      "sortid": 372,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "unobfurnacecakeontick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Mudpiefoodeatennorm",
+      "type": "procedure",
+      "sortid": 374,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mudpiefoodeatennorm",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "UnbochestUpdateTick",
+      "type": "procedure",
+      "sortid": 375,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "unbochest_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DecabloUpdateTick",
+      "type": "procedure",
+      "sortid": 376,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "decablo_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -6735,9 +7074,9 @@
       "block.usefuldns.digger_east": "Digger East",
       "advancements.swissachievment.title": "Get to Work",
       "item.reinfdiaplater.name": "Reiinforced Diamond Plate",
-      "block.usefuldns.compressedcoal": "Compressed Coal Block",
-      "item.usefuldns.quinmb": "Quintuple Money Bag",
       "tile.unobfurnace.name": "Unobtainium Furance",
+      "item.usefuldns.quinmb": "Quintuple Money Bag",
+      "block.usefuldns.compressedcoal": "Compressed Coal Block",
       "item.usefuldns.lightingrod": "Lightning Rod",
       "item.steelrod.name": "Steel Rod",
       "advancements.welcometohell.title": "Welcome to Thunder Dome",
@@ -6816,6 +7155,7 @@
       "item.tripmb.name": "Triple Money Bag",
       "item.usefuldns.unobmix": "Unobtainium Mixture",
       "item.usefuldns.steelrod": "Steel Rod",
+      "block.usefuldns.unobfurnacecake": "Unobtainium Furance",
       "item.usefuldns.mudpie": "Mudpie",
       "block.usefuldns.decablo": "DecaNySodium Block",
       "item.deca.name": "DecaNySodium Gem",
@@ -6823,6 +7163,7 @@
       "tile.decablo.name": "DecaNySodium Block",
       "item.usefuldns.steelplate": "Steel Plate",
       "block.usefuldns.creativeliquid": "Creativeliquid",
+      "effect.diamondpoops": "The Diamond Poops",
       "item.unobtainiumhelmet.name": "Unobtainium Helmet",
       "item.madbuck.name": "Madbuck",
       "item.sepmb.name": "Septuple Money Bag",
@@ -6843,6 +7184,7 @@
       "item.twentydollar.name": "20 Dollar bill",
       "itemGroup.tabusefuldns": "UsefulDNS",
       "item.unobmix.name": "Unobtainium Mixture",
+      "item.usefuldns.diamondmudpie": "Diamond Mudpie",
       "item.usefuldns.madstaff": "Madcock\u0027s Staff of Death",
       "advancements.eaglescout.descr": "All in one, get to surviving",
       "item.steelingot.name": "Steel Ingot",
@@ -6947,7 +7289,12 @@
       },
       {
         "name": "Recipe Book",
-        "children": []
+        "children": [
+          {
+            "name": "items",
+            "children": []
+          }
+        ]
       }
     ]
   },

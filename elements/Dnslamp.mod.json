@@ -3,13 +3,13 @@
   "_type": "block",
   "definition": {
     "texture": "reinforcedredstone",
-    "textureTop": "",
-    "textureLeft": "",
-    "textureFront": "",
-    "textureRight": "",
-    "textureBack": "",
-    "renderType": 11,
-    "customModelName": "Single texture",
+    "textureTop": "reinforcedredstone",
+    "textureLeft": "reinforcedredstonelava",
+    "textureFront": "reinforcedredstonewater",
+    "textureRight": "reinforcedredstonelava",
+    "textureBack": "reinforcedredstonewater",
+    "renderType": 10,
+    "customModelName": "Normal",
     "rotationMode": 0,
     "emissiveRendering": true,
     "displayFluidOverlay": false,
@@ -57,7 +57,7 @@
     "material": {
       "value": "GLASS"
     },
-    "tickRate": 10,
+    "tickRate": 5,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -124,6 +124,12 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onTickUpdate": {
+      "name": "DiamondGenUpdateTick"
+    },
+    "onEntityWalksOn": {
+      "name": "DnslampEntityWalksOnTheBlock"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

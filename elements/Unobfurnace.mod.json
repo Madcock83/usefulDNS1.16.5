@@ -13,6 +13,8 @@
     "rotationMode": 1,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
+    "itemTexture": "",
+    "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": false,
@@ -56,6 +58,9 @@
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
+    "emittedRedstonePower": {
+      "fixedValue": 15.0
+    },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
       "value": ""
@@ -74,6 +79,21 @@
     "soundOnStep": {
       "value": "ANVIL"
     },
+    "breakSound": {
+      "value": ""
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "placeSound": {
+      "value": ""
+    },
+    "hitSound": {
+      "value": ""
+    },
+    "fallSound": {
+      "value": ""
+    },
     "luminance": 0,
     "unbreakable": false,
     "breakHarvestLevel": 1,
@@ -85,8 +105,8 @@
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
     "hasInventory": true,
-    "guiBoundTo": "<NONE>",
-    "openGUIOnRightClick": false,
+    "guiBoundTo": "Unobfurancegui",
+    "openGUIOnRightClick": true,
     "inventorySize": 20,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
@@ -107,9 +127,7 @@
     "energyMaxExtract": 200,
     "isFluidTank": false,
     "fluidCapacity": 8000,
-    "onRightClicked": {
-      "name": "UnobfurnaceOnBlockRightClicked"
-    },
+    "fluidRestrictions": [],
     "onTickUpdate": {
       "name": "Unobfurancesmelt"
     },

@@ -46,6 +46,22 @@
           "x": 167,
           "y": 36
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "This Item can not be Duplicated",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Antimatterwarning"
+          },
+          "name": "This Item can not be Duplicated",
+          "x": 135,
+          "y": 101
+        }
       }
     ],
     "gridSettings": {
