@@ -2,12 +2,10 @@ package net.mcreator.usefuldns.procedures;
 
 import net.minecraftforge.energy.CapabilityEnergy;
 
-import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Direction;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraft.block.BlockState;
 
 import net.mcreator.usefuldns.UsefuldnsMod;
 
@@ -47,23 +45,6 @@ public class BatteryUpdateTickProcedure {
 		double west = 0;
 		double north = 0;
 		double south = 0;
-		if (!world.isRemote()) {
-			BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-			TileEntity _tileEntity = world.getTileEntity(_bp);
-			BlockState _bs = world.getBlockState(_bp);
-			if (_tileEntity != null)
-				_tileEntity.getTileData().putDouble("battery", (new Object() {
-					public int getEnergyStored(IWorld world, BlockPos pos) {
-						AtomicInteger _retval = new AtomicInteger(0);
-						TileEntity _ent = world.getTileEntity(pos);
-						if (_ent != null)
-							_ent.getCapability(CapabilityEnergy.ENERGY, null).ifPresent(capability -> _retval.set(capability.getEnergyStored()));
-						return _retval.get();
-					}
-				}.getEnergyStored(world, new BlockPos((int) x, (int) y, (int) z))));
-			if (world instanceof World)
-				((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
-		}
 		if ((new Object() {
 			public boolean canReceiveEnergy(IWorld world, BlockPos pos) {
 				AtomicBoolean _retval = new AtomicBoolean(false);

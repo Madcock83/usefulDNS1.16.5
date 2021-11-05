@@ -44,17 +44,14 @@ import net.minecraft.inventory.ISidedInventory;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.usefuldns.procedures.BatteryUpdateTickProcedure;
-import net.mcreator.usefuldns.procedures.BatteryPlayerStartsToDestroyProcedure;
-import net.mcreator.usefuldns.procedures.BatteryBlockIsPlacedByProcedure;
+import net.mcreator.usefuldns.procedures.PostionsProjectorUpdateTickProcedure;
 import net.mcreator.usefuldns.itemgroup.UsefuldnsItemGroup;
-import net.mcreator.usefuldns.gui.BatterguiGui;
+import net.mcreator.usefuldns.gui.GuipotionblockGui;
 import net.mcreator.usefuldns.UsefuldnsModElements;
 
 import javax.annotation.Nullable;
@@ -69,13 +66,13 @@ import java.util.Collections;
 import io.netty.buffer.Unpooled;
 
 @UsefuldnsModElements.ModElement.Tag
-public class BatteryBlock extends UsefuldnsModElements.ModElement {
-	@ObjectHolder("usefuldns:battery")
+public class PostionsProjectorBlock extends UsefuldnsModElements.ModElement {
+	@ObjectHolder("usefuldns:potions_projector")
 	public static final Block block = null;
-	@ObjectHolder("usefuldns:battery")
+	@ObjectHolder("usefuldns:potions_projector")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
-	public BatteryBlock(UsefuldnsModElements instance) {
-		super(instance, 65);
+	public PostionsProjectorBlock(UsefuldnsModElements instance) {
+		super(instance, 377);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 	}
 
@@ -87,14 +84,15 @@ public class BatteryBlock extends UsefuldnsModElements.ModElement {
 	private static class TileEntityRegisterHandler {
 		@SubscribeEvent
 		public void registerTileEntity(RegistryEvent.Register<TileEntityType<?>> event) {
-			event.getRegistry().register(TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("battery"));
+			event.getRegistry()
+					.register(TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("potions_projector"));
 		}
 	}
 
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ANVIL).sound(SoundType.ANVIL).hardnessAndResistance(2f, 100f).setLightLevel(s -> 15));
-			setRegistryName("battery");
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0));
+			setRegistryName("potions_projector");
 		}
 
 		@Override
@@ -131,42 +129,9 @@ public class BatteryBlock extends UsefuldnsModElements.ModElement {
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				BatteryUpdateTickProcedure.executeProcedure($_dependencies);
+				PostionsProjectorUpdateTickProcedure.executeProcedure($_dependencies);
 			}
 			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 1);
-		}
-
-		@Override
-		public void onBlockClicked(BlockState blockstate, World world, BlockPos pos, PlayerEntity entity) {
-			super.onBlockClicked(blockstate, world, pos, entity);
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				BatteryPlayerStartsToDestroyProcedure.executeProcedure($_dependencies);
-			}
-		}
-
-		@Override
-		public void onBlockPlacedBy(World world, BlockPos pos, BlockState blockstate, LivingEntity entity, ItemStack itemstack) {
-			super.onBlockPlacedBy(world, pos, blockstate, entity, itemstack);
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				BatteryBlockIsPlacedByProcedure.executeProcedure($_dependencies);
-			}
 		}
 
 		@Override
@@ -180,12 +145,12 @@ public class BatteryBlock extends UsefuldnsModElements.ModElement {
 				NetworkHooks.openGui((ServerPlayerEntity) entity, new INamedContainerProvider() {
 					@Override
 					public ITextComponent getDisplayName() {
-						return new StringTextComponent("DNS Battery");
+						return new StringTextComponent("Potions Projector");
 					}
 
 					@Override
 					public Container createMenu(int id, PlayerInventory inventory, PlayerEntity player) {
-						return new BatterguiGui.GuiContainerMod(id, inventory,
+						return new GuipotionblockGui.GuiContainerMod(id, inventory,
 								new PacketBuffer(Unpooled.buffer()).writeBlockPos(new BlockPos(x, y, z)));
 					}
 				}, new BlockPos(x, y, z));
@@ -244,7 +209,7 @@ public class BatteryBlock extends UsefuldnsModElements.ModElement {
 	}
 
 	public static class CustomTileEntity extends LockableLootTileEntity implements ISidedInventory {
-		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(1, ItemStack.EMPTY);
+		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(10, ItemStack.EMPTY);
 		protected CustomTileEntity() {
 			super(tileEntityType);
 		}
@@ -300,22 +265,22 @@ public class BatteryBlock extends UsefuldnsModElements.ModElement {
 
 		@Override
 		public ITextComponent getDefaultName() {
-			return new StringTextComponent("battery");
+			return new StringTextComponent("potions_projector");
 		}
 
 		@Override
 		public int getInventoryStackLimit() {
-			return 64;
+			return 1;
 		}
 
 		@Override
 		public Container createMenu(int id, PlayerInventory player) {
-			return new BatterguiGui.GuiContainerMod(id, player, new PacketBuffer(Unpooled.buffer()).writeBlockPos(this.getPos()));
+			return new GuipotionblockGui.GuiContainerMod(id, player, new PacketBuffer(Unpooled.buffer()).writeBlockPos(this.getPos()));
 		}
 
 		@Override
 		public ITextComponent getDisplayName() {
-			return new StringTextComponent("DNS Battery");
+			return new StringTextComponent("Potions Projector");
 		}
 
 		@Override
@@ -348,7 +313,7 @@ public class BatteryBlock extends UsefuldnsModElements.ModElement {
 			return true;
 		}
 		private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
-		private final EnergyStorage energyStorage = new EnergyStorage(2147483647, 10000000, 10000000, 0) {
+		private final EnergyStorage energyStorage = new EnergyStorage(100000, 1000, 1000, 0) {
 			@Override
 			public int receiveEnergy(int maxReceive, boolean simulate) {
 				int retval = super.receiveEnergy(maxReceive, simulate);

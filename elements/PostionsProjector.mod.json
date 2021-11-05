@@ -2,12 +2,12 @@
   "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "batteryinandout",
-    "textureTop": "batteryinandout",
-    "textureLeft": "batteryinandout",
-    "textureFront": "batteryinandout",
-    "textureRight": "batteryinandout",
-    "textureBack": "batteryinandout",
+    "texture": "antimattergui",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -32,10 +32,10 @@
         "subtract": false
       }
     ],
-    "name": "DNS Battery",
+    "name": "Potions Projector",
     "specialInfo": [],
-    "hardness": 2.0,
-    "resistance": 100.0,
+    "hardness": 1.0,
+    "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -52,7 +52,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "ANVIL"
+      "value": "ROCK"
     },
     "tickRate": 1,
     "tickRandomly": false,
@@ -77,7 +77,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "ANVIL"
+      "value": "GROUND"
     },
     "breakSound": {
       "value": ""
@@ -94,9 +94,9 @@
     "fallSound": {
       "value": ""
     },
-    "luminance": 15,
+    "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 2,
+    "breakHarvestLevel": 1,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
@@ -105,30 +105,24 @@
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
     "hasInventory": true,
-    "guiBoundTo": "Battergui",
+    "guiBoundTo": "Guipotionblock",
     "openGUIOnRightClick": true,
-    "inventorySize": 1,
-    "inventoryStackSize": 64,
+    "inventorySize": 10,
+    "inventoryStackSize": 1,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [],
     "inventoryInSlotIDs": [],
     "hasEnergyStorage": true,
     "energyInitial": 0,
-    "energyCapacity": 2147483647,
-    "energyMaxReceive": 10000000,
-    "energyMaxExtract": 10000000,
+    "energyCapacity": 100000,
+    "energyMaxReceive": 1000,
+    "energyMaxExtract": 1000,
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onTickUpdate": {
-      "name": "BatteryUpdateTick"
-    },
-    "onStartToDestroy": {
-      "name": "BatteryPlayerStartsToDestroy"
-    },
-    "onBlockPlayedBy": {
-      "name": "BatteryBlockIsPlacedBy"
+      "name": "PostionsProjectorUpdateTick"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

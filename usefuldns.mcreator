@@ -1,9 +1,9 @@
 {
   "id_map": {
-    "GUI": 22,
     "BIOME": 0,
+    "DIMENSION": 1,
     "ENTITY": 1,
-    "DIMENSION": 1
+    "GUI": 22
   },
   "mod_elements": [
     {
@@ -4114,6 +4114,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -7049,6 +7065,158 @@
           }
         ]
       }
+    },
+    {
+      "name": "PostionsProjector",
+      "type": "block",
+      "sortid": 377,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "potions_projector",
+      "path": "~/FE Power/Potion"
+    },
+    {
+      "name": "PostionsProjectorUpdateTick",
+      "type": "procedure",
+      "sortid": 378,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "postions_projector_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/FE Power/Potion"
+    },
+    {
+      "name": "Guipotionblock",
+      "type": "gui",
+      "sortid": 379,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "guipotionblock",
+      "path": "~/FE Power/Potion"
+    },
+    {
+      "name": "Modnightvision",
+      "type": "item",
+      "sortid": 380,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "modnightvision",
+      "path": "~/FE Power/Potion"
+    },
+    {
+      "name": "Modregen",
+      "type": "item",
+      "sortid": 381,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "modregen",
+      "path": "~/FE Power/Potion"
+    },
+    {
+      "name": "Modsaturation",
+      "type": "item",
+      "sortid": 382,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "modsaturation",
+      "path": "~/FE Power/Potion"
+    },
+    {
+      "name": "Modspeed",
+      "type": "item",
+      "sortid": 383,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "modspeed",
+      "path": "~/FE Power/Potion"
+    },
+    {
+      "name": "BatteryBlockIsPlacedBy",
+      "type": "procedure",
+      "sortid": 384,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "battery_block_is_placed_by",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FlashlightItemInHandTick",
+      "type": "procedure",
+      "sortid": 385,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flashlight_item_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -7142,6 +7310,7 @@
       "item.madstaff.name": "Madcock\u0027s Staff of Death",
       "item.usefuldns.unobtainiumlegs": "Unobtainium Leggings",
       "item.usefuldns.swiss_army": "Swiss Army Knife",
+      "item.usefuldns.modnightvision": "Night Vision Upgrade",
       "item.swissarmy.name": "Swiss Army Knife",
       "item.goldplate.name": "Golden Plate",
       "advancements.madcrafterach.descr": "Craft all the OP things",
@@ -7151,6 +7320,7 @@
       "item.usefuldns.holyhand": "Holy Hand Grenade",
       "item.goldeneos.name": "Golden EOS Circuit",
       "block.usefuldns.liquid_rf": "Liquid FE",
+      "item.usefuldns.modsaturation": "Saturation Upgrade",
       "tile.madcrafter.name": "Mad Crafter",
       "item.tripmb.name": "Triple Money Bag",
       "item.usefuldns.unobmix": "Unobtainium Mixture",
@@ -7178,6 +7348,7 @@
       "item.doublemb.name": "Double Money Bag",
       "item.usefuldns.fereader": "FE Reader",
       "fluid.liquidrf": "LiquidRF",
+      "block.usefuldns.potions_projector": "Potions Projector",
       "item.usefuldns.fivehunny": "500 Dollar Bill",
       "item.usefuldns.unobtainium_helmet": "Unobtainium Helmet",
       "item.flashlight.name": "Flashlight",
@@ -7208,6 +7379,7 @@
       "item.usefuldns.tendollar": "10 Dollar Bill",
       "item.usefuldns.sepmb": "Septuple Money Bag",
       "item.usefuldns.unobtainium_boots": "Unobtainium Boots",
+      "item.usefuldns.modspeed": "Speed Upgrade",
       "item.usefuldns.fivethousdollar": "5000 Dollar Bill",
       "item.usefuldns.energyconeright": "Energy Cone Right",
       "item.usefuldns.exporb": "XP Orb",
@@ -7228,6 +7400,7 @@
       "item.usefuldns.flashlight": "Flashlight",
       "item.fivehunny.name": "500 Dollar Bill",
       "advancements.manie.descr": "All the moneyz",
+      "item.usefuldns.modregen": "Regeneration Upgrade",
       "item.usefuldns.fivedollar": "5 Dollar Bill",
       "tile.octupleblock.name": "Octuple Block",
       "block.usefuldns.digger_north": "Digger North",
@@ -7262,6 +7435,10 @@
         "children": [
           {
             "name": "FE to Liquid Status bars",
+            "children": []
+          },
+          {
+            "name": "Potion",
             "children": []
           }
         ]

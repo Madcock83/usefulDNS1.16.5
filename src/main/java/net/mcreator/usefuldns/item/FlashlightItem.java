@@ -18,6 +18,7 @@ import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.usefuldns.procedures.FlashlightItemInInventoryTickProcedure;
+import net.mcreator.usefuldns.procedures.FlashlightItemInHandTickProcedure;
 import net.mcreator.usefuldns.itemgroup.UsefuldnsItemGroup;
 import net.mcreator.usefuldns.UsefuldnsModElements;
 
@@ -78,6 +79,7 @@ public class FlashlightItem extends UsefuldnsModElements.ModElement {
 		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
 			list.add(new StringTextComponent("Place in your inventory for Light"));
+			list.add(new StringTextComponent("Also see monsters..."));
 		}
 
 		@Override
@@ -86,6 +88,15 @@ public class FlashlightItem extends UsefuldnsModElements.ModElement {
 			double x = entity.getPosX();
 			double y = entity.getPosY();
 			double z = entity.getPosZ();
+			if (selected) {
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				FlashlightItemInHandTickProcedure.executeProcedure($_dependencies);
+			}
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);

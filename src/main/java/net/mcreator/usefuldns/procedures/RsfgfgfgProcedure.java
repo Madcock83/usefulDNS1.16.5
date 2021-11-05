@@ -9,16 +9,23 @@ import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.util.math.vector.Vector2f;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.effect.LightningBoltEntity;
+import net.minecraft.entity.EntityType;
 import net.minecraft.entity.Entity;
 import net.minecraft.command.ICommandSource;
 import net.minecraft.command.CommandSource;
 
 import net.mcreator.usefuldns.UsefuldnsMod;
 
+import java.util.stream.Collectors;
+import java.util.function.Function;
 import java.util.Map;
+import java.util.List;
+import java.util.Comparator;
 
 public class RsfgfgfgProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -52,7 +59,7 @@ public class RsfgfgfgProcedure {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if ((world.getWorldInfo().isRaining() == (true))) {
+		if (((world.getWorldInfo().isRaining() == (true)) && (!(entity.isSneaking())))) {
 			if (world instanceof ServerWorld) {
 				((World) world).getServer().getCommandManager()
 						.handleCommand(new CommandSource(ICommandSource.DUMMY, new Vector3d(x, y, z), Vector2f.ZERO, (ServerWorld) world, 4, "",
@@ -70,7 +77,7 @@ public class RsfgfgfgProcedure {
 						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.llama.angry")),
 						SoundCategory.NEUTRAL, (float) 1, (float) 2, false);
 			}
-		} else {
+		} else if (((world.getWorldInfo().isRaining() == (false)) && (!(entity.isSneaking())))) {
 			if (world instanceof ServerWorld) {
 				((World) world).getServer().getCommandManager()
 						.handleCommand(new CommandSource(ICommandSource.DUMMY, new Vector3d(x, y, z), Vector2f.ZERO, (ServerWorld) world, 4, "",
@@ -87,6 +94,27 @@ public class RsfgfgfgProcedure {
 				((World) world).playSound(x, y, z,
 						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.lightning_bolt.impact")),
 						SoundCategory.NEUTRAL, (float) 1, (float) 2, false);
+			}
+		}
+		{
+			List<Entity> _entfound = world
+					.getEntitiesWithinAABB(Entity.class,
+							new AxisAlignedBB(x - (30 / 2d), y - (30 / 2d), z - (30 / 2d), x + (30 / 2d), y + (30 / 2d), z + (30 / 2d)), null)
+					.stream().sorted(new Object() {
+						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+							return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+						}
+					}.compareDistOf(x, y, z)).collect(Collectors.toList());
+			for (Entity entityiterator : _entfound) {
+				if (((entity.isSneaking()) && (!(entityiterator == entity)))) {
+					if (world instanceof ServerWorld) {
+						LightningBoltEntity _ent = EntityType.LIGHTNING_BOLT.create((World) world);
+						_ent.moveForced(Vector3d.copyCenteredHorizontally(
+								new BlockPos((int) (entityiterator.getPosX()), (int) (entityiterator.getPosY()), (int) (entityiterator.getPosZ()))));
+						_ent.setEffectOnly(false);
+						((World) world).addEntity(_ent);
+					}
+				}
 			}
 		}
 	}
