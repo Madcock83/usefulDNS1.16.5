@@ -44,7 +44,6 @@ import net.minecraft.inventory.ISidedInventory;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockState;
@@ -52,7 +51,6 @@ import net.minecraft.block.Block;
 
 import net.mcreator.usefuldns.procedures.BatteryUpdateTickProcedure;
 import net.mcreator.usefuldns.procedures.BatteryPlayerStartsToDestroyProcedure;
-import net.mcreator.usefuldns.procedures.BatteryBlockIsPlacedByProcedure;
 import net.mcreator.usefuldns.itemgroup.UsefuldnsItemGroup;
 import net.mcreator.usefuldns.gui.BatterguiGui;
 import net.mcreator.usefuldns.UsefuldnsModElements;
@@ -145,27 +143,7 @@ public class BatteryBlock extends UsefuldnsModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
 				BatteryPlayerStartsToDestroyProcedure.executeProcedure($_dependencies);
-			}
-		}
-
-		@Override
-		public void onBlockPlacedBy(World world, BlockPos pos, BlockState blockstate, LivingEntity entity, ItemStack itemstack) {
-			super.onBlockPlacedBy(world, pos, blockstate, entity, itemstack);
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				BatteryBlockIsPlacedByProcedure.executeProcedure($_dependencies);
 			}
 		}
 

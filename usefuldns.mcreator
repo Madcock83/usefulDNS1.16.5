@@ -4114,22 +4114,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -7157,35 +7141,6 @@
       "path": "~/FE Power/Potion"
     },
     {
-      "name": "BatteryBlockIsPlacedBy",
-      "type": "procedure",
-      "sortid": 384,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "battery_block_is_placed_by",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "FlashlightItemInHandTick",
       "type": "procedure",
       "sortid": 385,
@@ -7219,7 +7174,14 @@
       }
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "test",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    }
+  ],
   "sound_elements": [
     {
       "name": "madcock",
@@ -7238,8 +7200,8 @@
   ],
   "language_map": {
     "en_us": {
-      "item.usefuldns.thousdollar": "1000 Dollar Bill",
       "block.usefuldns.digger_east": "Digger East",
+      "item.usefuldns.thousdollar": "1000 Dollar Bill",
       "advancements.swissachievment.title": "Get to Work",
       "item.reinfdiaplater.name": "Reiinforced Diamond Plate",
       "tile.unobfurnace.name": "Unobtainium Furance",

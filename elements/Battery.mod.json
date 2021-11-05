@@ -127,9 +127,6 @@
     "onStartToDestroy": {
       "name": "BatteryPlayerStartsToDestroy"
     },
-    "onBlockPlayedBy": {
-      "name": "BatteryBlockIsPlacedBy"
-    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [
