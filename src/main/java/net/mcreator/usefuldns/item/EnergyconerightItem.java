@@ -16,7 +16,7 @@ public class EnergyconerightItem extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:energyconeright")
 	public static final Item block = null;
 	public EnergyconerightItem(UsefuldnsModElements instance) {
-		super(instance, 51);
+		super(instance, 58);
 	}
 
 	@Override

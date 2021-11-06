@@ -3,20 +3,26 @@ package net.mcreator.usefuldns.item;
 
 import net.minecraftforge.registries.ObjectHolder;
 
+import net.minecraft.world.World;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.text.ITextComponent;
 import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.usefuldns.itemgroup.UsefuldnsItemGroup;
 import net.mcreator.usefuldns.UsefuldnsModElements;
+
+import java.util.List;
 
 @UsefuldnsModElements.ModElement.Tag
 public class ModsaturationItem extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:modsaturation")
 	public static final Item block = null;
 	public ModsaturationItem(UsefuldnsModElements instance) {
-		super(instance, 382);
+		super(instance, 44);
 	}
 
 	@Override
@@ -42,6 +48,13 @@ public class ModsaturationItem extends UsefuldnsModElements.ModElement {
 		@Override
 		public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
 			return 1F;
+		}
+
+		@Override
+		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
+			super.addInformation(itemstack, world, list, flag);
+			list.add(new StringTextComponent("Feeds you"));
+			list.add(new StringTextComponent("Comsumes 5 FE/tick"));
 		}
 	}
 }

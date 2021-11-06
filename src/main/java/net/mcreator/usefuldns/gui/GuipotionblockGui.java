@@ -40,7 +40,7 @@ public class GuipotionblockGui extends UsefuldnsModElements.ModElement {
 	public static HashMap guistate = new HashMap();
 	private static ContainerType<GuiContainerMod> containerType = null;
 	public GuipotionblockGui(UsefuldnsModElements instance) {
-		super(instance, 379);
+		super(instance, 384);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,
@@ -75,7 +75,7 @@ public class GuipotionblockGui extends UsefuldnsModElements.ModElement {
 			super(containerType, id);
 			this.entity = inv.player;
 			this.world = inv.player.world;
-			this.internal = new ItemStackHandler(5);
+			this.internal = new ItemStackHandler(12);
 			BlockPos pos = null;
 			if (extraData != null) {
 				pos = extraData.readBlockPos();
@@ -113,27 +113,69 @@ public class GuipotionblockGui extends UsefuldnsModElements.ModElement {
 					}
 				}
 			}
-			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 7, 8) {
+			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 9, 6) {
 			}));
-			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 52, 8) {
+			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 54, 6) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
-			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 52, 26) {
+			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 54, 24) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
-			this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 52, 44) {
+			this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 54, 42) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
-			this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 52, 62) {
+			this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 54, 60) {
+				@Override
+				public boolean isItemValid(ItemStack stack) {
+					return false;
+				}
+			}));
+			this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 54, 78) {
+				@Override
+				public boolean isItemValid(ItemStack stack) {
+					return false;
+				}
+			}));
+			this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 153, 6) {
+				@Override
+				public boolean isItemValid(ItemStack stack) {
+					return false;
+				}
+			}));
+			this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 153, 24) {
+				@Override
+				public boolean isItemValid(ItemStack stack) {
+					return false;
+				}
+			}));
+			this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 153, 42) {
+				@Override
+				public boolean isItemValid(ItemStack stack) {
+					return false;
+				}
+			}));
+			this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 153, 60) {
+				@Override
+				public boolean isItemValid(ItemStack stack) {
+					return false;
+				}
+			}));
+			this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 153, 78) {
+				@Override
+				public boolean isItemValid(ItemStack stack) {
+					return false;
+				}
+			}));
+			this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 234, 6) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
@@ -143,9 +185,9 @@ public class GuipotionblockGui extends UsefuldnsModElements.ModElement {
 			int sj;
 			for (si = 0; si < 3; ++si)
 				for (sj = 0; sj < 9; ++sj)
-					this.addSlot(new Slot(inv, sj + (si + 1) * 9, 27 + 8 + sj * 18, 0 + 84 + si * 18));
+					this.addSlot(new Slot(inv, sj + (si + 1) * 9, 56 + 8 + sj * 18, 25 + 84 + si * 18));
 			for (si = 0; si < 9; ++si)
-				this.addSlot(new Slot(inv, si, 27 + 8 + si * 18, 0 + 142));
+				this.addSlot(new Slot(inv, si, 56 + 8 + si * 18, 25 + 142));
 		}
 
 		public Map<Integer, Slot> get() {
@@ -164,18 +206,18 @@ public class GuipotionblockGui extends UsefuldnsModElements.ModElement {
 			if (slot != null && slot.getHasStack()) {
 				ItemStack itemstack1 = slot.getStack();
 				itemstack = itemstack1.copy();
-				if (index < 5) {
-					if (!this.mergeItemStack(itemstack1, 5, this.inventorySlots.size(), true)) {
+				if (index < 12) {
+					if (!this.mergeItemStack(itemstack1, 12, this.inventorySlots.size(), true)) {
 						return ItemStack.EMPTY;
 					}
 					slot.onSlotChange(itemstack1, itemstack);
-				} else if (!this.mergeItemStack(itemstack1, 0, 5, false)) {
-					if (index < 5 + 27) {
-						if (!this.mergeItemStack(itemstack1, 5 + 27, this.inventorySlots.size(), true)) {
+				} else if (!this.mergeItemStack(itemstack1, 0, 12, false)) {
+					if (index < 12 + 27) {
+						if (!this.mergeItemStack(itemstack1, 12 + 27, this.inventorySlots.size(), true)) {
 							return ItemStack.EMPTY;
 						}
 					} else {
-						if (!this.mergeItemStack(itemstack1, 5, 5 + 27, false)) {
+						if (!this.mergeItemStack(itemstack1, 12, 12 + 27, false)) {
 							return ItemStack.EMPTY;
 						}
 					}

@@ -65,7 +65,7 @@ public class LiquidRFBlock extends UsefuldnsModElements.ModElement {
 	public static FlowingFluid still = null;
 	private ForgeFlowingFluid.Properties fluidproperties = null;
 	public LiquidRFBlock(UsefuldnsModElements instance) {
-		super(instance, 70);
+		super(instance, 77);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FluidRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());

@@ -34,7 +34,7 @@ public class DiggerWestBlock extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:digger_west")
 	public static final Block block = null;
 	public DiggerWestBlock(UsefuldnsModElements instance) {
-		super(instance, 213);
+		super(instance, 222);
 	}
 
 	@Override

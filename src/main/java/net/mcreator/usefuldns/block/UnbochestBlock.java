@@ -79,7 +79,7 @@ public class UnbochestBlock extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:unbochest")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public UnbochestBlock(UsefuldnsModElements instance) {
-		super(instance, 55);
+		super(instance, 64);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 	}
 

@@ -16,7 +16,7 @@ public class TransisterItem extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:transister")
 	public static final Item block = null;
 	public TransisterItem(UsefuldnsModElements instance) {
-		super(instance, 49);
+		super(instance, 56);
 	}
 
 	@Override

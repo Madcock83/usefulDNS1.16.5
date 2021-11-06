@@ -16,7 +16,7 @@ public class ReinfdiaplaterItem extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:reinfdiaplater")
 	public static final Item block = null;
 	public ReinfdiaplaterItem(UsefuldnsModElements instance) {
-		super(instance, 45);
+		super(instance, 52);
 	}
 
 	@Override

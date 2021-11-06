@@ -13,7 +13,7 @@ import net.mcreator.usefuldns.UsefuldnsModElements;
 @UsefuldnsModElements.ModElement.Tag
 public class UsefuldnsItemGroup extends UsefuldnsModElements.ModElement {
 	public UsefuldnsItemGroup(UsefuldnsModElements instance) {
-		super(instance, 107);
+		super(instance, 116);
 	}
 
 	@Override

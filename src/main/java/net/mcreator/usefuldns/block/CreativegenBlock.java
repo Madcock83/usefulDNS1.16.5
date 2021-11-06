@@ -63,7 +63,7 @@ public class CreativegenBlock extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:creativegen")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public CreativegenBlock(UsefuldnsModElements instance) {
-		super(instance, 69);
+		super(instance, 78);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 	}
 

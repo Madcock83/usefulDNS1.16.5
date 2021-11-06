@@ -32,8 +32,10 @@
         "subtract": false
       }
     ],
-    "name": "Potions Projector",
-    "specialInfo": [],
+    "name": "FX Projector",
+    "specialInfo": [
+      "Place in upgrades to get affects"
+    ],
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
@@ -49,7 +51,7 @@
     "useLootTableForDrops": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
-    "canRedstoneConnect": false,
+    "canRedstoneConnect": true,
     "lightOpacity": 15,
     "material": {
       "value": "ROCK"
@@ -107,7 +109,7 @@
     "hasInventory": true,
     "guiBoundTo": "Guipotionblock",
     "openGUIOnRightClick": true,
-    "inventorySize": 10,
+    "inventorySize": 20,
     "inventoryStackSize": 1,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
@@ -115,9 +117,9 @@
     "inventoryInSlotIDs": [],
     "hasEnergyStorage": true,
     "energyInitial": 0,
-    "energyCapacity": 100000,
-    "energyMaxReceive": 1000,
-    "energyMaxExtract": 1000,
+    "energyCapacity": 250000,
+    "energyMaxReceive": 5000,
+    "energyMaxExtract": 5000,
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],

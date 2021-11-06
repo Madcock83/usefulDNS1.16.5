@@ -24,7 +24,7 @@ public class DiamondmudpieItem extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:diamondmudpie")
 	public static final Item block = null;
 	public DiamondmudpieItem(UsefuldnsModElements instance) {
-		super(instance, 363);
+		super(instance, 371);
 	}
 
 	@Override

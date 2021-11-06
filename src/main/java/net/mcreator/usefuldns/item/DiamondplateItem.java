@@ -16,7 +16,7 @@ public class DiamondplateItem extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:diamondplate")
 	public static final Item block = null;
 	public DiamondplateItem(UsefuldnsModElements instance) {
-		super(instance, 43);
+		super(instance, 50);
 	}
 
 	@Override

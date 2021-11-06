@@ -3,8 +3,8 @@
   "_type": "gui",
   "definition": {
     "type": 1,
-    "width": 230,
-    "height": 166,
+    "width": 288,
+    "height": 216,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
     "renderBgLayer": true,
@@ -20,8 +20,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #0",
-          "x": 105,
-          "y": 44
+          "x": 78,
+          "y": 17
         }
       },
       {
@@ -31,8 +31,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #1",
-          "x": 150,
-          "y": 44
+          "x": 123,
+          "y": 17
         }
       },
       {
@@ -42,8 +42,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #2",
-          "x": 150,
-          "y": 62
+          "x": 123,
+          "y": 35
         }
       },
       {
@@ -53,8 +53,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #3",
-          "x": 150,
-          "y": 80
+          "x": 123,
+          "y": 53
         }
       },
       {
@@ -64,8 +64,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #4",
-          "x": 150,
-          "y": 98
+          "x": 123,
+          "y": 71
         }
       },
       {
@@ -77,8 +77,8 @@
             "falpha": 0.0
           },
           "name": "Night Vision",
-          "x": 168,
-          "y": 44
+          "x": 141,
+          "y": 26
         }
       },
       {
@@ -90,8 +90,8 @@
             "falpha": 0.0
           },
           "name": "Regeneration",
-          "x": 168,
-          "y": 62
+          "x": 141,
+          "y": 44
         }
       },
       {
@@ -103,8 +103,8 @@
             "falpha": 0.0
           },
           "name": "Saturation",
-          "x": 168,
-          "y": 80
+          "x": 141,
+          "y": 62
         }
       },
       {
@@ -116,8 +116,8 @@
             "falpha": 0.0
           },
           "name": "Speed",
-          "x": 168,
-          "y": 98
+          "x": 141,
+          "y": 80
         }
       },
       {
@@ -126,8 +126,8 @@
           "image": "line.png",
           "use1Xscale": false,
           "name": "line.png",
-          "x": 123,
-          "y": 53
+          "x": 105,
+          "y": 35
         }
       },
       {
@@ -136,21 +136,150 @@
           "image": "afe_30.png",
           "use1Xscale": false,
           "name": "afe_30.png",
-          "x": 249,
+          "x": 204,
+          "y": 197
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 5,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #5",
+          "x": 123,
           "y": 89
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 6,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #6",
+          "x": 222,
+          "y": 17
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 7,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #7",
+          "x": 222,
+          "y": 35
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 8,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #8",
+          "x": 222,
+          "y": 53
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 9,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #9",
+          "x": 222,
+          "y": 71
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 10,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #10",
+          "x": 222,
+          "y": 89
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 11,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #11",
+          "x": 303,
+          "y": 17
         }
       },
       {
         "type": "label",
         "data": {
-          "text": "More to come",
+          "text": "Lock Day",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "More to come",
-          "x": 249,
-          "y": 53
+          "name": "Lock Day",
+          "x": 141,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<energy>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<energy>",
+          "x": 114,
+          "y": 206
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Death",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Death",
+          "x": 240,
+          "y": 26
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Stop Rain",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Stop Rain",
+          "x": 240,
+          "y": 44
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "/250,000",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "/250,000",
+          "x": 159,
+          "y": 206
         }
       }
     ],

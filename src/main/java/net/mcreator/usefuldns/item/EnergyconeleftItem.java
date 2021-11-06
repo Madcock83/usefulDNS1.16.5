@@ -16,7 +16,7 @@ public class EnergyconeleftItem extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:energyconeleft")
 	public static final Item block = null;
 	public EnergyconeleftItem(UsefuldnsModElements instance) {
-		super(instance, 50);
+		super(instance, 57);
 	}
 
 	@Override
