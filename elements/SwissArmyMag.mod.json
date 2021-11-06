@@ -30,9 +30,6 @@
     "onRightClickedInAir": {
       "name": "SwissArmyMagRightClickedInAir"
     },
-    "onRightClickedOnBlock": {
-      "name": "SwissArmyMagRightClickedInAir"
-    },
     "onItemInInventoryTick": {
       "name": "SwissArmyMagToolInInventoryTick"
     },

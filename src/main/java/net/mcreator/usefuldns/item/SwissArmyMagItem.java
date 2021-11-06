@@ -8,10 +8,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.World;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Hand;
-import net.minecraft.util.Direction;
-import net.minecraft.util.ActionResultType;
 import net.minecraft.util.ActionResult;
-import net.minecraft.item.ItemUseContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.EquipmentSlotType;
@@ -52,27 +49,6 @@ public class SwissArmyMagItem extends UsefuldnsModElements.ModElement {
 				double x = entity.getPosX();
 				double y = entity.getPosY();
 				double z = entity.getPosZ();
-				{
-					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("entity", entity);
-					$_dependencies.put("world", world);
-					SwissArmyMagRightClickedInAirProcedure.executeProcedure($_dependencies);
-				}
-				return retval;
-			}
-
-			@Override
-			public ActionResultType onItemUse(ItemUseContext context) {
-				ActionResultType retval = super.onItemUse(context);
-				World world = context.getWorld();
-				BlockPos pos = context.getPos();
-				PlayerEntity entity = context.getPlayer();
-				Direction direction = context.getFace();
-				BlockState blockstate = world.getBlockState(pos);
-				int x = pos.getX();
-				int y = pos.getY();
-				int z = pos.getZ();
-				ItemStack itemstack = context.getItem();
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
 					$_dependencies.put("entity", entity);
