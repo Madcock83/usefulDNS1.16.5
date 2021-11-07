@@ -3,7 +3,7 @@
   "_type": "gui",
   "definition": {
     "type": 1,
-    "width": 181,
+    "width": 219,
     "height": 189,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
@@ -345,13 +345,13 @@
       {
         "type": "label",
         "data": {
-          "text": "of 32,000 Buckets",
+          "text": "of 32,000 MilliBuckets",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "of 32,000 Buckets",
-          "x": 204,
+          "name": "of 32,000 MilliBuckets",
+          "x": 177,
           "y": 107
         }
       },
@@ -367,6 +367,41 @@
           "x": 132,
           "y": 35
         }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 294,
+          "y": 35
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 294,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow2.png",
+          "use1Xscale": true,
+          "name": "arrow2.png",
+          "x": 295,
+          "y": 58
+        }
       }
     ],
     "gridSettings": {
@@ -374,7 +409,7 @@
       "sy": 18,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": true
+      "snapOnGrid": false
     }
   }
 }

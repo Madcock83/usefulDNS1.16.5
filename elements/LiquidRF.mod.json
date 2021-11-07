@@ -4,8 +4,8 @@
   "definition": {
     "name": "Liquid FE",
     "bucketName": "Liquid RF Bucket",
-    "textureStill": "liquidrf2",
-    "textureFlowing": "liquidrf2",
+    "textureStill": "liquidfe_still2",
+    "textureFlowing": "liquidfe_flow1",
     "tintType": "No tint",
     "canMultiply": false,
     "flowRate": 5,

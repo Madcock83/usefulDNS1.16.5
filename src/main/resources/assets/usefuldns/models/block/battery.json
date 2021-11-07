@@ -3,10 +3,10 @@
   "textures": {
     "down": "usefuldns:blocks/batterytopbottom",
     "up": "usefuldns:blocks/batterytopbottom",
-    "north": "usefuldns:blocks/battery75",
-    "east": "usefuldns:blocks/battery75",
-    "south": "usefuldns:blocks/battery75",
-    "west": "usefuldns:blocks/battery75",
+    "north": "usefuldns:blocks/batteryanimated",
+    "east": "usefuldns:blocks/batteryanimated",
+    "south": "usefuldns:blocks/batteryanimated",
+    "west": "usefuldns:blocks/batteryanimated",
     "particle": "usefuldns:blocks/batterytopbottom"
   }
 }

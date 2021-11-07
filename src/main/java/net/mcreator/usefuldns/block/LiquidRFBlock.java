@@ -87,7 +87,8 @@ public class LiquidRFBlock extends UsefuldnsModElements.ModElement {
 	@Override
 	public void initElements() {
 		fluidproperties = new ForgeFlowingFluid.Properties(() -> still, () -> flowing,
-				FluidAttributes.builder(new ResourceLocation("usefuldns:blocks/liquidrf2"), new ResourceLocation("usefuldns:blocks/liquidrf2"))
+				FluidAttributes
+						.builder(new ResourceLocation("usefuldns:blocks/liquidfe_still2"), new ResourceLocation("usefuldns:blocks/liquidfe_flow1"))
 						.luminosity(100).density(1000).viscosity(50).temperature(300).rarity(Rarity.COMMON)).explosionResistance(100f).tickRate(5)
 								.levelDecreasePerBlock(1).slopeFindDistance(4).bucket(() -> bucket).block(() -> block);
 		still = (FlowingFluid) new ForgeFlowingFluid.Source(fluidproperties).setRegistryName("liquid_rf");

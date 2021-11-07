@@ -3,10 +3,10 @@
   "textures": {
     "down": "usefuldns:blocks/fetoliquidtopbottomon",
     "up": "usefuldns:blocks/fetoliquidtopbottomon",
-    "north": "usefuldns:blocks/fetoliquidsideon",
-    "east": "usefuldns:blocks/fetoliquidsideon",
-    "south": "usefuldns:blocks/fetoliquidsideon",
-    "west": "usefuldns:blocks/fetoliquidsideon",
+    "north": "usefuldns:blocks/fetoliqanimated2",
+    "east": "usefuldns:blocks/fetoliqanimated2",
+    "south": "usefuldns:blocks/fetoliqanimated2",
+    "west": "usefuldns:blocks/fetoliqanimated2",
     "particle": "usefuldns:blocks/fetoliquidtopbottomon"
   }
 }

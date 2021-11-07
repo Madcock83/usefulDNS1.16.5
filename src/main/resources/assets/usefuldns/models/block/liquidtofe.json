@@ -3,10 +3,10 @@
   "textures": {
     "down": "usefuldns:blocks/liquidtofetopbottomon",
     "up": "usefuldns:blocks/liquidtofetopbottomon",
-    "north": "usefuldns:blocks/liquidtofesideon",
-    "east": "usefuldns:blocks/liquidtofesideon",
-    "south": "usefuldns:blocks/liquidtofesideon",
-    "west": "usefuldns:blocks/liquidtofesideon",
+    "north": "usefuldns:blocks/liqtofeanimated",
+    "east": "usefuldns:blocks/liqtofeanimated",
+    "south": "usefuldns:blocks/liqtofeanimated",
+    "west": "usefuldns:blocks/liqtofeanimated",
     "particle": "usefuldns:blocks/liquidtofetopbottomon"
   }
 }

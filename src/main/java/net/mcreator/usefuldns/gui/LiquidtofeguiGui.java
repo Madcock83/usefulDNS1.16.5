@@ -1,6 +1,7 @@
 
 package net.mcreator.usefuldns.gui;
 
+import net.minecraftforge.items.SlotItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.CapabilityItemHandler;
@@ -74,7 +75,7 @@ public class LiquidtofeguiGui extends UsefuldnsModElements.ModElement {
 			super(containerType, id);
 			this.entity = inv.player;
 			this.world = inv.player.world;
-			this.internal = new ItemStackHandler(0);
+			this.internal = new ItemStackHandler(2);
 			BlockPos pos = null;
 			if (extraData != null) {
 				pos = extraData.readBlockPos();
@@ -112,13 +113,21 @@ public class LiquidtofeguiGui extends UsefuldnsModElements.ModElement {
 					}
 				}
 			}
+			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 10, 29) {
+			}));
+			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 10, 66) {
+				@Override
+				public boolean isItemValid(ItemStack stack) {
+					return false;
+				}
+			}));
 			int si;
 			int sj;
 			for (si = 0; si < 3; ++si)
 				for (sj = 0; sj < 9; ++sj)
-					this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 7 + 84 + si * 18));
+					this.addSlot(new Slot(inv, sj + (si + 1) * 9, 21 + 8 + sj * 18, 11 + 84 + si * 18));
 			for (si = 0; si < 9; ++si)
-				this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 7 + 142));
+				this.addSlot(new Slot(inv, si, 21 + 8 + si * 18, 11 + 142));
 		}
 
 		public Map<Integer, Slot> get() {
@@ -137,18 +146,18 @@ public class LiquidtofeguiGui extends UsefuldnsModElements.ModElement {
 			if (slot != null && slot.getHasStack()) {
 				ItemStack itemstack1 = slot.getStack();
 				itemstack = itemstack1.copy();
-				if (index < 0) {
-					if (!this.mergeItemStack(itemstack1, 0, this.inventorySlots.size(), true)) {
+				if (index < 2) {
+					if (!this.mergeItemStack(itemstack1, 2, this.inventorySlots.size(), true)) {
 						return ItemStack.EMPTY;
 					}
 					slot.onSlotChange(itemstack1, itemstack);
-				} else if (!this.mergeItemStack(itemstack1, 0, 0, false)) {
-					if (index < 0 + 27) {
-						if (!this.mergeItemStack(itemstack1, 0 + 27, this.inventorySlots.size(), true)) {
+				} else if (!this.mergeItemStack(itemstack1, 0, 2, false)) {
+					if (index < 2 + 27) {
+						if (!this.mergeItemStack(itemstack1, 2 + 27, this.inventorySlots.size(), true)) {
 							return ItemStack.EMPTY;
 						}
 					} else {
-						if (!this.mergeItemStack(itemstack1, 0, 0 + 27, false)) {
+						if (!this.mergeItemStack(itemstack1, 2, 2 + 27, false)) {
 							return ItemStack.EMPTY;
 						}
 					}

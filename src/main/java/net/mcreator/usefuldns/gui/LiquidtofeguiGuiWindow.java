@@ -60,8 +60,8 @@ public class LiquidtofeguiGuiWindow extends ContainerScreen<LiquidtofeguiGui.Gui
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.xSize = 176;
-		this.ySize = 180;
+		this.xSize = 219;
+		this.ySize = 188;
 	}
 	private static final ResourceLocation texture = new ResourceLocation("usefuldns:textures/liquidtofegui.png");
 	@Override
@@ -81,95 +81,97 @@ public class LiquidtofeguiGuiWindow extends ContainerScreen<LiquidtofeguiGui.Gui
 		int l = (this.height - this.ySize) / 2;
 		this.blit(ms, k, l, 0, 0, this.xSize, this.ySize, this.xSize, this.ySize);
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/untitled.png"));
-		this.blit(ms, this.guiLeft + 51, this.guiTop + 14, 0, 0, 72, 73, 72, 73);
+		this.blit(ms, this.guiLeft + 55, this.guiTop + 17, 0, 0, 72, 73, 72, 73);
 		if (Liqtofeper0Procedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world))) {
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/aliquid_0.png"));
-			this.blit(ms, this.guiLeft + 15, this.guiTop + 23, 0, 0, 18, 61, 18, 61);
+			this.blit(ms, this.guiLeft + 37, this.guiTop + 27, 0, 0, 18, 61, 18, 61);
 		}
 		if (Liqtofeper10Procedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world))) {
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/aliquid_10.png"));
-			this.blit(ms, this.guiLeft + 15, this.guiTop + 23, 0, 0, 18, 61, 18, 61);
+			this.blit(ms, this.guiLeft + 37, this.guiTop + 27, 0, 0, 18, 61, 18, 61);
 		}
 		if (Liqtofeper20Procedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world))) {
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/aliquid_20.png"));
-			this.blit(ms, this.guiLeft + 15, this.guiTop + 23, 0, 0, 18, 61, 18, 61);
+			this.blit(ms, this.guiLeft + 37, this.guiTop + 27, 0, 0, 18, 61, 18, 61);
 		}
 		if (Liqtofeper30Procedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world))) {
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/liquid_30.png"));
-			this.blit(ms, this.guiLeft + 15, this.guiTop + 23, 0, 0, 18, 61, 18, 61);
+			this.blit(ms, this.guiLeft + 37, this.guiTop + 27, 0, 0, 18, 61, 18, 61);
 		}
 		if (Liqtofeper40Procedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world))) {
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/liquid_40.png"));
-			this.blit(ms, this.guiLeft + 15, this.guiTop + 23, 0, 0, 18, 61, 18, 61);
+			this.blit(ms, this.guiLeft + 37, this.guiTop + 27, 0, 0, 18, 61, 18, 61);
 		}
 		if (Liqtofeper50Procedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world))) {
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/liquid_50.png"));
-			this.blit(ms, this.guiLeft + 15, this.guiTop + 23, 0, 0, 18, 61, 18, 61);
+			this.blit(ms, this.guiLeft + 37, this.guiTop + 27, 0, 0, 18, 61, 18, 61);
 		}
 		if (Liqtofeper60Procedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world))) {
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/liquid_60.png"));
-			this.blit(ms, this.guiLeft + 15, this.guiTop + 23, 0, 0, 18, 61, 18, 61);
+			this.blit(ms, this.guiLeft + 37, this.guiTop + 27, 0, 0, 18, 61, 18, 61);
 		}
 		if (Liqtofeper70Procedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world))) {
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/liquid_70.png"));
-			this.blit(ms, this.guiLeft + 15, this.guiTop + 23, 0, 0, 18, 61, 18, 61);
+			this.blit(ms, this.guiLeft + 37, this.guiTop + 27, 0, 0, 18, 61, 18, 61);
 		}
 		if (Liqtofeper80Procedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world))) {
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/liquid_80.png"));
-			this.blit(ms, this.guiLeft + 15, this.guiTop + 23, 0, 0, 18, 61, 18, 61);
+			this.blit(ms, this.guiLeft + 37, this.guiTop + 27, 0, 0, 18, 61, 18, 61);
 		}
 		if (Liqtofeper90Procedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world))) {
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/liquid_90.png"));
-			this.blit(ms, this.guiLeft + 15, this.guiTop + 23, 0, 0, 18, 61, 18, 61);
+			this.blit(ms, this.guiLeft + 37, this.guiTop + 27, 0, 0, 18, 61, 18, 61);
 		}
 		if (Liqtofeper100Procedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world))) {
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/liquid_100.png"));
-			this.blit(ms, this.guiLeft + 15, this.guiTop + 23, 0, 0, 18, 61, 18, 61);
+			this.blit(ms, this.guiLeft + 37, this.guiTop + 27, 0, 0, 18, 61, 18, 61);
 		}
 		if (Liquidtofeper0Procedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world))) {
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/afe_0.png"));
-			this.blit(ms, this.guiLeft + 96, this.guiTop + 23, 0, 0, 61, 18, 61, 18);
+			this.blit(ms, this.guiLeft + 118, this.guiTop + 27, 0, 0, 61, 18, 61, 18);
 		}
 		if (Liquidtofeper10Procedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world))) {
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/afe_10.png"));
-			this.blit(ms, this.guiLeft + 96, this.guiTop + 23, 0, 0, 61, 18, 61, 18);
+			this.blit(ms, this.guiLeft + 118, this.guiTop + 27, 0, 0, 61, 18, 61, 18);
 		}
 		if (Liquidtofeper20Procedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world))) {
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/afe_20.png"));
-			this.blit(ms, this.guiLeft + 96, this.guiTop + 23, 0, 0, 61, 18, 61, 18);
+			this.blit(ms, this.guiLeft + 118, this.guiTop + 27, 0, 0, 61, 18, 61, 18);
 		}
 		if (Liquidtofeper30Procedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world))) {
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/afe_30.png"));
-			this.blit(ms, this.guiLeft + 96, this.guiTop + 23, 0, 0, 61, 18, 61, 18);
+			this.blit(ms, this.guiLeft + 118, this.guiTop + 27, 0, 0, 61, 18, 61, 18);
 		}
 		if (Liquidtofeper40Procedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world))) {
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/afe_40.png"));
-			this.blit(ms, this.guiLeft + 96, this.guiTop + 23, 0, 0, 61, 18, 61, 18);
+			this.blit(ms, this.guiLeft + 118, this.guiTop + 27, 0, 0, 61, 18, 61, 18);
 		}
 		if (Liquidtofeper50Procedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world))) {
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/afe_50.png"));
-			this.blit(ms, this.guiLeft + 96, this.guiTop + 23, 0, 0, 61, 18, 61, 18);
+			this.blit(ms, this.guiLeft + 118, this.guiTop + 27, 0, 0, 61, 18, 61, 18);
 		}
 		if (Liquidtofeper60Procedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world))) {
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/afe_60.png"));
-			this.blit(ms, this.guiLeft + 96, this.guiTop + 23, 0, 0, 61, 18, 61, 18);
+			this.blit(ms, this.guiLeft + 118, this.guiTop + 27, 0, 0, 61, 18, 61, 18);
 		}
 		if (Liquidtofeper70Procedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world))) {
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/afe_70.png"));
-			this.blit(ms, this.guiLeft + 96, this.guiTop + 23, 0, 0, 61, 18, 61, 18);
+			this.blit(ms, this.guiLeft + 118, this.guiTop + 27, 0, 0, 61, 18, 61, 18);
 		}
 		if (Liquidtofeper80Procedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world))) {
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/afe_80.png"));
-			this.blit(ms, this.guiLeft + 96, this.guiTop + 23, 0, 0, 61, 18, 61, 18);
+			this.blit(ms, this.guiLeft + 118, this.guiTop + 27, 0, 0, 61, 18, 61, 18);
 		}
 		if (Liquidtofeper90Procedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world))) {
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/afe_90.png"));
-			this.blit(ms, this.guiLeft + 96, this.guiTop + 23, 0, 0, 61, 18, 61, 18);
+			this.blit(ms, this.guiLeft + 118, this.guiTop + 27, 0, 0, 61, 18, 61, 18);
 		}
 		if (Liquidtofeper100Procedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world))) {
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/afe_100.png"));
-			this.blit(ms, this.guiLeft + 96, this.guiTop + 23, 0, 0, 61, 18, 61, 18);
+			this.blit(ms, this.guiLeft + 118, this.guiTop + 27, 0, 0, 61, 18, 61, 18);
 		}
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/arrow.png"));
+		this.blit(ms, this.guiLeft + 11, this.guiTop + 48, 0, 0, 128, 128, 128, 128);
 		RenderSystem.disableBlend();
 	}
 
@@ -197,7 +199,7 @@ public class LiquidtofeguiGuiWindow extends ContainerScreen<LiquidtofeguiGui.Gui
 					_ent.getCapability(CapabilityEnergy.ENERGY, null).ifPresent(capability -> _retval.set(capability.getEnergyStored()));
 				return _retval.get();
 			}
-		}.getEnergyStored(new BlockPos((int) x, (int) y, (int) z))) + "", 105, 41, -12829636);
+		}.getEnergyStored(new BlockPos((int) x, (int) y, (int) z))) + "", 127, 45, -12829636);
 		this.font.drawString(ms, "" + (new Object() {
 			public int getFluidTankLevel(BlockPos pos, int tank) {
 				AtomicInteger _retval = new AtomicInteger(0);
@@ -207,10 +209,10 @@ public class LiquidtofeguiGuiWindow extends ContainerScreen<LiquidtofeguiGui.Gui
 							.ifPresent(capability -> _retval.set(capability.getFluidInTank(tank).getAmount()));
 				return _retval.get();
 			}
-		}.getFluidTankLevel(new BlockPos((int) x, (int) y, (int) z), 1)) + "", 33, 68, -12829636);
-		this.font.drawString(ms, "Liquid Fe To FE transformer", 6, 5, -12829636);
-		this.font.drawString(ms, "of 32,000 Buckets", 33, 77, -12829636);
-		this.font.drawString(ms, "of 100 Million", 96, 50, -12829636);
+		}.getFluidTankLevel(new BlockPos((int) x, (int) y, (int) z), 1)) + "", 60, 71, -12829636);
+		this.font.drawString(ms, "Liquid Fe To FE transformer", 28, 9, -12829636);
+		this.font.drawString(ms, "of 32,000 MilliBuckets", 61, 81, -12829636);
+		this.font.drawString(ms, "of 100 Million", 118, 54, -12829636);
 	}
 
 	@Override
