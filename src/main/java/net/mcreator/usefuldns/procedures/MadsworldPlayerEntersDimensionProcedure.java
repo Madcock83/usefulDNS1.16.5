@@ -22,7 +22,7 @@ public class MadsworldPlayerEntersDimensionProcedure {
 		Entity entity = (Entity) dependencies.get("entity");
 		if (entity instanceof ServerPlayerEntity) {
 			Advancement _adv = ((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
-					.getAdvancement(new ResourceLocation("none"));
+					.getAdvancement(new ResourceLocation("usefuldns:welcometohell"));
 			AdvancementProgress _ap = ((ServerPlayerEntity) entity).getAdvancements().getProgress(_adv);
 			if (!_ap.isDone()) {
 				Iterator _iterator = _ap.getRemaningCriteria().iterator();
