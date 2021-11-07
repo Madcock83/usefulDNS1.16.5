@@ -1,12 +1,7 @@
 {
-  "parent": "block/cube",
+  "parent": "block/cube_all",
   "textures": {
-    "down": "usefuldns:blocks/creativeliquid",
-    "up": "usefuldns:blocks/creativeliquid",
-    "north": "usefuldns:blocks/creativeliquid",
-    "east": "usefuldns:blocks/creativeliquid",
-    "south": "usefuldns:blocks/creativeliquid",
-    "west": "usefuldns:blocks/creativeliquid",
+    "all": "usefuldns:blocks/creativeliquid",
     "particle": "usefuldns:blocks/creativeliquid"
   }
 }

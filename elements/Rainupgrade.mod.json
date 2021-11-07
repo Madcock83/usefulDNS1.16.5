@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "rainupgrade",
+    "texture": "stoprain",
     "customModelName": "Normal",
     "name": "Rain Upgrade",
     "rarity": "COMMON",

@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "saturationemoduleitem",
+    "texture": "saturation",
     "customModelName": "Normal",
     "name": "Saturation Upgrade",
     "rarity": "COMMON",

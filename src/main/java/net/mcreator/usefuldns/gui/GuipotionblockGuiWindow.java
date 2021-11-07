@@ -57,7 +57,7 @@ public class GuipotionblockGuiWindow extends ContainerScreen<GuipotionblockGui.G
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/line.png"));
 		this.blit(ms, this.guiLeft + 35, this.guiTop + 23, 0, 0, 20, 50, 20, 50);
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/afe_30.png"));
-		this.blit(ms, this.guiLeft + 134, this.guiTop + 185, 0, 0, 61, 18, 61, 18);
+		this.blit(ms, this.guiLeft + 161, this.guiTop + 185, 0, 0, 61, 18, 61, 18);
 		RenderSystem.disableBlend();
 	}
 
@@ -90,10 +90,13 @@ public class GuipotionblockGuiWindow extends ContainerScreen<GuipotionblockGui.G
 					_ent.getCapability(CapabilityEnergy.ENERGY, null).ifPresent(capability -> _retval.set(capability.getEnergyStored()));
 				return _retval.get();
 			}
-		}.getEnergyStored(new BlockPos((int) x, (int) y, (int) z))) + "", 44, 194, -12829636);
+		}.getEnergyStored(new BlockPos((int) x, (int) y, (int) z))) + "", 80, 194, -12829636);
 		this.font.drawString(ms, "Death", 170, 14, -12829636);
 		this.font.drawString(ms, "Stop Rain", 170, 32, -12829636);
-		this.font.drawString(ms, "/250,000", 89, 194, -12829636);
+		this.font.drawString(ms, "/250,000", 116, 194, -12829636);
+		this.font.drawString(ms, "not in use (yet)", 170, 50, -12829636);
+		this.font.drawString(ms, "not in use (yet)", 170, 68, -12829636);
+		this.font.drawString(ms, "not in use (yet)", 170, 86, -12829636);
 	}
 
 	@Override

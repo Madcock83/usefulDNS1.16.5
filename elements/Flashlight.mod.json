@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "flashlight",
+    "texture": "flashlight1",
     "customModelName": "Normal",
     "name": "Flashlight",
     "rarity": "COMMON",

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "usefuldns:items/timeupgrade"
+    "layer0": "usefuldns:items/lockday"
   }
 }

@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "usefuldns:blocks/ender_crafter_top",
-    "up": "usefuldns:blocks/ender_crafter_top",
-    "north": "usefuldns:blocks/ender_crafter_top",
-    "east": "usefuldns:blocks/ender_crafter_top",
-    "south": "usefuldns:blocks/ender_crafter_top",
-    "west": "usefuldns:blocks/ender_crafter_top",
-    "particle": "usefuldns:blocks/ender_crafter_top"
+    "down": "usefuldns:blocks/starterhouse",
+    "up": "usefuldns:blocks/starterhouse",
+    "north": "usefuldns:blocks/starterhouse",
+    "east": "usefuldns:blocks/starterhouse",
+    "south": "usefuldns:blocks/starterhouse",
+    "west": "usefuldns:blocks/starterhouse",
+    "particle": "usefuldns:blocks/starterhouse"
   }
 }

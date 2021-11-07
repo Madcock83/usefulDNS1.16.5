@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "usefuldns:items/energymeter"
+    "layer0": "usefuldns:items/fereader"
   }
 }

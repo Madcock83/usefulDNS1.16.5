@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "usefuldns:blocks/iron_drill_side2",
-    "up": "usefuldns:blocks/iron_drill_side2",
-    "north": "usefuldns:blocks/iron_drill_side3",
-    "east": "usefuldns:blocks/iron_drill_head_off",
-    "south": "usefuldns:blocks/iron_drill_side2",
-    "west": "usefuldns:blocks/iron_drill_back",
-    "particle": "usefuldns:blocks/iron_drill_side2"
+    "down": "usefuldns:blocks/drillrightoff",
+    "up": "usefuldns:blocks/drillrightoff",
+    "north": "usefuldns:blocks/drillleftoff",
+    "east": "usefuldns:blocks/drillhead",
+    "south": "usefuldns:blocks/drillrightoff",
+    "west": "usefuldns:blocks/drillback",
+    "particle": "usefuldns:blocks/drillrightoff"
   }
 }

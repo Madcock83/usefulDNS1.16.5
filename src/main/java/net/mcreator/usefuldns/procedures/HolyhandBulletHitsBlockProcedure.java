@@ -60,11 +60,11 @@ public class HolyhandBulletHitsBlockProcedure {
 			if (world instanceof World && !world.isRemote()) {
 				((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
 						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("usefuldns:madcock")),
-						SoundCategory.NEUTRAL, (float) 2, (float) 1);
+						SoundCategory.NEUTRAL, (float) 1, (float) 1);
 			} else {
 				((World) world).playSound(x, y, z,
 						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("usefuldns:madcock")),
-						SoundCategory.NEUTRAL, (float) 2, (float) 1, false);
+						SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
 			}
 		}
 		for (int index1 = 0; index1 < (int) (50); index1++) {
@@ -134,11 +134,11 @@ public class HolyhandBulletHitsBlockProcedure {
 					if (world instanceof World && !world.isRemote()) {
 						((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
 								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("usefuldns:madcock")),
-								SoundCategory.NEUTRAL, (float) 2, (float) 1);
+								SoundCategory.NEUTRAL, (float) 1, (float) 1);
 					} else {
 						((World) world).playSound(x, y, z,
 								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("usefuldns:madcock")),
-								SoundCategory.NEUTRAL, (float) 2, (float) 1, false);
+								SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
 					}
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
@@ -280,11 +280,11 @@ public class HolyhandBulletHitsBlockProcedure {
 				if (world instanceof World && !world.isRemote()) {
 					((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
 							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("usefuldns:madcock")),
-							SoundCategory.NEUTRAL, (float) 2, (float) 1);
+							SoundCategory.NEUTRAL, (float) 1, (float) 1);
 				} else {
 					((World) world).playSound(x, y, z,
 							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("usefuldns:madcock")),
-							SoundCategory.NEUTRAL, (float) 2, (float) 1, false);
+							SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
 				}
 				MinecraftForge.EVENT_BUS.unregister(this);
 			}

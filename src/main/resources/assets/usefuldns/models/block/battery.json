@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "usefuldns:blocks/batteryinandout",
-    "up": "usefuldns:blocks/batteryinandout",
-    "north": "usefuldns:blocks/batteryinandout",
-    "east": "usefuldns:blocks/batteryinandout",
-    "south": "usefuldns:blocks/batteryinandout",
-    "west": "usefuldns:blocks/batteryinandout",
-    "particle": "usefuldns:blocks/batteryinandout"
+    "down": "usefuldns:blocks/batterytopbottom",
+    "up": "usefuldns:blocks/batterytopbottom",
+    "north": "usefuldns:blocks/battery75",
+    "east": "usefuldns:blocks/battery75",
+    "south": "usefuldns:blocks/battery75",
+    "west": "usefuldns:blocks/battery75",
+    "particle": "usefuldns:blocks/batterytopbottom"
   }
 }

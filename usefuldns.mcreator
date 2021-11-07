@@ -1,9 +1,9 @@
 {
   "id_map": {
     "DIMENSION": 1,
-    "BIOME": 0,
+    "GUI": 22,
     "ENTITY": 1,
-    "GUI": 22
+    "BIOME": 0
   },
   "mod_elements": [
     {
@@ -7250,6 +7250,36 @@
         ]
       },
       "path": "~/FE Power"
+    },
+    {
+      "name": "PostionsProjectorParticleSpawningCondition",
+      "type": "procedure",
+      "sortid": 388,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "postions_projector_particle_spawning_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [

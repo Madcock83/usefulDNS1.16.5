@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "deathupgrade",
+    "texture": "death",
     "customModelName": "Normal",
     "name": "Death to Hostiles Upgrade",
     "rarity": "COMMON",

@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "usefuldns:items/pngaaa.com-985016"
+    "layer0": "usefuldns:items/holyhandgrenade"
   },
   "display": {
     "thirdperson_righthand": {

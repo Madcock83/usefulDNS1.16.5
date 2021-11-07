@@ -2,12 +2,12 @@
   "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "antimattergui",
-    "textureTop": "",
-    "textureLeft": "",
-    "textureFront": "",
-    "textureRight": "",
-    "textureBack": "",
+    "texture": "buffmachinebottom",
+    "textureTop": "buffmachinetop",
+    "textureLeft": "buffmachineside",
+    "textureFront": "buffmachineside",
+    "textureRight": "buffmachineside",
+    "textureBack": "buffmachineside",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -36,14 +36,14 @@
     "specialInfo": [
       "Place in upgrades to get affects"
     ],
-    "hardness": 1.0,
+    "hardness": 1.1500000000000001,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:Usefuldns"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "pickaxe",
     "customDrop": {
       "value": ""
     },
@@ -54,7 +54,7 @@
     "canRedstoneConnect": true,
     "lightOpacity": 15,
     "material": {
-      "value": "ROCK"
+      "value": "IRON"
     },
     "tickRate": 1,
     "tickRandomly": false,
@@ -79,7 +79,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "GROUND"
+      "value": "METAL"
     },
     "breakSound": {
       "value": ""
@@ -99,13 +99,16 @@
     "luminance": 0,
     "unbreakable": false,
     "breakHarvestLevel": 1,
-    "spawnParticles": false,
+    "spawnParticles": true,
     "particleToSpawn": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "CAMPFIRE_SIGNAL_SMOKE"
     },
-    "particleSpawningShape": "Spread",
+    "particleSpawningShape": "Top",
     "particleSpawningRadious": 0.5,
-    "particleAmount": 4,
+    "particleAmount": 10,
+    "particleCondition": {
+      "name": "PostionsProjectorParticleSpawningCondition"
+    },
     "hasInventory": true,
     "guiBoundTo": "Guipotionblock",
     "openGUIOnRightClick": true,

@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "usefuldns:blocks/reinforcedredstone",
-    "up": "usefuldns:blocks/reinforcedredstone",
-    "north": "usefuldns:blocks/reinforcedredstonewater",
-    "east": "usefuldns:blocks/reinforcedredstonelava",
-    "south": "usefuldns:blocks/reinforcedredstonewater",
-    "west": "usefuldns:blocks/reinforcedredstonelava",
-    "particle": "usefuldns:blocks/reinforcedredstone"
+    "down": "usefuldns:blocks/lamplit",
+    "up": "usefuldns:blocks/lamplit",
+    "north": "usefuldns:blocks/lampblue",
+    "east": "usefuldns:blocks/lampred",
+    "south": "usefuldns:blocks/lampblue",
+    "west": "usefuldns:blocks/lampred",
+    "particle": "usefuldns:blocks/lamplit"
   }
 }

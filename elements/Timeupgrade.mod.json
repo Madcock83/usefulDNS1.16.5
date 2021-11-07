@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "timeupgrade",
+    "texture": "lockday",
     "customModelName": "Normal",
     "name": "Time Upgrade",
     "rarity": "COMMON",

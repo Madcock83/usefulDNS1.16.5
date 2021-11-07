@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "energymeter",
+    "texture": "fereader",
     "customModelName": "Normal",
     "name": "FE Reader",
     "rarity": "COMMON",
