@@ -42,12 +42,6 @@ public class DecabloUpdateTickProcedure {
 			if (world instanceof World && !world.isRemote()) {
 				((World) world).addEntity(new ExperienceOrbEntity(((World) world), (x + 0.5), (y + 2), (z + 0.5), (int) 10));
 			}
-			if (world instanceof World && !world.isRemote()) {
-				((World) world).addEntity(new ExperienceOrbEntity(((World) world), (x + 0.5), (y + 2), (z + 0.5), (int) 10));
-			}
-			if (world instanceof World && !world.isRemote()) {
-				((World) world).addEntity(new ExperienceOrbEntity(((World) world), (x + 0.5), (y + 2), (z + 0.5), (int) 10));
-			}
 		}
 	}
 }

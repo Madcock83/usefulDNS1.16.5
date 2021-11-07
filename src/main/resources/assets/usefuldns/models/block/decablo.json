@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "usefuldns:blocks/blockodns",
-    "up": "usefuldns:blocks/blockodns",
-    "north": "usefuldns:blocks/blockodns",
-    "east": "usefuldns:blocks/blockodns",
-    "south": "usefuldns:blocks/blockodns",
-    "west": "usefuldns:blocks/blockodns",
-    "particle": "usefuldns:blocks/blockodns"
+    "down": "usefuldns:blocks/decablock1",
+    "up": "usefuldns:blocks/decablock1",
+    "north": "usefuldns:blocks/decablock1",
+    "east": "usefuldns:blocks/decablock1",
+    "south": "usefuldns:blocks/decablock1",
+    "west": "usefuldns:blocks/decablock1",
+    "particle": "usefuldns:blocks/decablock1"
   }
 }
