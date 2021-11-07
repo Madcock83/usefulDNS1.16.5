@@ -131,16 +131,6 @@
         }
       },
       {
-        "type": "image",
-        "data": {
-          "image": "afe_30.png",
-          "use1Xscale": false,
-          "name": "afe_30.png",
-          "x": 231,
-          "y": 197
-        }
-      },
-      {
         "type": "outputslot",
         "data": {
           "id": 5,
@@ -319,6 +309,188 @@
           "name": "not in use (yet)",
           "x": 240,
           "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Input",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Input",
+          "x": 78,
+          "y": 35
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Use Redstone",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Use Redstone",
+          "x": 6,
+          "y": 17
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "To Activate",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "To Activate",
+          "x": 6,
+          "y": 26
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_0.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Fxgui0"
+          },
+          "name": "afe_0.png",
+          "x": 231,
+          "y": 197
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_10.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FxGui10"
+          },
+          "name": "afe_10.png",
+          "x": 231,
+          "y": 197
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_20.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Liqtofeper20"
+          },
+          "name": "afe_20.png",
+          "x": 231,
+          "y": 197
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_30.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FXGui30"
+          },
+          "name": "afe_30.png",
+          "x": 231,
+          "y": 197
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_40.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FxGui40"
+          },
+          "name": "afe_40.png",
+          "x": 231,
+          "y": 197
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_50.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FxGui50"
+          },
+          "name": "afe_50.png",
+          "x": 231,
+          "y": 197
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_60.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FxGui60"
+          },
+          "name": "afe_60.png",
+          "x": 231,
+          "y": 197
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_70.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FxGui70"
+          },
+          "name": "afe_70.png",
+          "x": 231,
+          "y": 197
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_80.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FxGui80"
+          },
+          "name": "afe_80.png",
+          "x": 231,
+          "y": 197
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_90.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Liqtofeper90"
+          },
+          "name": "afe_90.png",
+          "x": 231,
+          "y": 197
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "afe_100.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FxGui100"
+          },
+          "name": "afe_100.png",
+          "x": 231,
+          "y": 197
         }
       }
     ],

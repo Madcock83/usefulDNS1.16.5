@@ -1,0 +1,42 @@
+{
+  "group": "usefuldns",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:redstone"
+    },
+    "1": {
+      "item": "usefuldns:lightingrod"
+    },
+    "2": {
+      "item": "minecraft:redstone"
+    },
+    "3": {
+      "item": "usefuldns:tripmb"
+    },
+    "4": {
+      "item": "usefuldns:unobcrafter"
+    },
+    "5": {
+      "item": "usefuldns:tripmb"
+    },
+    "6": {
+      "item": "usefuldns:unboingot"
+    },
+    "7": {
+      "item": "usefuldns:unobblock"
+    },
+    "8": {
+      "item": "usefuldns:unboingot"
+    }
+  },
+  "result": {
+    "item": "usefuldns:potions_projector",
+    "count": 1
+  }
+}

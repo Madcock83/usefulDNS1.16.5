@@ -14,6 +14,7 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.block.FlowingFluidBlock;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.usefuldns.block.LiquidRFBlock;
@@ -219,6 +220,25 @@ public class FetoliquidUpdateTickProcedure {
 				}.getFluidTankCapacity(new BlockPos((int) x, (int) y, (int) z), (int) 1)));
 			if (world instanceof World)
 				((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
+		}
+		if ((((new Object() {
+			public int getFluidTankLevel(BlockPos pos, int tank) {
+				AtomicInteger _retval = new AtomicInteger(0);
+				TileEntity _ent = world.getTileEntity(pos);
+				if (_ent != null)
+					_ent.getCapability(CapabilityFluidHandler.FLUID_HANDLER_CAPABILITY, null)
+							.ifPresent(capability -> _retval.set(capability.getFluidInTank(tank).getAmount()));
+				return _retval.get();
+			}
+		}.getFluidTankLevel(new BlockPos((int) x, (int) y, (int) z), (int) 1)) <= 31000)
+				&& ((world.getBlockState(new BlockPos((int) x, (int) (y - 0), (int) z))).getBlock() == Blocks.SHULKER_BOX))) {
+			{
+				TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+				int _amount = (int) 100;
+				if (_ent != null)
+					_ent.getCapability(CapabilityFluidHandler.FLUID_HANDLER_CAPABILITY, null).ifPresent(
+							capability -> capability.fill(new FluidStack(LiquidRFBlock.still, _amount), IFluidHandler.FluidAction.EXECUTE));
+			}
 		}
 	}
 }

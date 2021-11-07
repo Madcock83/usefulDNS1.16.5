@@ -1,0 +1,30 @@
+{
+  "group": "usefuldns",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:wither_skeleton_skull"
+    },
+    "3": {
+      "item": "minecraft:lapis_lazuli"
+    },
+    "4": {
+      "item": "usefuldns:blankupgrade"
+    },
+    "5": {
+      "item": "minecraft:lapis_lazuli"
+    },
+    "7": {
+      "item": "usefuldns:holyhand"
+    }
+  },
+  "result": {
+    "item": "usefuldns:deathupgrade",
+    "count": 1
+  }
+}

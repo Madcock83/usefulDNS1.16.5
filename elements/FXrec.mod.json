@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.REDSTONE"
+      },
+      {
+        "value": "CUSTOM:Lightingrod"
+      },
+      {
+        "value": "Items.REDSTONE"
+      },
+      {
+        "value": "CUSTOM:Tripmb"
+      },
+      {
+        "value": "CUSTOM:Unobcrafter"
+      },
+      {
+        "value": "CUSTOM:Tripmb"
+      },
+      {
+        "value": "CUSTOM:Unboingot"
+      },
+      {
+        "value": "CUSTOM:Unobblock"
+      },
+      {
+        "value": "CUSTOM:Unboingot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:PostionsProjector"
+    },
+    "name": "f_xrec",
+    "namespace": "mod"
+  }
+}

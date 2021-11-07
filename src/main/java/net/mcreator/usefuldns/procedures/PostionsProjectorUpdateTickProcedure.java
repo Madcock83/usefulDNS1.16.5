@@ -17,11 +17,13 @@ import net.minecraft.potion.Effects;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.monster.SlimeEntity;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.command.ICommandSource;
 import net.minecraft.command.CommandSource;
+import net.minecraft.block.BlockState;
 
 import net.mcreator.usefuldns.item.TimeupgradeItem;
 import net.mcreator.usefuldns.item.RainupgradeItem;
@@ -577,6 +579,40 @@ public class PostionsProjectorUpdateTickProcedure {
 							}
 						}.compareDistOf(x, y, z)).findFirst().orElse(null)))
 								.addPotionEffect(new EffectInstance(Effects.LEVITATION, (int) 120, (int) 5, (false), (false)));
+			if (((Entity) world
+					.getEntitiesWithinAABB(SlimeEntity.class,
+							new AxisAlignedBB(x - (50 / 2d), y - (50 / 2d), z - (50 / 2d), x + (50 / 2d), y + (50 / 2d), z + (50 / 2d)), null)
+					.stream().sorted(new Object() {
+						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+							return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+						}
+					}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof LivingEntity)
+				((LivingEntity) ((Entity) world
+						.getEntitiesWithinAABB(SlimeEntity.class,
+								new AxisAlignedBB(x - (50 / 2d), y - (50 / 2d), z - (50 / 2d), x + (50 / 2d), y + (50 / 2d), z + (50 / 2d)), null)
+						.stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)))
+								.addPotionEffect(new EffectInstance(Effects.WITHER, (int) 120, (int) 5, (false), (false)));
+			if (((Entity) world
+					.getEntitiesWithinAABB(SlimeEntity.class,
+							new AxisAlignedBB(x - (50 / 2d), y - (50 / 2d), z - (50 / 2d), x + (50 / 2d), y + (50 / 2d), z + (50 / 2d)), null)
+					.stream().sorted(new Object() {
+						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+							return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+						}
+					}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof LivingEntity)
+				((LivingEntity) ((Entity) world
+						.getEntitiesWithinAABB(SlimeEntity.class,
+								new AxisAlignedBB(x - (50 / 2d), y - (50 / 2d), z - (50 / 2d), x + (50 / 2d), y + (50 / 2d), z + (50 / 2d)), null)
+						.stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)))
+								.addPotionEffect(new EffectInstance(Effects.LEVITATION, (int) 120, (int) 5, (false), (false)));
 		}
 		if (((new Object() {
 			public ItemStack getItemStack(BlockPos pos, int sltid) {
@@ -652,6 +688,23 @@ public class PostionsProjectorUpdateTickProcedure {
 									new StringTextComponent(""), ((World) world).getServer(), null).withFeedbackDisabled(), "weather clear");
 				}
 			}
+		}
+		if (!world.isRemote()) {
+			BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+			TileEntity _tileEntity = world.getTileEntity(_bp);
+			BlockState _bs = world.getBlockState(_bp);
+			if (_tileEntity != null)
+				_tileEntity.getTileData().putDouble("power8", (new Object() {
+					public int getEnergyStored(IWorld world, BlockPos pos) {
+						AtomicInteger _retval = new AtomicInteger(0);
+						TileEntity _ent = world.getTileEntity(pos);
+						if (_ent != null)
+							_ent.getCapability(CapabilityEnergy.ENERGY, null).ifPresent(capability -> _retval.set(capability.getEnergyStored()));
+						return _retval.get();
+					}
+				}.getEnergyStored(world, new BlockPos((int) x, (int) y, (int) z))));
+			if (world instanceof World)
+				((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
 		}
 	}
 }

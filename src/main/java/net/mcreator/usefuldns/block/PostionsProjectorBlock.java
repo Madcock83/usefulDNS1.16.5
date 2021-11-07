@@ -165,11 +165,11 @@ public class PostionsProjectorBlock extends UsefuldnsModElements.ModElement {
 			int y = pos.getY();
 			int z = pos.getZ();
 			if (PostionsProjectorParticleSpawningConditionProcedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world)))
-				for (int l = 0; l < 10; ++l) {
-					double d0 = (double) ((float) x + 0.5) + (double) (random.nextFloat() - 0.5) * 0.5D;
-					double d1 = ((double) ((float) y + 0.7) + (double) (random.nextFloat() - 0.5) * 0.5D) + 0.5;
-					double d2 = (double) ((float) z + 0.5) + (double) (random.nextFloat() - 0.5) * 0.5D;
-					world.addParticle(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, d0, d1, d2, 0, 0, 0);
+				for (int l = 0; l < 8; ++l) {
+					double d0 = (double) ((float) x + 0.5) + (double) (random.nextFloat() - 0.5) * 1.5D;
+					double d1 = ((double) ((float) y + 0.7) + (double) (random.nextFloat() - 0.5) * 1.5D) + 0.5;
+					double d2 = (double) ((float) z + 0.5) + (double) (random.nextFloat() - 0.5) * 1.5D;
+					world.addParticle(ParticleTypes.TOTEM_OF_UNDYING, d0, d1, d2, 0, 0, 0);
 				}
 		}
 

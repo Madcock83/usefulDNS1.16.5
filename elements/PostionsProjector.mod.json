@@ -101,11 +101,11 @@
     "breakHarvestLevel": 1,
     "spawnParticles": true,
     "particleToSpawn": {
-      "value": "CAMPFIRE_SIGNAL_SMOKE"
+      "value": "TOTEM"
     },
     "particleSpawningShape": "Top",
-    "particleSpawningRadious": 0.5,
-    "particleAmount": 10,
+    "particleSpawningRadious": 1.5,
+    "particleAmount": 8,
     "particleCondition": {
       "name": "PostionsProjectorParticleSpawningCondition"
     },

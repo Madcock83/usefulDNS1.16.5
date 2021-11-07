@@ -15,11 +15,25 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.usefuldns.procedures.Liqtofeper90Procedure;
+import net.mcreator.usefuldns.procedures.Liqtofeper20Procedure;
+import net.mcreator.usefuldns.procedures.Fxgui0Procedure;
+import net.mcreator.usefuldns.procedures.FxGui80Procedure;
+import net.mcreator.usefuldns.procedures.FxGui70Procedure;
+import net.mcreator.usefuldns.procedures.FxGui60Procedure;
+import net.mcreator.usefuldns.procedures.FxGui50Procedure;
+import net.mcreator.usefuldns.procedures.FxGui40Procedure;
+import net.mcreator.usefuldns.procedures.FxGui10Procedure;
+import net.mcreator.usefuldns.procedures.FxGui100Procedure;
+import net.mcreator.usefuldns.procedures.FXGui30Procedure;
+
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.HashMap;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.matrix.MatrixStack;
+
+import com.google.common.collect.ImmutableMap;
 
 @OnlyIn(Dist.CLIENT)
 public class GuipotionblockGuiWindow extends ContainerScreen<GuipotionblockGui.GuiContainerMod> {
@@ -56,8 +70,50 @@ public class GuipotionblockGuiWindow extends ContainerScreen<GuipotionblockGui.G
 		this.blit(ms, k, l, 0, 0, this.xSize, this.ySize, this.xSize, this.ySize);
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/line.png"));
 		this.blit(ms, this.guiLeft + 35, this.guiTop + 23, 0, 0, 20, 50, 20, 50);
-		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/afe_30.png"));
-		this.blit(ms, this.guiLeft + 161, this.guiTop + 185, 0, 0, 61, 18, 61, 18);
+		if (Fxgui0Procedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world))) {
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/afe_0.png"));
+			this.blit(ms, this.guiLeft + 161, this.guiTop + 185, 0, 0, 61, 18, 61, 18);
+		}
+		if (FxGui10Procedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world))) {
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/afe_10.png"));
+			this.blit(ms, this.guiLeft + 161, this.guiTop + 185, 0, 0, 61, 18, 61, 18);
+		}
+		if (Liqtofeper20Procedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world))) {
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/afe_20.png"));
+			this.blit(ms, this.guiLeft + 161, this.guiTop + 185, 0, 0, 61, 18, 61, 18);
+		}
+		if (FXGui30Procedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world))) {
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/afe_30.png"));
+			this.blit(ms, this.guiLeft + 161, this.guiTop + 185, 0, 0, 61, 18, 61, 18);
+		}
+		if (FxGui40Procedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world))) {
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/afe_40.png"));
+			this.blit(ms, this.guiLeft + 161, this.guiTop + 185, 0, 0, 61, 18, 61, 18);
+		}
+		if (FxGui50Procedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world))) {
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/afe_50.png"));
+			this.blit(ms, this.guiLeft + 161, this.guiTop + 185, 0, 0, 61, 18, 61, 18);
+		}
+		if (FxGui60Procedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world))) {
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/afe_60.png"));
+			this.blit(ms, this.guiLeft + 161, this.guiTop + 185, 0, 0, 61, 18, 61, 18);
+		}
+		if (FxGui70Procedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world))) {
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/afe_70.png"));
+			this.blit(ms, this.guiLeft + 161, this.guiTop + 185, 0, 0, 61, 18, 61, 18);
+		}
+		if (FxGui80Procedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world))) {
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/afe_80.png"));
+			this.blit(ms, this.guiLeft + 161, this.guiTop + 185, 0, 0, 61, 18, 61, 18);
+		}
+		if (Liqtofeper90Procedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world))) {
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/afe_90.png"));
+			this.blit(ms, this.guiLeft + 161, this.guiTop + 185, 0, 0, 61, 18, 61, 18);
+		}
+		if (FxGui100Procedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world))) {
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/afe_100.png"));
+			this.blit(ms, this.guiLeft + 161, this.guiTop + 185, 0, 0, 61, 18, 61, 18);
+		}
 		RenderSystem.disableBlend();
 	}
 
@@ -97,6 +153,9 @@ public class GuipotionblockGuiWindow extends ContainerScreen<GuipotionblockGui.G
 		this.font.drawString(ms, "not in use (yet)", 170, 50, -12829636);
 		this.font.drawString(ms, "not in use (yet)", 170, 68, -12829636);
 		this.font.drawString(ms, "not in use (yet)", 170, 86, -12829636);
+		this.font.drawString(ms, "Input", 8, 23, -12829636);
+		this.font.drawString(ms, "Use Redstone", -63, 5, -1);
+		this.font.drawString(ms, "To Activate", -63, 14, -1);
 	}
 
 	@Override
