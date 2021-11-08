@@ -3,11 +3,11 @@
   "_type": "block",
   "definition": {
     "texture": "buffmachinebottom",
-    "textureTop": "buffmachinetop",
-    "textureLeft": "buffmachineside",
-    "textureFront": "buffmachineside",
-    "textureRight": "buffmachineside",
-    "textureBack": "buffmachineside",
+    "textureTop": "fxprojectortop",
+    "textureLeft": "fxprojectorside",
+    "textureFront": "fxprojectorside",
+    "textureRight": "fxprojectorside",
+    "textureBack": "fxprojectorside",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -34,7 +34,8 @@
     ],
     "name": "FX Projector",
     "specialInfo": [
-      "Place in upgrades to get affects"
+      "Place in upgrades to get affects",
+      "Projects in a 50 block cube"
     ],
     "hardness": 1.1500000000000001,
     "resistance": 10.0,

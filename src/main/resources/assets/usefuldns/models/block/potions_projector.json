@@ -2,11 +2,11 @@
   "parent": "block/cube",
   "textures": {
     "down": "usefuldns:blocks/buffmachinebottom",
-    "up": "usefuldns:blocks/buffmachinetop",
-    "north": "usefuldns:blocks/buffmachineside",
-    "east": "usefuldns:blocks/buffmachineside",
-    "south": "usefuldns:blocks/buffmachineside",
-    "west": "usefuldns:blocks/buffmachineside",
+    "up": "usefuldns:blocks/fxprojectortop",
+    "north": "usefuldns:blocks/fxprojectorside",
+    "east": "usefuldns:blocks/fxprojectorside",
+    "south": "usefuldns:blocks/fxprojectorside",
+    "west": "usefuldns:blocks/fxprojectorside",
     "particle": "usefuldns:blocks/buffmachinebottom"
   }
 }

@@ -16,7 +16,7 @@ public class GoldplateItem extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:goldplate")
 	public static final Item block = null;
 	public GoldplateItem(UsefuldnsModElements instance) {
-		super(instance, 49);
+		super(instance, 50);
 	}
 
 	@Override

@@ -77,7 +77,7 @@ public class UnobfurnaceBlock extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:unobfurnace")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public UnobfurnaceBlock(UsefuldnsModElements instance) {
-		super(instance, 68);
+		super(instance, 69);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 	}
 

@@ -382,7 +382,7 @@
           "image": "afe_20.png",
           "use1Xscale": false,
           "displayCondition": {
-            "name": "Liqtofeper20"
+            "name": "FXGui20"
           },
           "name": "afe_20.png",
           "x": 231,
@@ -473,7 +473,7 @@
           "image": "afe_90.png",
           "use1Xscale": false,
           "displayCondition": {
-            "name": "Liqtofeper90"
+            "name": "FxGui90"
           },
           "name": "afe_90.png",
           "x": 231,

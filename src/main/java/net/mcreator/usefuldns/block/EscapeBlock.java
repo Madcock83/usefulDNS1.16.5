@@ -40,7 +40,7 @@ public class EscapeBlock extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:escape")
 	public static final Block block = null;
 	public EscapeBlock(UsefuldnsModElements instance) {
-		super(instance, 71);
+		super(instance, 72);
 	}
 
 	@Override

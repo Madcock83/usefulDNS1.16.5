@@ -64,7 +64,7 @@ public class MadcrafterBlock extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:madcrafter")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public MadcrafterBlock(UsefuldnsModElements instance) {
-		super(instance, 69);
+		super(instance, 70);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 	}
 

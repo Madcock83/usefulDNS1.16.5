@@ -22,7 +22,7 @@ public class TimeupgradeItem extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:timeupgrade")
 	public static final Item block = null;
 	public TimeupgradeItem(UsefuldnsModElements instance) {
-		super(instance, 46);
+		super(instance, 47);
 	}
 
 	@Override

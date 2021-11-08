@@ -42,7 +42,7 @@ public class FoolsGoldBlock extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:fools_gold")
 	public static final Block block = null;
 	public FoolsGoldBlock(UsefuldnsModElements instance) {
-		super(instance, 243);
+		super(instance, 244);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

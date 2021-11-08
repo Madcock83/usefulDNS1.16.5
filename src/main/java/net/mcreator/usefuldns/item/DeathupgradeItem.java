@@ -22,7 +22,7 @@ public class DeathupgradeItem extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:deathupgrade")
 	public static final Item block = null;
 	public DeathupgradeItem(UsefuldnsModElements instance) {
-		super(instance, 47);
+		super(instance, 48);
 	}
 
 	@Override

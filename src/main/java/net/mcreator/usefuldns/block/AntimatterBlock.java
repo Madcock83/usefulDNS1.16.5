@@ -80,7 +80,7 @@ public class AntimatterBlock extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:antimatter")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public AntimatterBlock(UsefuldnsModElements instance) {
-		super(instance, 70);
+		super(instance, 71);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 	}
 

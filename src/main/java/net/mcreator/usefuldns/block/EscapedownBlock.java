@@ -39,7 +39,7 @@ public class EscapedownBlock extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:escapedown")
 	public static final Block block = null;
 	public EscapedownBlock(UsefuldnsModElements instance) {
-		super(instance, 199);
+		super(instance, 200);
 	}
 
 	@Override

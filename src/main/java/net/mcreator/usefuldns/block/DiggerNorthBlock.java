@@ -33,7 +33,7 @@ public class DiggerNorthBlock extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:digger_north")
 	public static final Block block = null;
 	public DiggerNorthBlock(UsefuldnsModElements instance) {
-		super(instance, 229);
+		super(instance, 230);
 	}
 
 	@Override

@@ -22,7 +22,7 @@ public class ModnightvisionItem extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:modnightvision")
 	public static final Item block = null;
 	public ModnightvisionItem(UsefuldnsModElements instance) {
-		super(instance, 42);
+		super(instance, 43);
 	}
 
 	@Override

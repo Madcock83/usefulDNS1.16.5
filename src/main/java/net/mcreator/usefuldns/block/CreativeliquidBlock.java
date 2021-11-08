@@ -65,7 +65,7 @@ public class CreativeliquidBlock extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:creativeliquid")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public CreativeliquidBlock(UsefuldnsModElements instance) {
-		super(instance, 79);
+		super(instance, 80);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 	}
 

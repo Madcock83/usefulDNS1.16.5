@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Unboingot"
+      },
+      {
+        "value": "CUSTOM:Transister"
+      },
+      {
+        "value": "CUSTOM:Unboingot"
+      },
+      {
+        "value": "Blocks.REDSTONE_BLOCK"
+      },
+      {
+        "value": "CUSTOM:Unobcrafter"
+      },
+      {
+        "value": "Blocks.REDSTONE_BLOCK"
+      },
+      {
+        "value": "CUSTOM:Unboingot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Unboingot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Fetoliquid"
+    },
+    "name": "fetoliquidrec",
+    "namespace": "mod"
+  }
+}

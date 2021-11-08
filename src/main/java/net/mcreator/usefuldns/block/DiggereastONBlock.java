@@ -36,7 +36,7 @@ public class DiggereastONBlock extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:diggereast_on")
 	public static final Block block = null;
 	public DiggereastONBlock(UsefuldnsModElements instance) {
-		super(instance, 216);
+		super(instance, 217);
 	}
 
 	@Override

@@ -45,7 +45,7 @@ public class MadcrafterleggingsGui extends UsefuldnsModElements.ModElement {
 	public static HashMap guistate = new HashMap();
 	private static ContainerType<GuiContainerMod> containerType = null;
 	public MadcrafterleggingsGui(UsefuldnsModElements instance) {
-		super(instance, 342);
+		super(instance, 343);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,

@@ -72,7 +72,7 @@ public class ElectrictoolrepairBlock extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:electrictoolrepair")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public ElectrictoolrepairBlock(UsefuldnsModElements instance) {
-		super(instance, 75);
+		super(instance, 76);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 	}
 

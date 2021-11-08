@@ -15,9 +15,8 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.usefuldns.procedures.Liqtofeper90Procedure;
-import net.mcreator.usefuldns.procedures.Liqtofeper20Procedure;
 import net.mcreator.usefuldns.procedures.Fxgui0Procedure;
+import net.mcreator.usefuldns.procedures.FxGui90Procedure;
 import net.mcreator.usefuldns.procedures.FxGui80Procedure;
 import net.mcreator.usefuldns.procedures.FxGui70Procedure;
 import net.mcreator.usefuldns.procedures.FxGui60Procedure;
@@ -26,6 +25,7 @@ import net.mcreator.usefuldns.procedures.FxGui40Procedure;
 import net.mcreator.usefuldns.procedures.FxGui10Procedure;
 import net.mcreator.usefuldns.procedures.FxGui100Procedure;
 import net.mcreator.usefuldns.procedures.FXGui30Procedure;
+import net.mcreator.usefuldns.procedures.FXGui20Procedure;
 
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.HashMap;
@@ -78,7 +78,7 @@ public class GuipotionblockGuiWindow extends ContainerScreen<GuipotionblockGui.G
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/afe_10.png"));
 			this.blit(ms, this.guiLeft + 161, this.guiTop + 185, 0, 0, 61, 18, 61, 18);
 		}
-		if (Liqtofeper20Procedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world))) {
+		if (FXGui20Procedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world))) {
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/afe_20.png"));
 			this.blit(ms, this.guiLeft + 161, this.guiTop + 185, 0, 0, 61, 18, 61, 18);
 		}
@@ -106,7 +106,7 @@ public class GuipotionblockGuiWindow extends ContainerScreen<GuipotionblockGui.G
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/afe_80.png"));
 			this.blit(ms, this.guiLeft + 161, this.guiTop + 185, 0, 0, 61, 18, 61, 18);
 		}
-		if (Liqtofeper90Procedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world))) {
+		if (FxGui90Procedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world))) {
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/afe_90.png"));
 			this.blit(ms, this.guiLeft + 161, this.guiTop + 185, 0, 0, 61, 18, 61, 18);
 		}

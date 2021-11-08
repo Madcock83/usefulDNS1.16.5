@@ -15,9 +15,11 @@ import net.minecraft.entity.item.ItemEntity;
 
 import net.mcreator.usefuldns.block.UnobfurnaceBlock;
 import net.mcreator.usefuldns.block.UnobcrafterBlock;
+import net.mcreator.usefuldns.block.PostionsProjectorBlock;
 import net.mcreator.usefuldns.block.MadcrafterBlock;
 import net.mcreator.usefuldns.block.LiquidtofeBlock;
 import net.mcreator.usefuldns.block.FetoliquidBlock;
+import net.mcreator.usefuldns.block.ElectrictoolrepairBlock;
 import net.mcreator.usefuldns.block.BatteryBlock;
 import net.mcreator.usefuldns.block.AntimatterBlock;
 import net.mcreator.usefuldns.UsefuldnsMod;
@@ -96,7 +98,29 @@ public class AntimatterUpdateTickProcedure {
 				}
 				return _retval.get();
 			}
-		}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == BatteryBlock.block.asItem()))) || (((new Object() {
+		}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == BatteryBlock.block.asItem()))) || ((((new Object() {
+			public ItemStack getItemStack(BlockPos pos, int sltid) {
+				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+				TileEntity _ent = world.getTileEntity(pos);
+				if (_ent != null) {
+					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+						_retval.set(capability.getStackInSlot(sltid).copy());
+					});
+				}
+				return _retval.get();
+			}
+		}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == ElectrictoolrepairBlock.block.asItem()) || ((new Object() {
+			public ItemStack getItemStack(BlockPos pos, int sltid) {
+				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+				TileEntity _ent = world.getTileEntity(pos);
+				if (_ent != null) {
+					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+						_retval.set(capability.getStackInSlot(sltid).copy());
+					});
+				}
+				return _retval.get();
+			}
+		}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == PostionsProjectorBlock.block.asItem())) || (((new Object() {
 			public ItemStack getItemStack(BlockPos pos, int sltid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				TileEntity _ent = world.getTileEntity(pos);
@@ -129,7 +153,7 @@ public class AntimatterUpdateTickProcedure {
 				}
 				return _retval.get();
 			}
-		}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == FetoliquidBlock.block.asItem())))))) {
+		}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == FetoliquidBlock.block.asItem()))))))) {
 			if ((((new Object() {
 				public int getAmount(IWorld world, BlockPos pos, int sltid) {
 					AtomicInteger _retval = new AtomicInteger(0);

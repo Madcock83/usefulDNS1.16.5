@@ -31,7 +31,7 @@ public class CompressedcoalBlock extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:compressedcoal")
 	public static final Block block = null;
 	public CompressedcoalBlock(UsefuldnsModElements instance) {
-		super(instance, 66);
+		super(instance, 67);
 	}
 
 	@Override

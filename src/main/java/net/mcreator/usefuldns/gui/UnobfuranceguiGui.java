@@ -41,7 +41,7 @@ public class UnobfuranceguiGui extends UsefuldnsModElements.ModElement {
 	public static HashMap guistate = new HashMap();
 	private static ContainerType<GuiContainerMod> containerType = null;
 	public UnobfuranceguiGui(UsefuldnsModElements instance) {
-		super(instance, 159);
+		super(instance, 160);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,

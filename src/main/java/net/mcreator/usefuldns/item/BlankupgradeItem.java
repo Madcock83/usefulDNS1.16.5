@@ -16,7 +16,7 @@ public class BlankupgradeItem extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:blankupgrade")
 	public static final Item block = null;
 	public BlankupgradeItem(UsefuldnsModElements instance) {
-		super(instance, 390);
+		super(instance, 42);
 	}
 
 	@Override

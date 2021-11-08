@@ -16,7 +16,7 @@ public class DiamondeosItem extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:diamondeos")
 	public static final Item block = null;
 	public DiamondeosItem(UsefuldnsModElements instance) {
-		super(instance, 54);
+		super(instance, 55);
 	}
 
 	@Override

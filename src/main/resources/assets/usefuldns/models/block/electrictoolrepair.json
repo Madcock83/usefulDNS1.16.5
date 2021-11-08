@@ -3,10 +3,10 @@
   "textures": {
     "down": "usefuldns:blocks/repairstationbottom",
     "up": "usefuldns:blocks/repairstationtop",
-    "north": "usefuldns:blocks/repairstationsideoff",
-    "east": "usefuldns:blocks/repairstationsideoff",
-    "south": "usefuldns:blocks/repairstationsideoff",
-    "west": "usefuldns:blocks/repairstationsideoff",
+    "north": "usefuldns:blocks/repairstationonside",
+    "east": "usefuldns:blocks/repairstationonside",
+    "south": "usefuldns:blocks/repairstationonside",
+    "west": "usefuldns:blocks/repairstationonside",
     "particle": "usefuldns:blocks/repairstationbottom"
   }
 }

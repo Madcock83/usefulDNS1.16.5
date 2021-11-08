@@ -22,7 +22,7 @@ public class ModspeedItem extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:modspeed")
 	public static final Item block = null;
 	public ModspeedItem(UsefuldnsModElements instance) {
-		super(instance, 45);
+		super(instance, 46);
 	}
 
 	@Override

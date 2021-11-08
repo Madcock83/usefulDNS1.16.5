@@ -77,7 +77,7 @@ public class FetoliquidBlock extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:fetoliquid")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public FetoliquidBlock(UsefuldnsModElements instance) {
-		super(instance, 73);
+		super(instance, 74);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 	}
 

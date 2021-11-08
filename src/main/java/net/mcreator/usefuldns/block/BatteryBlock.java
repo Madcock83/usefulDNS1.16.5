@@ -73,7 +73,7 @@ public class BatteryBlock extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:battery")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public BatteryBlock(UsefuldnsModElements instance) {
-		super(instance, 72);
+		super(instance, 73);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 	}
 

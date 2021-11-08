@@ -22,7 +22,7 @@ public class ModsaturationItem extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:modsaturation")
 	public static final Item block = null;
 	public ModsaturationItem(UsefuldnsModElements instance) {
-		super(instance, 44);
+		super(instance, 45);
 	}
 
 	@Override

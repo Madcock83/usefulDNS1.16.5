@@ -77,7 +77,7 @@ public class LiquidtofeBlock extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:liquidtofe")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public LiquidtofeBlock(UsefuldnsModElements instance) {
-		super(instance, 74);
+		super(instance, 75);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 	}
 

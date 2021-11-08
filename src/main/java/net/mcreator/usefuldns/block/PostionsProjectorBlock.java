@@ -81,7 +81,7 @@ public class PostionsProjectorBlock extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:potions_projector")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public PostionsProjectorBlock(UsefuldnsModElements instance) {
-		super(instance, 76);
+		super(instance, 77);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 	}
 
@@ -110,6 +110,7 @@ public class PostionsProjectorBlock extends UsefuldnsModElements.ModElement {
 		public void addInformation(ItemStack itemstack, IBlockReader world, List<ITextComponent> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
 			list.add(new StringTextComponent("Place in upgrades to get affects"));
+			list.add(new StringTextComponent("Projects in a 50 block cube"));
 		}
 
 		@Override

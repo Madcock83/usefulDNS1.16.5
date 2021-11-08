@@ -22,7 +22,7 @@ public class RainupgradeItem extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:rainupgrade")
 	public static final Item block = null;
 	public RainupgradeItem(UsefuldnsModElements instance) {
-		super(instance, 48);
+		super(instance, 49);
 	}
 
 	@Override

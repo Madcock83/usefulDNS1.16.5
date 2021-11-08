@@ -26,7 +26,7 @@ public class UnobblockBlock extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:unobblock")
 	public static final Block block = null;
 	public UnobblockBlock(UsefuldnsModElements instance) {
-		super(instance, 63);
+		super(instance, 64);
 	}
 
 	@Override

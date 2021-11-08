@@ -1,0 +1,39 @@
+{
+  "group": "usefuldns",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "usefuldns:unboingot"
+    },
+    "1": {
+      "item": "usefuldns:transister"
+    },
+    "2": {
+      "item": "usefuldns:unboingot"
+    },
+    "3": {
+      "item": "minecraft:redstone_block"
+    },
+    "4": {
+      "item": "usefuldns:unobcrafter"
+    },
+    "5": {
+      "item": "minecraft:redstone_block"
+    },
+    "6": {
+      "item": "usefuldns:unboingot"
+    },
+    "8": {
+      "item": "usefuldns:unboingot"
+    }
+  },
+  "result": {
+    "item": "usefuldns:fetoliquid",
+    "count": 1
+  }
+}

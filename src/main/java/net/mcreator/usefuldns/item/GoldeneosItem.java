@@ -16,7 +16,7 @@ public class GoldeneosItem extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:goldeneos")
 	public static final Item block = null;
 	public GoldeneosItem(UsefuldnsModElements instance) {
-		super(instance, 53);
+		super(instance, 54);
 	}
 
 	@Override

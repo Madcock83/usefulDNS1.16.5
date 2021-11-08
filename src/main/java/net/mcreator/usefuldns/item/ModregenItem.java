@@ -22,7 +22,7 @@ public class ModregenItem extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:modregen")
 	public static final Item block = null;
 	public ModregenItem(UsefuldnsModElements instance) {
-		super(instance, 43);
+		super(instance, 44);
 	}
 
 	@Override
