@@ -38,7 +38,7 @@
       "Projects in a 50 block cube"
     ],
     "hardness": 1.1500000000000001,
-    "resistance": 10.0,
+    "resistance": 15000.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {

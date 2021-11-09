@@ -35,7 +35,7 @@
     "name": "Anti-Matter Projector",
     "specialInfo": [],
     "hardness": 2.0,
-    "resistance": 10.0,
+    "resistance": 15000.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {

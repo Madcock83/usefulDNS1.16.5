@@ -36,8 +36,8 @@ public class UnobblockBlock extends UsefuldnsModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ANVIL).sound(SoundType.ANVIL).hardnessAndResistance(2f, 10f).setLightLevel(s -> 0).harvestLevel(3)
-					.harvestTool(ToolType.PICKAXE).setRequiresTool());
+			super(Block.Properties.create(Material.ANVIL).sound(SoundType.SCAFFOLDING).hardnessAndResistance(2f, 10f).setLightLevel(s -> 0)
+					.harvestLevel(3).harvestTool(ToolType.PICKAXE).setRequiresTool());
 			setRegistryName("unobblock");
 		}
 

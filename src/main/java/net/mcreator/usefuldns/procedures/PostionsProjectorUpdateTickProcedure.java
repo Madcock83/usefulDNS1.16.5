@@ -38,6 +38,7 @@ import java.util.function.Function;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.Map;
+import java.util.HashMap;
 import java.util.Comparator;
 
 public class PostionsProjectorUpdateTickProcedure {
@@ -235,6 +236,23 @@ public class PostionsProjectorUpdateTickProcedure {
 							}
 						}.compareDistOf(x, y, z)).findFirst().orElse(null)))
 								.addPotionEffect(new EffectInstance(Effects.REGENERATION, (int) 120, (int) 5, (false), (false)));
+			if (((Entity) world
+					.getEntitiesWithinAABB(PlayerEntity.class,
+							new AxisAlignedBB(x - (50 / 2d), y - (50 / 2d), z - (50 / 2d), x + (50 / 2d), y + (50 / 2d), z + (50 / 2d)), null)
+					.stream().sorted(new Object() {
+						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+							return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+						}
+					}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof LivingEntity)
+				((LivingEntity) ((Entity) world
+						.getEntitiesWithinAABB(PlayerEntity.class,
+								new AxisAlignedBB(x - (50 / 2d), y - (50 / 2d), z - (50 / 2d), x + (50 / 2d), y + (50 / 2d), z + (50 / 2d)), null)
+						.stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)))
+								.addPotionEffect(new EffectInstance(Effects.HEALTH_BOOST, (int) 120, (int) 5, (false), (false)));
 		}
 		if (((new Object() {
 			public ItemStack getItemStack(BlockPos pos, int sltid) {
@@ -705,6 +723,14 @@ public class PostionsProjectorUpdateTickProcedure {
 				}.getEnergyStored(world, new BlockPos((int) x, (int) y, (int) z))));
 			if (world instanceof World)
 				((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
+		}
+		{
+			Map<String, Object> $_dependencies = new HashMap<>();
+			$_dependencies.put("x", x);
+			$_dependencies.put("y", y);
+			$_dependencies.put("z", z);
+			$_dependencies.put("world", world);
+			ChickenProcedure.executeProcedure($_dependencies);
 		}
 	}
 }

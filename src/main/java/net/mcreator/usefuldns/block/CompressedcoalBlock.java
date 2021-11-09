@@ -41,7 +41,7 @@ public class CompressedcoalBlock extends UsefuldnsModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.ANVIL).hardnessAndResistance(2f, 1f).setLightLevel(s -> 0).harvestLevel(4)
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(2f, 1f).setLightLevel(s -> 0).harvestLevel(4)
 					.harvestTool(ToolType.PICKAXE).setRequiresTool());
 			setRegistryName("compressedcoal");
 		}

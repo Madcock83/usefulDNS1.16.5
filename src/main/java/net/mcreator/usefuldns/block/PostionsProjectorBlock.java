@@ -100,8 +100,8 @@ public class PostionsProjectorBlock extends UsefuldnsModElements.ModElement {
 
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(1.1500000000000001f, 10f).setLightLevel(s -> 0)
-					.harvestLevel(1).harvestTool(ToolType.PICKAXE).setRequiresTool());
+			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(1.1500000000000001f, 15000f)
+					.setLightLevel(s -> 0).harvestLevel(1).harvestTool(ToolType.PICKAXE).setRequiresTool());
 			setRegistryName("potions_projector");
 		}
 
