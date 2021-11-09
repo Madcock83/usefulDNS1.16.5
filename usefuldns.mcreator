@@ -7751,6 +7751,51 @@
       "ids": {},
       "registry_name": "fereaderrec",
       "path": "~/FE Power"
+    },
+    {
+      "name": "Gemdiamond",
+      "type": "tag",
+      "sortid": 413,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gemdiamond"
+    },
+    {
+      "name": "Rawsteelore",
+      "type": "tag",
+      "sortid": 414,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rawsteelore"
+    },
+    {
+      "name": "Rarironore",
+      "type": "tag",
+      "sortid": 415,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rarironore"
+    },
+    {
+      "name": "Steelingotor",
+      "type": "tag",
+      "sortid": 416,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "steelingotor"
+    },
+    {
+      "name": "Rodore",
+      "type": "tag",
+      "sortid": 417,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rodore"
     }
   ],
   "variable_elements": [
