@@ -6,12 +6,14 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
+import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.client.gui.widget.button.Button;
 import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.Minecraft;
 
@@ -26,6 +28,7 @@ import net.mcreator.usefuldns.procedures.FxGui10Procedure;
 import net.mcreator.usefuldns.procedures.FxGui100Procedure;
 import net.mcreator.usefuldns.procedures.FXGui30Procedure;
 import net.mcreator.usefuldns.procedures.FXGui20Procedure;
+import net.mcreator.usefuldns.UsefuldnsMod;
 
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.HashMap;
@@ -156,6 +159,7 @@ public class GuipotionblockGuiWindow extends ContainerScreen<GuipotionblockGui.G
 		this.font.drawString(ms, "Input", 8, 23, -12829636);
 		this.font.drawString(ms, "Use Redstone", -63, 5, -1);
 		this.font.drawString(ms, "To Activate", -63, 14, -1);
+		this.font.drawString(ms, "Spawner", 242, 5, -12829636);
 	}
 
 	@Override
@@ -168,5 +172,11 @@ public class GuipotionblockGuiWindow extends ContainerScreen<GuipotionblockGui.G
 	public void init(Minecraft minecraft, int width, int height) {
 		super.init(minecraft, width, height);
 		minecraft.keyboardListener.enableRepeatEvents(true);
+		this.addButton(new Button(this.guiLeft + 224, this.guiTop + 23, 55, 20, new StringTextComponent("How To"), e -> {
+			if (true) {
+				UsefuldnsMod.PACKET_HANDLER.sendToServer(new GuipotionblockGui.ButtonPressedMessage(0, x, y, z));
+				GuipotionblockGui.handleButtonAction(entity, 0, x, y, z);
+			}
+		}));
 	}
 }

@@ -1,0 +1,140 @@
+{
+  "_fv": 24,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 233,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Place a drop of the mob in the input",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Place a drop of the mob in the input",
+          "x": 122,
+          "y": 45
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Only a few for now, more mobs will come later",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Only a few for now, more mobs will come later",
+          "x": 103,
+          "y": 57
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Egg = Chicken    Beef = Cow",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Egg = Chicken    Beef = Cow",
+          "x": 105,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Wool = Sheep     Pork = Pig",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Wool = Sheep     Pork = Pig",
+          "x": 105,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Blaze Rod = Blaze   Bone = Skeleton",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Blaze Rod = Blaze   Bone = Skeleton",
+          "x": 105,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Gunpowder = Creeper   Flesh = Zombie",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Gunpowder = Creeper   Flesh = Zombie",
+          "x": 105,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Wither Skeleton Skull = Wither Skeleton",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Wither Skeleton Skull = Wither Skeleton",
+          "x": 105,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "More Mobs to Come Later",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "More Mobs to Come Later",
+          "x": 150,
+          "y": 125
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Back",
+          "onClick": {
+            "name": "Openfxgui"
+          },
+          "width": 45,
+          "height": 20,
+          "name": "Back",
+          "x": 186,
+          "y": 152
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

@@ -1,7 +1,7 @@
 {
   "id_map": {
-    "ENTITY": 1,
     "BIOME": 0,
+    "ENTITY": 1,
     "GUI": 22,
     "DIMENSION": 1
   },
@@ -7798,13 +7798,91 @@
       "registry_name": "rodore"
     },
     {
-      "name": "Chicken",
-      "type": "procedure",
-      "sortid": 418,
+      "name": "Spawnergui",
+      "type": "gui",
+      "sortid": 427,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "chicken",
+      "registry_name": "spawnergui",
+      "path": "~/FE Power/Potion"
+    },
+    {
+      "name": "Openfxgui",
+      "type": "procedure",
+      "sortid": 428,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "openfxgui",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/FE Power/Potion"
+    },
+    {
+      "name": "Openspawnergui",
+      "type": "procedure",
+      "sortid": 429,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "openspawnergui",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/FE Power/Potion"
+    },
+    {
+      "name": "MobSpawner",
+      "type": "procedure",
+      "sortid": 430,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mob_spawner",
       "metadata": {
         "dependencies": [
           {
@@ -8108,7 +8186,7 @@
   "workspaceSettings": {
     "modid": "usefuldns",
     "modName": "usefulDNS",
-    "version": "7.1.9",
+    "version": "7.2.4",
     "description": "useful items for the dns techpack",
     "author": "Madcock83",
     "websiteURL": "http://www.madcock83.com",
@@ -8121,6 +8199,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.16.5",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.usefuldns",
     "lockBaseModFiles": false
   },

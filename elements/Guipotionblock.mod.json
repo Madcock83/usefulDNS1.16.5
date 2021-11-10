@@ -203,7 +203,7 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #11",
-          "x": 303,
+          "x": 294,
           "y": 17
         }
       },
@@ -491,6 +491,33 @@
           "name": "afe_100.png",
           "x": 231,
           "y": 197
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Spawner",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Spawner",
+          "x": 312,
+          "y": 17
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "How To",
+          "onClick": {
+            "name": "Openspawnergui"
+          },
+          "width": 55,
+          "height": 20,
+          "name": "How To",
+          "x": 294,
+          "y": 35
         }
       }
     ],

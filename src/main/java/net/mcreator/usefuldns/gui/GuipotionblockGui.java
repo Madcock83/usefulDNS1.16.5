@@ -28,6 +28,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.client.gui.ScreenManager;
 
+import net.mcreator.usefuldns.procedures.OpenspawnerguiProcedure;
 import net.mcreator.usefuldns.UsefuldnsModElements;
 import net.mcreator.usefuldns.UsefuldnsMod;
 
@@ -175,7 +176,7 @@ public class GuipotionblockGui extends UsefuldnsModElements.ModElement {
 					return false;
 				}
 			}));
-			this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 234, 6) {
+			this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 225, 6) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
@@ -428,6 +429,17 @@ public class GuipotionblockGui extends UsefuldnsModElements.ModElement {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
+		if (buttonID == 0) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				OpenspawnerguiProcedure.executeProcedure($_dependencies);
+			}
+		}
 	}
 
 	private static void handleSlotAction(PlayerEntity entity, int slotID, int changeType, int meta, int x, int y, int z) {

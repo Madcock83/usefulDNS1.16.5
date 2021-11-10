@@ -1,5 +1,7 @@
 package net.mcreator.usefuldns.procedures;
 
+import net.minecraftforge.items.ItemHandlerHelper;
+
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.item.ItemStack;
@@ -50,9 +52,9 @@ public class ExporbRightClickedInAirProcedure {
 						.giveExperiencePoints((int) -(((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).experienceLevel : 0) * 10));
 			}
 			if (entity instanceof PlayerEntity) {
-				ItemStack _stktoremove = new ItemStack(ExporbItem.block);
-				((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
-						((PlayerEntity) entity).container.func_234641_j_());
+				ItemStack _setstack = new ItemStack(ExporbItem.block);
+				_setstack.setCount((int) 1);
+				ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 			}
 		} else {
 			if ((((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).experienceLevel : 0) < 1)) {
