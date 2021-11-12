@@ -107,7 +107,7 @@ public class UnobfurancesmeltProcedure {
 					return tileEntity.getTileData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "furnacetimer")) >= 60)) {
+		}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "furnacetimer")) >= 10)) {
 			if ((((((new Object() {
 				public ItemStack getItemStack(BlockPos pos, int sltid) {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
