@@ -42,11 +42,11 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:Usefuldns"
+      "value": "No creative tab entry"
     },
     "destroyTool": "pickaxe",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:PotionProjecterOFF"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -100,7 +100,7 @@
     "luminance": 0,
     "unbreakable": false,
     "breakHarvestLevel": 1,
-    "spawnParticles": true,
+    "spawnParticles": false,
     "particleToSpawn": {
       "value": "TOTEM"
     },
@@ -128,7 +128,7 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onTickUpdate": {
-      "name": "PostionsProjectorUpdateTick"
+      "name": "PosionProjectorON"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

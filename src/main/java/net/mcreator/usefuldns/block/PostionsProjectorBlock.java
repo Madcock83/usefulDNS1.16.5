@@ -31,7 +31,6 @@ import net.minecraft.util.ActionResultType;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.LockableLootTileEntity;
-import net.minecraft.particles.ParticleTypes;
 import net.minecraft.network.play.server.SUpdateTileEntityPacket;
 import net.minecraft.network.PacketBuffer;
 import net.minecraft.network.NetworkManager;
@@ -49,15 +48,12 @@ import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.util.ITooltipFlag;
-import net.minecraft.client.Minecraft;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.usefuldns.procedures.PostionsProjectorUpdateTickProcedure;
-import net.mcreator.usefuldns.procedures.PostionsProjectorParticleSpawningConditionProcedure;
-import net.mcreator.usefuldns.itemgroup.UsefuldnsItemGroup;
+import net.mcreator.usefuldns.procedures.PosionProjectorONProcedure;
 import net.mcreator.usefuldns.gui.GuipotionblockGui;
 import net.mcreator.usefuldns.UsefuldnsModElements;
 
@@ -72,8 +68,6 @@ import java.util.Collections;
 
 import io.netty.buffer.Unpooled;
 
-import com.google.common.collect.ImmutableMap;
-
 @UsefuldnsModElements.ModElement.Tag
 public class PostionsProjectorBlock extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:potions_projector")
@@ -81,14 +75,14 @@ public class PostionsProjectorBlock extends UsefuldnsModElements.ModElement {
 	@ObjectHolder("usefuldns:potions_projector")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public PostionsProjectorBlock(UsefuldnsModElements instance) {
-		super(instance, 77);
+		super(instance, 384);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 	}
 
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(UsefuldnsItemGroup.tab)).setRegistryName(block.getRegistryName()));
+		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(null)).setRegistryName(block.getRegistryName()));
 	}
 	private static class TileEntityRegisterHandler {
 		@SubscribeEvent
@@ -128,7 +122,7 @@ public class PostionsProjectorBlock extends UsefuldnsModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(this, 1));
+			return Collections.singletonList(new ItemStack(PotionProjecterOFFBlock.block));
 		}
 
 		@Override
@@ -152,26 +146,9 @@ public class PostionsProjectorBlock extends UsefuldnsModElements.ModElement {
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				PostionsProjectorUpdateTickProcedure.executeProcedure($_dependencies);
+				PosionProjectorONProcedure.executeProcedure($_dependencies);
 			}
 			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 1);
-		}
-
-		@OnlyIn(Dist.CLIENT)
-		@Override
-		public void animateTick(BlockState blockstate, World world, BlockPos pos, Random random) {
-			super.animateTick(blockstate, world, pos, random);
-			PlayerEntity entity = Minecraft.getInstance().player;
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			if (PostionsProjectorParticleSpawningConditionProcedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world)))
-				for (int l = 0; l < 8; ++l) {
-					double d0 = (double) ((float) x + 0.5) + (double) (random.nextFloat() - 0.5) * 1.5D;
-					double d1 = ((double) ((float) y + 0.7) + (double) (random.nextFloat() - 0.5) * 1.5D) + 0.5;
-					double d2 = (double) ((float) z + 0.5) + (double) (random.nextFloat() - 0.5) * 1.5D;
-					world.addParticle(ParticleTypes.TOTEM_OF_UNDYING, d0, d1, d2, 0, 0, 0);
-				}
 		}
 
 		@Override

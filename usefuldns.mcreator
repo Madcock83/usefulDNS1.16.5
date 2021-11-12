@@ -9,7 +9,7 @@
     {
       "name": "LiquidRF",
       "type": "fluid",
-      "sortid": 78,
+      "sortid": 80,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3510,7 +3510,7 @@
     {
       "name": "Creativegen",
       "type": "block",
-      "sortid": 79,
+      "sortid": 78,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3674,7 +3674,7 @@
     {
       "name": "Creativeliquid",
       "type": "block",
-      "sortid": 80,
+      "sortid": 79,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -7051,7 +7051,7 @@
     {
       "name": "PostionsProjector",
       "type": "block",
-      "sortid": 77,
+      "sortid": 384,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -7061,7 +7061,7 @@
     {
       "name": "PostionsProjectorUpdateTick",
       "type": "procedure",
-      "sortid": 384,
+      "sortid": 385,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -7091,7 +7091,7 @@
     {
       "name": "Guipotionblock",
       "type": "gui",
-      "sortid": 385,
+      "sortid": 386,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -7141,7 +7141,7 @@
     {
       "name": "FlashlightItemInHandTick",
       "type": "procedure",
-      "sortid": 386,
+      "sortid": 387,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -7214,7 +7214,7 @@
     {
       "name": "Guielectric",
       "type": "gui",
-      "sortid": 387,
+      "sortid": 388,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -7224,7 +7224,7 @@
     {
       "name": "ElectrictoolrepairUpdateTick",
       "type": "procedure",
-      "sortid": 388,
+      "sortid": 389,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -7254,7 +7254,7 @@
     {
       "name": "PostionsProjectorParticleSpawningCondition",
       "type": "procedure",
-      "sortid": 389,
+      "sortid": 390,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -7284,7 +7284,7 @@
     {
       "name": "Toolrepairrec",
       "type": "recipe",
-      "sortid": 390,
+      "sortid": 391,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -7304,7 +7304,7 @@
     {
       "name": "BlankRec",
       "type": "recipe",
-      "sortid": 391,
+      "sortid": 392,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -7314,7 +7314,7 @@
     {
       "name": "NVupgradeRec",
       "type": "recipe",
-      "sortid": 392,
+      "sortid": 393,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -7324,7 +7324,7 @@
     {
       "name": "RegupgradeRec",
       "type": "recipe",
-      "sortid": 393,
+      "sortid": 394,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -7334,7 +7334,7 @@
     {
       "name": "SATupgradeRec",
       "type": "recipe",
-      "sortid": 394,
+      "sortid": 395,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -7344,7 +7344,7 @@
     {
       "name": "SpeedupgradeRec",
       "type": "recipe",
-      "sortid": 395,
+      "sortid": 396,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -7354,7 +7354,7 @@
     {
       "name": "LockupgradeRec",
       "type": "recipe",
-      "sortid": 396,
+      "sortid": 397,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -7364,7 +7364,7 @@
     {
       "name": "DeatupgradeRec",
       "type": "recipe",
-      "sortid": 397,
+      "sortid": 398,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -7374,7 +7374,7 @@
     {
       "name": "RainUpgradeRec",
       "type": "recipe",
-      "sortid": 398,
+      "sortid": 399,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -7384,7 +7384,7 @@
     {
       "name": "FXrec",
       "type": "recipe",
-      "sortid": 399,
+      "sortid": 400,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -7394,7 +7394,7 @@
     {
       "name": "Fxgui0",
       "type": "procedure",
-      "sortid": 400,
+      "sortid": 401,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -7425,7 +7425,7 @@
     {
       "name": "FxGui10",
       "type": "procedure",
-      "sortid": 401,
+      "sortid": 402,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -7456,7 +7456,7 @@
     {
       "name": "FXGui20",
       "type": "procedure",
-      "sortid": 402,
+      "sortid": 403,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -7487,7 +7487,7 @@
     {
       "name": "FXGui30",
       "type": "procedure",
-      "sortid": 403,
+      "sortid": 404,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -7518,7 +7518,7 @@
     {
       "name": "FxGui40",
       "type": "procedure",
-      "sortid": 404,
+      "sortid": 405,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -7549,7 +7549,7 @@
     {
       "name": "FxGui50",
       "type": "procedure",
-      "sortid": 405,
+      "sortid": 406,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -7580,7 +7580,7 @@
     {
       "name": "FxGui60",
       "type": "procedure",
-      "sortid": 406,
+      "sortid": 407,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -7611,7 +7611,7 @@
     {
       "name": "FxGui70",
       "type": "procedure",
-      "sortid": 407,
+      "sortid": 408,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -7642,7 +7642,7 @@
     {
       "name": "FxGui80",
       "type": "procedure",
-      "sortid": 408,
+      "sortid": 409,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -7673,7 +7673,7 @@
     {
       "name": "FxGui90",
       "type": "procedure",
-      "sortid": 409,
+      "sortid": 410,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -7704,7 +7704,7 @@
     {
       "name": "FxGui100",
       "type": "procedure",
-      "sortid": 410,
+      "sortid": 411,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -7735,7 +7735,7 @@
     {
       "name": "Fetoliquidrec",
       "type": "recipe",
-      "sortid": 411,
+      "sortid": 412,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -7745,7 +7745,7 @@
     {
       "name": "Fereaderrec",
       "type": "recipe",
-      "sortid": 412,
+      "sortid": 413,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -7755,7 +7755,7 @@
     {
       "name": "Gemdiamond",
       "type": "tag",
-      "sortid": 413,
+      "sortid": 414,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -7764,7 +7764,7 @@
     {
       "name": "Rawsteelore",
       "type": "tag",
-      "sortid": 414,
+      "sortid": 415,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -7773,7 +7773,7 @@
     {
       "name": "Rarironore",
       "type": "tag",
-      "sortid": 415,
+      "sortid": 416,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -7782,7 +7782,7 @@
     {
       "name": "Steelingotor",
       "type": "tag",
-      "sortid": 416,
+      "sortid": 417,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -7791,7 +7791,7 @@
     {
       "name": "Rodore",
       "type": "tag",
-      "sortid": 417,
+      "sortid": 418,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -7800,7 +7800,7 @@
     {
       "name": "Spawnergui",
       "type": "gui",
-      "sortid": 427,
+      "sortid": 419,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -7810,7 +7810,7 @@
     {
       "name": "Openfxgui",
       "type": "procedure",
-      "sortid": 428,
+      "sortid": 420,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -7844,7 +7844,7 @@
     {
       "name": "Openspawnergui",
       "type": "procedure",
-      "sortid": 429,
+      "sortid": 421,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -7878,7 +7878,7 @@
     {
       "name": "MobSpawner",
       "type": "procedure",
-      "sortid": 430,
+      "sortid": 422,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -7904,6 +7904,46 @@
         ]
       },
       "path": "~/FE Power/Potion/spawner"
+    },
+    {
+      "name": "PotionProjecterOFF",
+      "type": "block",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "potion_projecter_off",
+      "path": "~/FE Power/Potion"
+    },
+    {
+      "name": "PosionProjectorON",
+      "type": "procedure",
+      "sortid": 423,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "posion_projector_on",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/FE Power/Potion"
     }
   ],
   "variable_elements": [
@@ -7954,6 +7994,7 @@
       "advancements.madcrafterach.title": "Time to Break the Game",
       "item.energyconeleft.name": "Energy Cone Left",
       "item.usefuldns.octuplemb": "Octuple Money Bag",
+      "block.usefuldns.potion_projecter_off": "FX Projector",
       "block.usefuldns.digger_west": "Digger West",
       "item.usefuldns.raw_steel": "Raw Steel",
       "item.usefuldns.rawsteel": "Raw Steel",

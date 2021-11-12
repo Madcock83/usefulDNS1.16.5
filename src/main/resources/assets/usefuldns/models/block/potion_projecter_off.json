@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "usefuldns:blocks/buffmachinebottom",
+    "up": "usefuldns:blocks/buffmachinetopoff",
+    "north": "usefuldns:blocks/buffmachinesideoff",
+    "east": "usefuldns:blocks/buffmachinesideoff",
+    "south": "usefuldns:blocks/buffmachinesideoff",
+    "west": "usefuldns:blocks/buffmachinesideoff",
+    "particle": "usefuldns:blocks/buffmachinebottom"
+  }
+}

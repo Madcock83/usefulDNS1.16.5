@@ -5,6 +5,7 @@ import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.items.wrapper.SidedInvWrapper;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.CapabilityItemHandler;
+import net.minecraftforge.fml.network.NetworkHooks;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
@@ -12,19 +13,27 @@ import net.minecraftforge.energy.EnergyStorage;
 import net.minecraftforge.energy.CapabilityEnergy;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.common.capabilities.Capability;
+import net.minecraftforge.common.ToolType;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.NonNullList;
+import net.minecraft.util.Hand;
 import net.minecraft.util.Direction;
+import net.minecraft.util.ActionResultType;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.LockableLootTileEntity;
+import net.minecraft.particles.ParticleTypes;
 import net.minecraft.network.play.server.SUpdateTileEntityPacket;
+import net.minecraft.network.PacketBuffer;
 import net.minecraft.network.NetworkManager;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.loot.LootContext;
@@ -33,18 +42,23 @@ import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.inventory.container.INamedContainerProvider;
 import net.minecraft.inventory.container.Container;
-import net.minecraft.inventory.container.ChestContainer;
 import net.minecraft.inventory.ItemStackHelper;
 import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.inventory.ISidedInventory;
+import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.client.util.ITooltipFlag;
+import net.minecraft.client.Minecraft;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.usefuldns.procedures.CreativegenUpdateTickProcedure;
+import net.mcreator.usefuldns.procedures.PostionsProjectorUpdateTickProcedure;
+import net.mcreator.usefuldns.procedures.PostionsProjectorParticleSpawningConditionProcedure;
 import net.mcreator.usefuldns.itemgroup.UsefuldnsItemGroup;
+import net.mcreator.usefuldns.gui.GuipotionblockGui;
 import net.mcreator.usefuldns.UsefuldnsModElements;
 
 import javax.annotation.Nullable;
@@ -56,14 +70,18 @@ import java.util.List;
 import java.util.HashMap;
 import java.util.Collections;
 
+import io.netty.buffer.Unpooled;
+
+import com.google.common.collect.ImmutableMap;
+
 @UsefuldnsModElements.ModElement.Tag
-public class CreativegenBlock extends UsefuldnsModElements.ModElement {
-	@ObjectHolder("usefuldns:creativegen")
+public class PotionProjecterOFFBlock extends UsefuldnsModElements.ModElement {
+	@ObjectHolder("usefuldns:potion_projecter_off")
 	public static final Block block = null;
-	@ObjectHolder("usefuldns:creativegen")
+	@ObjectHolder("usefuldns:potion_projecter_off")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
-	public CreativegenBlock(UsefuldnsModElements instance) {
-		super(instance, 78);
+	public PotionProjecterOFFBlock(UsefuldnsModElements instance) {
+		super(instance, 77);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 	}
 
@@ -75,19 +93,34 @@ public class CreativegenBlock extends UsefuldnsModElements.ModElement {
 	private static class TileEntityRegisterHandler {
 		@SubscribeEvent
 		public void registerTileEntity(RegistryEvent.Register<TileEntityType<?>> event) {
-			event.getRegistry().register(TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("creativegen"));
+			event.getRegistry()
+					.register(TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("potion_projecter_off"));
 		}
 	}
 
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0));
-			setRegistryName("creativegen");
+			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(1.1500000000000001f, 15000f)
+					.setLightLevel(s -> 0).harvestLevel(1).harvestTool(ToolType.PICKAXE).setRequiresTool());
+			setRegistryName("potion_projecter_off");
+		}
+
+		@Override
+		@OnlyIn(Dist.CLIENT)
+		public void addInformation(ItemStack itemstack, IBlockReader world, List<ITextComponent> list, ITooltipFlag flag) {
+			super.addInformation(itemstack, world, list, flag);
+			list.add(new StringTextComponent("Place in upgrades to get affects"));
+			list.add(new StringTextComponent("Projects in a 50 block cube"));
 		}
 
 		@Override
 		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
 			return 15;
+		}
+
+		@Override
+		public boolean canConnectRedstone(BlockState state, IBlockReader world, BlockPos pos, Direction side) {
+			return true;
 		}
 
 		@Override
@@ -119,9 +152,50 @@ public class CreativegenBlock extends UsefuldnsModElements.ModElement {
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				CreativegenUpdateTickProcedure.executeProcedure($_dependencies);
+				PostionsProjectorUpdateTickProcedure.executeProcedure($_dependencies);
 			}
 			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 1);
+		}
+
+		@OnlyIn(Dist.CLIENT)
+		@Override
+		public void animateTick(BlockState blockstate, World world, BlockPos pos, Random random) {
+			super.animateTick(blockstate, world, pos, random);
+			PlayerEntity entity = Minecraft.getInstance().player;
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			if (PostionsProjectorParticleSpawningConditionProcedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world)))
+				for (int l = 0; l < 8; ++l) {
+					double d0 = (double) ((float) x + 0.5) + (double) (random.nextFloat() - 0.5) * 1.5D;
+					double d1 = ((double) ((float) y + 0.7) + (double) (random.nextFloat() - 0.5) * 1.5D) + 0.5;
+					double d2 = (double) ((float) z + 0.5) + (double) (random.nextFloat() - 0.5) * 1.5D;
+					world.addParticle(ParticleTypes.TOTEM_OF_UNDYING, d0, d1, d2, 0, 0, 0);
+				}
+		}
+
+		@Override
+		public ActionResultType onBlockActivated(BlockState blockstate, World world, BlockPos pos, PlayerEntity entity, Hand hand,
+				BlockRayTraceResult hit) {
+			super.onBlockActivated(blockstate, world, pos, entity, hand, hit);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			if (entity instanceof ServerPlayerEntity) {
+				NetworkHooks.openGui((ServerPlayerEntity) entity, new INamedContainerProvider() {
+					@Override
+					public ITextComponent getDisplayName() {
+						return new StringTextComponent("FX Projector");
+					}
+
+					@Override
+					public Container createMenu(int id, PlayerInventory inventory, PlayerEntity player) {
+						return new GuipotionblockGui.GuiContainerMod(id, inventory,
+								new PacketBuffer(Unpooled.buffer()).writeBlockPos(new BlockPos(x, y, z)));
+					}
+				}, new BlockPos(x, y, z));
+			}
+			return ActionResultType.SUCCESS;
 		}
 
 		@Override
@@ -175,7 +249,7 @@ public class CreativegenBlock extends UsefuldnsModElements.ModElement {
 	}
 
 	public static class CustomTileEntity extends LockableLootTileEntity implements ISidedInventory {
-		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
+		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(20, ItemStack.EMPTY);
 		protected CustomTileEntity() {
 			super(tileEntityType);
 		}
@@ -231,22 +305,22 @@ public class CreativegenBlock extends UsefuldnsModElements.ModElement {
 
 		@Override
 		public ITextComponent getDefaultName() {
-			return new StringTextComponent("creativegen");
+			return new StringTextComponent("potion_projecter_off");
 		}
 
 		@Override
 		public int getInventoryStackLimit() {
-			return 64;
+			return 1;
 		}
 
 		@Override
 		public Container createMenu(int id, PlayerInventory player) {
-			return ChestContainer.createGeneric9X3(id, player, this);
+			return new GuipotionblockGui.GuiContainerMod(id, player, new PacketBuffer(Unpooled.buffer()).writeBlockPos(this.getPos()));
 		}
 
 		@Override
 		public ITextComponent getDisplayName() {
-			return new StringTextComponent("Creative Generator");
+			return new StringTextComponent("FX Projector");
 		}
 
 		@Override
@@ -279,7 +353,7 @@ public class CreativegenBlock extends UsefuldnsModElements.ModElement {
 			return true;
 		}
 		private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
-		private final EnergyStorage energyStorage = new EnergyStorage(100000000, 75000, 75000, 100000000) {
+		private final EnergyStorage energyStorage = new EnergyStorage(250000, 5000, 5000, 0) {
 			@Override
 			public int receiveEnergy(int maxReceive, boolean simulate) {
 				int retval = super.receiveEnergy(maxReceive, simulate);

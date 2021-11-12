@@ -140,7 +140,7 @@ public class UnobfurnaceBlock extends UsefuldnsModElements.ModElement {
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
-			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 10);
+			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 1);
 		}
 
 		@Override
@@ -157,7 +157,7 @@ public class UnobfurnaceBlock extends UsefuldnsModElements.ModElement {
 				$_dependencies.put("world", world);
 				UnobfurancesmeltProcedure.executeProcedure($_dependencies);
 			}
-			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 10);
+			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 1);
 		}
 
 		@Override

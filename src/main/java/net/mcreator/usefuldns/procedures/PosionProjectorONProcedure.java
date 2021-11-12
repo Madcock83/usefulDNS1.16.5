@@ -16,7 +16,6 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.state.Property;
 import net.minecraft.potion.Effects;
 import net.minecraft.potion.EffectInstance;
-import net.minecraft.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.player.PlayerEntity;
@@ -28,7 +27,6 @@ import net.minecraft.command.ICommandSource;
 import net.minecraft.command.CommandSource;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.usefuldns.potion.DiamondpoopsPotionEffect;
 import net.mcreator.usefuldns.item.TimeupgradeItem;
 import net.mcreator.usefuldns.item.RainupgradeItem;
 import net.mcreator.usefuldns.item.ModspeedItem;
@@ -36,7 +34,7 @@ import net.mcreator.usefuldns.item.ModsaturationItem;
 import net.mcreator.usefuldns.item.ModregenItem;
 import net.mcreator.usefuldns.item.ModnightvisionItem;
 import net.mcreator.usefuldns.item.DeathupgradeItem;
-import net.mcreator.usefuldns.block.PostionsProjectorBlock;
+import net.mcreator.usefuldns.block.PotionProjecterOFFBlock;
 import net.mcreator.usefuldns.UsefuldnsMod;
 
 import java.util.function.Function;
@@ -46,36 +44,36 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Comparator;
 
-public class PostionsProjectorUpdateTickProcedure {
+public class PosionProjectorONProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				UsefuldnsMod.LOGGER.warn("Failed to load dependency x for procedure PostionsProjectorUpdateTick!");
+				UsefuldnsMod.LOGGER.warn("Failed to load dependency x for procedure PosionProjectorON!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				UsefuldnsMod.LOGGER.warn("Failed to load dependency y for procedure PostionsProjectorUpdateTick!");
+				UsefuldnsMod.LOGGER.warn("Failed to load dependency y for procedure PosionProjectorON!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				UsefuldnsMod.LOGGER.warn("Failed to load dependency z for procedure PostionsProjectorUpdateTick!");
+				UsefuldnsMod.LOGGER.warn("Failed to load dependency z for procedure PosionProjectorON!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				UsefuldnsMod.LOGGER.warn("Failed to load dependency world for procedure PostionsProjectorUpdateTick!");
+				UsefuldnsMod.LOGGER.warn("Failed to load dependency world for procedure PosionProjectorON!");
 			return;
 		}
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (((world instanceof World) ? ((World) world).isBlockPowered(new BlockPos((int) x, (int) y, (int) z)) : false)) {
+		if ((!((world instanceof World) ? ((World) world).isBlockPowered(new BlockPos((int) x, (int) y, (int) z)) : false))) {
 			{
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				BlockState _bs = PostionsProjectorBlock.block.getDefaultState();
+				BlockState _bs = PotionProjecterOFFBlock.block.getDefaultState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 					Property _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
@@ -101,9 +99,6 @@ public class PostionsProjectorUpdateTickProcedure {
 						}
 					}
 				}
-			}
-			if (world instanceof ServerWorld) {
-				((ServerWorld) world).spawnParticle(ParticleTypes.TOTEM_OF_UNDYING, x, y, z, (int) 500, 6, 6, 6, 1);
 			}
 		}
 		if (((new Object() {
@@ -359,7 +354,7 @@ public class PostionsProjectorUpdateTickProcedure {
 								return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
 							}
 						}.compareDistOf(x, y, z)).findFirst().orElse(null)))
-								.addPotionEffect(new EffectInstance(DiamondpoopsPotionEffect.potion, (int) 120, (int) 5, (false), (false)));
+								.addPotionEffect(new EffectInstance(Effects.SATURATION, (int) 120, (int) 5, (false), (false)));
 		}
 		if (((new Object() {
 			public ItemStack getItemStack(BlockPos pos, int sltid) {

@@ -2,15 +2,15 @@
   "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "furn3",
-    "textureTop": "furn3",
-    "textureLeft": "furn2",
-    "textureFront": "furn",
-    "textureRight": "furn2",
-    "textureBack": "furn2",
+    "texture": "buffmachinebottom",
+    "textureTop": "buffmachinetopoff",
+    "textureLeft": "buffmachinesideoff",
+    "textureFront": "buffmachinesideoff",
+    "textureRight": "buffmachinesideoff",
+    "textureBack": "buffmachinesideoff",
     "renderType": 10,
     "customModelName": "Normal",
-    "rotationMode": 1,
+    "rotationMode": 0,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
@@ -32,10 +32,13 @@
         "subtract": false
       }
     ],
-    "name": "Unobtainium Furance",
-    "specialInfo": [],
-    "hardness": 2.0,
-    "resistance": 10.0,
+    "name": "FX Projector",
+    "specialInfo": [
+      "Place in upgrades to get affects",
+      "Projects in a 50 block cube"
+    ],
+    "hardness": 1.1500000000000001,
+    "resistance": 15000.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -49,7 +52,7 @@
     "useLootTableForDrops": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
-    "canRedstoneConnect": false,
+    "canRedstoneConnect": true,
     "lightOpacity": 15,
     "material": {
       "value": "IRON"
@@ -77,7 +80,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "ANVIL"
+      "value": "METAL"
     },
     "breakSound": {
       "value": ""
@@ -97,39 +100,35 @@
     "luminance": 0,
     "unbreakable": false,
     "breakHarvestLevel": 1,
-    "spawnParticles": false,
+    "spawnParticles": true,
     "particleToSpawn": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "TOTEM"
     },
-    "particleSpawningShape": "Spread",
-    "particleSpawningRadious": 0.5,
-    "particleAmount": 4,
+    "particleSpawningShape": "Top",
+    "particleSpawningRadious": 1.5,
+    "particleAmount": 8,
+    "particleCondition": {
+      "name": "PostionsProjectorParticleSpawningCondition"
+    },
     "hasInventory": true,
-    "guiBoundTo": "Unobfurancegui",
+    "guiBoundTo": "Guipotionblock",
     "openGUIOnRightClick": true,
     "inventorySize": 20,
-    "inventoryStackSize": 64,
+    "inventoryStackSize": 1,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
-    "inventoryOutSlotIDs": [
-      10,
-      11,
-      12,
-      13,
-      14,
-      15
-    ],
+    "inventoryOutSlotIDs": [],
     "inventoryInSlotIDs": [],
-    "hasEnergyStorage": false,
+    "hasEnergyStorage": true,
     "energyInitial": 0,
-    "energyCapacity": 400000,
-    "energyMaxReceive": 200,
-    "energyMaxExtract": 200,
+    "energyCapacity": 250000,
+    "energyMaxReceive": 5000,
+    "energyMaxExtract": 5000,
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onTickUpdate": {
-      "name": "Unobfurancesmelt"
+      "name": "PostionsProjectorUpdateTick"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
@@ -140,7 +139,7 @@
     ],
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
-    "minGenerateHeight": 10,
-    "maxGenerateHeight": 110
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 64
   }
 }
