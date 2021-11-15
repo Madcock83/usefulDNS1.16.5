@@ -114,69 +114,69 @@ public class GuipotionblockGui extends UsefuldnsModElements.ModElement {
 					}
 				}
 			}
-			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 9, 6) {
+			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 9, 9) {
 			}));
-			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 54, 6) {
+			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 54, 9) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
-			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 54, 24) {
+			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 54, 27) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
-			this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 54, 42) {
+			this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 54, 45) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
-			this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 54, 60) {
+			this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 54, 63) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
-			this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 54, 78) {
+			this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 54, 81) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
-			this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 153, 6) {
+			this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 153, 9) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
-			this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 153, 24) {
+			this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 153, 27) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
-			this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 153, 42) {
+			this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 153, 45) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
-			this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 153, 60) {
+			this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 153, 63) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
-			this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 153, 78) {
+			this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 153, 81) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
-			this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 225, 6) {
+			this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 246, 10) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
@@ -186,9 +186,9 @@ public class GuipotionblockGui extends UsefuldnsModElements.ModElement {
 			int sj;
 			for (si = 0; si < 3; ++si)
 				for (sj = 0; sj < 9; ++sj)
-					this.addSlot(new Slot(inv, sj + (si + 1) * 9, 56 + 8 + sj * 18, 25 + 84 + si * 18));
+					this.addSlot(new Slot(inv, sj + (si + 1) * 9, 56 + 8 + sj * 18, 28 + 84 + si * 18));
 			for (si = 0; si < 9; ++si)
-				this.addSlot(new Slot(inv, si, 56 + 8 + si * 18, 25 + 142));
+				this.addSlot(new Slot(inv, si, 56 + 8 + si * 18, 28 + 142));
 		}
 
 		public Map<Integer, Slot> get() {

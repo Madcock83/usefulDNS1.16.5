@@ -4,12 +4,22 @@
   "definition": {
     "type": 1,
     "width": 288,
-    "height": 216,
+    "height": 222,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
     "renderBgLayer": true,
     "doesPauseGame": false,
     "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "antiback4.png",
+          "use1Xscale": false,
+          "name": "antiback4.png",
+          "x": 113,
+          "y": 12
+        }
+      },
       {
         "type": "inputslot",
         "data": {
@@ -126,8 +136,8 @@
           "image": "line.png",
           "use1Xscale": false,
           "name": "line.png",
-          "x": 105,
-          "y": 35
+          "x": 304,
+          "y": 131
         }
       },
       {
@@ -203,8 +213,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #11",
-          "x": 294,
-          "y": 17
+          "x": 315,
+          "y": 18
         }
       },
       {
@@ -275,12 +285,12 @@
       {
         "type": "label",
         "data": {
-          "text": "not in use (yet)",
+          "text": "not in use",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "not in use (yet)",
+          "name": "not in use",
           "x": 240,
           "y": 62
         }
@@ -288,12 +298,12 @@
       {
         "type": "label",
         "data": {
-          "text": "not in use (yet)",
+          "text": "not in use",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "not in use (yet)",
+          "name": "not in use",
           "x": 240,
           "y": 80
         }
@@ -301,12 +311,12 @@
       {
         "type": "label",
         "data": {
-          "text": "not in use (yet)",
+          "text": "not in use",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "not in use (yet)",
+          "name": "not in use",
           "x": 240,
           "y": 98
         }
@@ -502,8 +512,8 @@
             "falpha": 0.0
           },
           "name": "Spawner",
-          "x": 312,
-          "y": 17
+          "x": 314,
+          "y": 38
         }
       },
       {
@@ -516,8 +526,18 @@
           "width": 55,
           "height": 20,
           "name": "How To",
-          "x": 294,
-          "y": 35
+          "x": 355,
+          "y": 17
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrowcurved.png",
+          "use1Xscale": true,
+          "name": "arrowcurved.png",
+          "x": 81,
+          "y": 47
         }
       }
     ],
@@ -526,7 +546,7 @@
       "sy": 18,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": true
+      "snapOnGrid": false
     }
   }
 }
