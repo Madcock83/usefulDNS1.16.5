@@ -1,9 +1,9 @@
 {
   "id_map": {
-    "BIOME": 0,
-    "GUI": 22,
+    "DIMENSION": 1,
     "ENTITY": 1,
-    "DIMENSION": 1
+    "GUI": 22,
+    "BIOME": 0
   },
   "mod_elements": [
     {
@@ -8257,7 +8257,7 @@
   "workspaceSettings": {
     "modid": "usefuldns",
     "modName": "usefulDNS",
-    "version": "7.2.4",
+    "version": "7.2.6",
     "description": "useful items for the dns techpack",
     "author": "Madcock83",
     "websiteURL": "http://www.madcock83.com",

@@ -199,7 +199,7 @@ public class AntimatterUpdateTickProcedure {
 					world.addEntity(entityToSpawn);
 				}
 				if (world instanceof ServerWorld) {
-					((ServerWorld) world).spawnParticle(ParticleTypes.LAVA, (x + 0.5), (y + 1), (z + 0.5), (int) 50, 0, 1, 0, 1);
+					((ServerWorld) world).spawnParticle(ParticleTypes.LAVA, (x + 0.5), (y + 1), (z + 0.5), (int) 20, 0, 1, 0, 1);
 				}
 			}
 		}
