@@ -163,7 +163,7 @@ public class MobSpawnerProcedure {
 				}
 				if (world instanceof ServerWorld) {
 					Entity entityToSpawn = new BlazeEntity(EntityType.BLAZE, (World) world);
-					entityToSpawn.setLocationAndAngles((x + 1), y, z, world.getRandom().nextFloat() * 360F, 0);
+					entityToSpawn.setLocationAndAngles((x + 2), y, z, world.getRandom().nextFloat() * 360F, 0);
 					if (entityToSpawn instanceof MobEntity)
 						((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
 								SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
@@ -171,7 +171,7 @@ public class MobSpawnerProcedure {
 				}
 				if (world instanceof ServerWorld) {
 					Entity entityToSpawn = new BlazeEntity(EntityType.BLAZE, (World) world);
-					entityToSpawn.setLocationAndAngles(x, y, (z + 1), world.getRandom().nextFloat() * 360F, 0);
+					entityToSpawn.setLocationAndAngles(x, y, (z + 2), world.getRandom().nextFloat() * 360F, 0);
 					if (entityToSpawn instanceof MobEntity)
 						((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
 								SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
@@ -300,7 +300,7 @@ public class MobSpawnerProcedure {
 				}
 				return _retval.get();
 			}
-		}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == Items.LEATHER)) {
+		}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == Items.BEEF)) {
 			{
 				TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 				if (_ent != null) {
@@ -319,7 +319,7 @@ public class MobSpawnerProcedure {
 				TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 				if (_ent != null) {
 					final int _sltid = (int) (11);
-					final ItemStack _setstack = new ItemStack(Items.LEATHER);
+					final ItemStack _setstack = new ItemStack(Items.BEEF);
 					_setstack.setCount((int) 1);
 					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
 						if (capability instanceof IItemHandlerModifiable) {
@@ -340,7 +340,7 @@ public class MobSpawnerProcedure {
 				}
 				return _retval.get();
 			}
-		}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (11))).getItem() == Items.LEATHER) && ((new Object() {
+		}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (11))).getItem() == Items.BEEF) && ((new Object() {
 			public int getEnergyStored(IWorld world, BlockPos pos) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				TileEntity _ent = world.getTileEntity(pos);
@@ -391,7 +391,7 @@ public class MobSpawnerProcedure {
 				}
 				if (world instanceof ServerWorld) {
 					Entity entityToSpawn = new CowEntity(EntityType.COW, (World) world);
-					entityToSpawn.setLocationAndAngles((x + 1), y, z, world.getRandom().nextFloat() * 360F, 0);
+					entityToSpawn.setLocationAndAngles((x + 2), y, z, world.getRandom().nextFloat() * 360F, 0);
 					if (entityToSpawn instanceof MobEntity)
 						((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
 								SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
@@ -399,7 +399,7 @@ public class MobSpawnerProcedure {
 				}
 				if (world instanceof ServerWorld) {
 					Entity entityToSpawn = new CowEntity(EntityType.COW, (World) world);
-					entityToSpawn.setLocationAndAngles(x, y, (z + 1), world.getRandom().nextFloat() * 360F, 0);
+					entityToSpawn.setLocationAndAngles(x, y, (z + 2), world.getRandom().nextFloat() * 360F, 0);
 					if (entityToSpawn instanceof MobEntity)
 						((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
 								SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
@@ -627,7 +627,7 @@ public class MobSpawnerProcedure {
 				}
 				if (world instanceof ServerWorld) {
 					Entity entityToSpawn = new PigEntity(EntityType.PIG, (World) world);
-					entityToSpawn.setLocationAndAngles((x + 1), y, z, world.getRandom().nextFloat() * 360F, 0);
+					entityToSpawn.setLocationAndAngles((x + 2), y, z, world.getRandom().nextFloat() * 360F, 0);
 					if (entityToSpawn instanceof MobEntity)
 						((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
 								SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
@@ -635,7 +635,7 @@ public class MobSpawnerProcedure {
 				}
 				if (world instanceof ServerWorld) {
 					Entity entityToSpawn = new PigEntity(EntityType.PIG, (World) world);
-					entityToSpawn.setLocationAndAngles(x, y, (z + 1), world.getRandom().nextFloat() * 360F, 0);
+					entityToSpawn.setLocationAndAngles(x, y, (z + 2), world.getRandom().nextFloat() * 360F, 0);
 					if (entityToSpawn instanceof MobEntity)
 						((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
 								SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
@@ -745,7 +745,7 @@ public class MobSpawnerProcedure {
 				}
 				if (world instanceof ServerWorld) {
 					Entity entityToSpawn = new SheepEntity(EntityType.SHEEP, (World) world);
-					entityToSpawn.setLocationAndAngles((x + 1), y, z, world.getRandom().nextFloat() * 360F, 0);
+					entityToSpawn.setLocationAndAngles((x + 2), y, z, world.getRandom().nextFloat() * 360F, 0);
 					if (entityToSpawn instanceof MobEntity)
 						((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
 								SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
@@ -753,7 +753,7 @@ public class MobSpawnerProcedure {
 				}
 				if (world instanceof ServerWorld) {
 					Entity entityToSpawn = new SheepEntity(EntityType.SHEEP, (World) world);
-					entityToSpawn.setLocationAndAngles(x, y, (z + 1), world.getRandom().nextFloat() * 360F, 0);
+					entityToSpawn.setLocationAndAngles(x, y, (z + 2), world.getRandom().nextFloat() * 360F, 0);
 					if (entityToSpawn instanceof MobEntity)
 						((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
 								SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
@@ -863,7 +863,7 @@ public class MobSpawnerProcedure {
 				}
 				if (world instanceof ServerWorld) {
 					Entity entityToSpawn = new SkeletonEntity(EntityType.SKELETON, (World) world);
-					entityToSpawn.setLocationAndAngles((x + 1), y, z, world.getRandom().nextFloat() * 360F, 0);
+					entityToSpawn.setLocationAndAngles((x + 2), y, z, world.getRandom().nextFloat() * 360F, 0);
 					if (entityToSpawn instanceof MobEntity)
 						((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
 								SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
@@ -871,7 +871,7 @@ public class MobSpawnerProcedure {
 				}
 				if (world instanceof ServerWorld) {
 					Entity entityToSpawn = new SkeletonEntity(EntityType.SKELETON, (World) world);
-					entityToSpawn.setLocationAndAngles(x, y, (z + 1), world.getRandom().nextFloat() * 360F, 0);
+					entityToSpawn.setLocationAndAngles(x, y, (z + 2), world.getRandom().nextFloat() * 360F, 0);
 					if (entityToSpawn instanceof MobEntity)
 						((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
 								SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
@@ -981,7 +981,7 @@ public class MobSpawnerProcedure {
 				}
 				if (world instanceof ServerWorld) {
 					Entity entityToSpawn = new WitherSkeletonEntity(EntityType.WITHER_SKELETON, (World) world);
-					entityToSpawn.setLocationAndAngles((x + 1), y, z, world.getRandom().nextFloat() * 360F, 0);
+					entityToSpawn.setLocationAndAngles((x + 2), y, z, world.getRandom().nextFloat() * 360F, 0);
 					if (entityToSpawn instanceof MobEntity)
 						((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
 								SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
@@ -989,7 +989,7 @@ public class MobSpawnerProcedure {
 				}
 				if (world instanceof ServerWorld) {
 					Entity entityToSpawn = new WitherSkeletonEntity(EntityType.WITHER_SKELETON, (World) world);
-					entityToSpawn.setLocationAndAngles(x, y, (z + 1), world.getRandom().nextFloat() * 360F, 0);
+					entityToSpawn.setLocationAndAngles(x, y, (z + 2), world.getRandom().nextFloat() * 360F, 0);
 					if (entityToSpawn instanceof MobEntity)
 						((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
 								SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
@@ -1099,7 +1099,7 @@ public class MobSpawnerProcedure {
 				}
 				if (world instanceof ServerWorld) {
 					Entity entityToSpawn = new ZombieEntity(EntityType.ZOMBIE, (World) world);
-					entityToSpawn.setLocationAndAngles((x + 1), y, z, world.getRandom().nextFloat() * 360F, 0);
+					entityToSpawn.setLocationAndAngles((x + 2), y, z, world.getRandom().nextFloat() * 360F, 0);
 					if (entityToSpawn instanceof MobEntity)
 						((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
 								SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
@@ -1107,7 +1107,7 @@ public class MobSpawnerProcedure {
 				}
 				if (world instanceof ServerWorld) {
 					Entity entityToSpawn = new ZombieEntity(EntityType.ZOMBIE, (World) world);
-					entityToSpawn.setLocationAndAngles(x, y, (z + 1), world.getRandom().nextFloat() * 360F, 0);
+					entityToSpawn.setLocationAndAngles(x, y, (z + 2), world.getRandom().nextFloat() * 360F, 0);
 					if (entityToSpawn instanceof MobEntity)
 						((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
 								SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);

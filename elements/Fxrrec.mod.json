@@ -10,37 +10,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "CUSTOM:Decablo"
       },
       {
-        "value": "CUSTOM:Unboingot"
+        "value": "CUSTOM:Mudpie"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Decablo"
       },
       {
-        "value": "CUSTOM:Unboingot"
+        "value": "CUSTOM:Madstaff"
       },
       {
-        "value": "CUSTOM:Cobblegen"
+        "value": "CUSTOM:Unobblock"
       },
       {
-        "value": "CUSTOM:Unboingot"
+        "value": "CUSTOM:Quinmb"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Decablo"
       },
       {
-        "value": "CUSTOM:Unboingot"
+        "value": "Items.NETHER_STAR"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Decablo"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Gamemode"
+      "value": "CUSTOM:PostionsProjector"
     },
-    "name": "gamemoderec",
+    "name": "fxrrec",
     "namespace": "mod"
   }
 }

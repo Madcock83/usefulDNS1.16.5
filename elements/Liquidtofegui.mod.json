@@ -341,19 +341,19 @@
             "falpha": 0.0
           },
           "name": "Liquid Fe To FE transformer",
-          "x": 132,
-          "y": 35
+          "x": 113,
+          "y": 34
         }
       },
       {
         "type": "label",
         "data": {
-          "text": "of 32,000 MilliBuckets",
+          "text": "of 32,000 mBuckets",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "of 32,000 MilliBuckets",
+          "name": "of 32,000 mBuckets",
           "x": 165,
           "y": 107
         }

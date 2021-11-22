@@ -42,11 +42,6 @@ public class KbindOnKeyPressedProcedure {
 			if (entity instanceof PlayerEntity)
 				((PlayerEntity) entity).inventory.clear();
 			if (entity instanceof PlayerEntity) {
-				ItemStack _setstack = new ItemStack(SwissArmyItem.block);
-				_setstack.setCount((int) 1);
-				ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
-			}
-			if (entity instanceof PlayerEntity) {
 				ItemStack _setstack = new ItemStack(FlashlightItem.block);
 				_setstack.setCount((int) 1);
 				ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
@@ -58,6 +53,11 @@ public class KbindOnKeyPressedProcedure {
 			}
 			if (entity instanceof PlayerEntity) {
 				ItemStack _setstack = new ItemStack(MadstaffItem.block);
+				_setstack.setCount((int) 1);
+				ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
+			}
+			if (entity instanceof PlayerEntity) {
+				ItemStack _setstack = new ItemStack(SwissArmyItem.block);
 				_setstack.setCount((int) 1);
 				ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 			}

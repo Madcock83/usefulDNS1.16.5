@@ -69,6 +69,8 @@ public class BatterguiGuiWindow extends ContainerScreen<BatterguiGui.GuiContaine
 		int k = (this.width - this.xSize) / 2;
 		int l = (this.height - this.ySize) / 2;
 		this.blit(ms, k, l, 0, 0, this.xSize, this.ySize, this.xSize, this.ySize);
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/untitled.png"));
+		this.blit(ms, this.guiLeft + 69, this.guiTop + 8, 0, 0, 72, 73, 72, 73);
 		if (Batteryprogress0Procedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world))) {
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("usefuldns:textures/afe_0.png"));
 			this.blit(ms, this.guiLeft + 78, this.guiTop + 53, 0, 0, 61, 18, 61, 18);
@@ -146,7 +148,7 @@ public class BatterguiGuiWindow extends ContainerScreen<BatterguiGui.GuiContaine
 				return _retval.get();
 			}
 		}.getEnergyStored(new BlockPos((int) x, (int) y, (int) z))) + "", 87, 26, -12829636);
-		this.font.drawString(ms, "DNS Battery", 24, 8, -12829636);
+		this.font.drawString(ms, "DNS Battery", 6, 8, -12829636);
 		this.font.drawString(ms, "Battery WILL lose all power if picked up", 6, 71, -12829636);
 	}
 

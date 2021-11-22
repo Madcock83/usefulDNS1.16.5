@@ -7,7 +7,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 
-import net.mcreator.usefuldns.item.SwissArmyItem;
+import net.mcreator.usefuldns.item.SwissArmyMagItem;
 import net.mcreator.usefuldns.UsefuldnsModElements;
 
 @UsefuldnsModElements.ModElement.Tag
@@ -22,7 +22,7 @@ public class UsefuldnsItemGroup extends UsefuldnsModElements.ModElement {
 			@OnlyIn(Dist.CLIENT)
 			@Override
 			public ItemStack createIcon() {
-				return new ItemStack(SwissArmyItem.block);
+				return new ItemStack(SwissArmyMagItem.block);
 			}
 
 			@OnlyIn(Dist.CLIENT)

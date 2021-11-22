@@ -13,6 +13,16 @@
       {
         "type": "image",
         "data": {
+          "image": "untitled.png",
+          "use1Xscale": false,
+          "name": "untitled.png",
+          "x": 177,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
           "image": "afe_0.png",
           "use1Xscale": false,
           "displayCondition": {
@@ -201,7 +211,7 @@
             "falpha": 0.0
           },
           "name": "DNS Battery",
-          "x": 132,
+          "x": 114,
           "y": 44
         }
       },

@@ -208,8 +208,8 @@ public class FetoliquidguiGuiWindow extends ContainerScreen<FetoliquidguiGui.Gui
 				return _retval.get();
 			}
 		}.getFluidTankLevel(new BlockPos((int) x, (int) y, (int) z), 1)) + "", 127, 72, -12829636);
-		this.font.drawString(ms, "of 32,000 MilliBuckets", 73, 81, -12829636);
-		this.font.drawString(ms, "FE to Liquid Fe Transformer", 28, 9, -12829636);
+		this.font.drawString(ms, "of 32,000 mBuckets", 98, 81, -12829636);
+		this.font.drawString(ms, "FE to Liquid Fe Transformer", 7, 8, -12829636);
 	}
 
 	@Override

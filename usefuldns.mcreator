@@ -1,9 +1,9 @@
 {
   "id_map": {
-    "DIMENSION": 1,
     "ENTITY": 1,
     "GUI": 22,
-    "BIOME": 0
+    "BIOME": 0,
+    "DIMENSION": 1
   },
   "mod_elements": [
     {
@@ -2377,16 +2377,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "caveexcaperec",
-      "path": "~/Recipes/Mod Recipes"
-    },
-    {
-      "name": "Gamemoderec",
-      "type": "recipe",
-      "sortid": 199,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "gamemoderec",
       "path": "~/Recipes/Mod Recipes"
     },
     {
@@ -7974,6 +7964,26 @@
           }
         ]
       }
+    },
+    {
+      "name": "Blazerodrec",
+      "type": "recipe",
+      "sortid": 425,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blazerodrec",
+      "path": "~/Recipes/Vanilla Recipes"
+    },
+    {
+      "name": "Fxrrec",
+      "type": "recipe",
+      "sortid": 426,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fxrrec",
+      "path": "~/Recipes/Mod Recipes"
     }
   ],
   "variable_elements": [
@@ -8146,7 +8156,7 @@
       "item.usefuldns.modsaturation": "Saturation Upgrade",
       "tile.madcrafter.name": "Mad Crafter",
       "item.usefuldns.unobmix": "Unobtainium Mixture",
-      "block.usefuldns.unobfurnacecake": "Unobtainium Furance",
+      "block.usefuldns.unobfurnacecake": "Unobtainium Furnace",
       "block.usefuldns.decablo": "DecaNySodium Block",
       "item.deca.name": "DecaNySodium Gem",
       "block.usefuldns.antimatter": "Anti-Matter Projector",
@@ -8177,7 +8187,7 @@
       "key.mcreator.shiftkey": "Left Shift",
       "item.usefuldns.onedollar": "1 Dollar Bill",
       "block.usefuldns.digger_south": "Digger South",
-      "block.usefuldns.unobfurnace": "Unobtainium Furance",
+      "block.usefuldns.unobfurnace": "Unobtainium Furnace",
       "advancements.eaglescout.title": "Eagle Scout",
       "block.usefuldns.battery": "DNS Battery",
       "item.usefuldns.madsworld": "Madcock\u0027s Travel Staff",
@@ -8257,7 +8267,7 @@
   "workspaceSettings": {
     "modid": "usefuldns",
     "modName": "usefulDNS",
-    "version": "7.2.6",
+    "version": "7.2.10",
     "description": "useful items for the dns techpack",
     "author": "Madcock83",
     "websiteURL": "http://www.madcock83.com",

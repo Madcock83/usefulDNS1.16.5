@@ -28,7 +28,6 @@ import net.minecraft.command.ICommandSource;
 import net.minecraft.command.CommandSource;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.usefuldns.potion.DiamondpoopsPotionEffect;
 import net.mcreator.usefuldns.item.TimeupgradeItem;
 import net.mcreator.usefuldns.item.RainupgradeItem;
 import net.mcreator.usefuldns.item.ModspeedItem;
@@ -359,7 +358,7 @@ public class PostionsProjectorUpdateTickProcedure {
 								return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
 							}
 						}.compareDistOf(x, y, z)).findFirst().orElse(null)))
-								.addPotionEffect(new EffectInstance(DiamondpoopsPotionEffect.potion, (int) 120, (int) 5, (false), (false)));
+								.addPotionEffect(new EffectInstance(Effects.SATURATION, (int) 120, (int) 5, (false), (false)));
 		}
 		if (((new Object() {
 			public ItemStack getItemStack(BlockPos pos, int sltid) {

@@ -3,7 +3,7 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "swissmag",
+    "texture": "swissanimated3",
     "customModelName": "Normal",
     "name": "Swiss Army Knife (Magnet)",
     "specialInfo": [],

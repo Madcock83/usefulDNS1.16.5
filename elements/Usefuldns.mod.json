@@ -4,7 +4,7 @@
   "definition": {
     "name": "UsefulDNS",
     "icon": {
-      "value": "CUSTOM:SwissArmy"
+      "value": "CUSTOM:SwissArmyMag"
     },
     "showSearch": true
   }

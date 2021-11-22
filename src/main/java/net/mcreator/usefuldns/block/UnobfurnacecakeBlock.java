@@ -170,7 +170,7 @@ public class UnobfurnacecakeBlock extends UsefuldnsModElements.ModElement {
 				NetworkHooks.openGui((ServerPlayerEntity) entity, new INamedContainerProvider() {
 					@Override
 					public ITextComponent getDisplayName() {
-						return new StringTextComponent("Unobtainium Furance");
+						return new StringTextComponent("Unobtainium Furnace");
 					}
 
 					@Override
@@ -302,7 +302,7 @@ public class UnobfurnacecakeBlock extends UsefuldnsModElements.ModElement {
 
 		@Override
 		public ITextComponent getDisplayName() {
-			return new StringTextComponent("Unobtainium Furance");
+			return new StringTextComponent("Unobtainium Furnace");
 		}
 
 		@Override

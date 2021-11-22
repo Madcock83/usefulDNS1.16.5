@@ -1,0 +1,12 @@
+{
+  "group": "usefuldns",
+  "type": "minecraft:blasting",
+  "experience": 5,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "usefuldns:steel_rod"
+  },
+  "result": {
+    "item": "minecraft:blaze_rod"
+  }
+}

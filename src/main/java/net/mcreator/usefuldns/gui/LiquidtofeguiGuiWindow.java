@@ -210,8 +210,8 @@ public class LiquidtofeguiGuiWindow extends ContainerScreen<LiquidtofeguiGui.Gui
 				return _retval.get();
 			}
 		}.getFluidTankLevel(new BlockPos((int) x, (int) y, (int) z), 1)) + "", 60, 71, -12829636);
-		this.font.drawString(ms, "Liquid Fe To FE transformer", 28, 9, -12829636);
-		this.font.drawString(ms, "of 32,000 MilliBuckets", 61, 81, -12829636);
+		this.font.drawString(ms, "Liquid Fe To FE transformer", 9, 8, -12829636);
+		this.font.drawString(ms, "of 32,000 mBuckets", 61, 81, -12829636);
 		this.font.drawString(ms, "of 100 Million", 118, 54, -12829636);
 	}
 

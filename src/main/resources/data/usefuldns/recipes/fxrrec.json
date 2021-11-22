@@ -1,0 +1,42 @@
+{
+  "group": "usefuldns",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "usefuldns:decablo"
+    },
+    "1": {
+      "item": "usefuldns:mudpie"
+    },
+    "2": {
+      "item": "usefuldns:decablo"
+    },
+    "3": {
+      "item": "usefuldns:madstaff"
+    },
+    "4": {
+      "item": "usefuldns:unobblock"
+    },
+    "5": {
+      "item": "usefuldns:quinmb"
+    },
+    "6": {
+      "item": "usefuldns:decablo"
+    },
+    "7": {
+      "item": "minecraft:nether_star"
+    },
+    "8": {
+      "item": "usefuldns:decablo"
+    }
+  },
+  "result": {
+    "item": "usefuldns:potions_projector",
+    "count": 1
+  }
+}
